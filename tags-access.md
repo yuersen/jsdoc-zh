@@ -4,7 +4,7 @@
 
 - [语法](#语法)
 - [概述](#概述)
-- [示例](#示例)
+- [实例](#实例)
 - [相关链接](#相关链接)
 
 ## 语法
@@ -26,7 +26,7 @@
 
 请注意，doclet 的访问级别不用于他们的 scope (作用域)。例如，如果 Parent 有一个名为 child 的内部变量，那么这个内部变量将被记录为 `@public`, child 变量仍然是被视为一个内部变量，其 namepath 为 `Parent~child`。 换一种说法，child 变量将有一个内部作用域，即使这个变量是公开的。 要更改 doclet 的作用域，请使用 [`@instance`](./tags-instance.md), [`@static`](./tags-static.md), 和 [`@global`](./tags-global.md) 标签。
 
-## 示例 
+## 实例 
 
 可以使用与 `@access` 标签同义的其他标签：
 
