@@ -1,4 +1,4 @@
-# @require
+# @requires
 
 ## 目录
 
