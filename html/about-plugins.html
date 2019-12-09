@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>关于 JSDoc 插件</title>
+  <style>.markdown-body hr::after,.markdown-body::after{clear:both}@font-face{font-family:octicons-link;src:url(data:font/woff;charset=utf-8;base64,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) format(&#39;woff&#39;)}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Helvetica,Arial,sans-serif,&#34;Apple Color Emoji&#34;,&#34;Segoe UI Emoji&#34;,&#34;Segoe UI Symbol&#34;;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body .pl-c{color:#6a737d}.markdown-body .pl-c1,.markdown-body .pl-s .pl-v{color:#005cc5}.markdown-body .pl-e,.markdown-body .pl-en{color:#6f42c1}.markdown-body .pl-s .pl-s1,.markdown-body .pl-smi{color:#24292e}.markdown-body .pl-ent{color:#22863a}.markdown-body .pl-k{color:#d73a49}.markdown-body .pl-pds,.markdown-body .pl-s,.markdown-body .pl-s .pl-pse .pl-s1,.markdown-body .pl-sr,.markdown-body .pl-sr .pl-cce,.markdown-body .pl-sr .pl-sra,.markdown-body .pl-sr .pl-sre{color:#032f62}.markdown-body .pl-smw,.markdown-body .pl-v{color:#e36209}.markdown-body .pl-bu{color:#b31d28}.markdown-body .pl-ii{color:#fafbfc;background-color:#b31d28}.markdown-body .pl-c2{color:#fafbfc;background-color:#d73a49}.markdown-body .pl-c2::before{content:&#34;^M&#34;}.markdown-body .pl-sr .pl-cce{font-weight:700;color:#22863a}.markdown-body .pl-ml{color:#735c0f}.markdown-body .pl-mh,.markdown-body .pl-mh .pl-en,.markdown-body .pl-ms{font-weight:700;color:#005cc5}.markdown-body .pl-mi{font-style:italic;color:#24292e}.markdown-body .pl-mb{font-weight:700;color:#24292e}.markdown-body .pl-md{color:#b31d28;background-color:#ffeef0}.markdown-body .pl-mi1{color:#22863a;background-color:#f0fff4}.markdown-body .pl-mc{color:#e36209;background-color:#ffebda}.markdown-body .pl-mi2{color:#f6f8fa;background-color:#005cc5}.markdown-body .pl-mdr{font-weight:700;color:#6f42c1}.markdown-body .pl-ba{color:#586069}.markdown-body .pl-sg{color:#959da5}.markdown-body .pl-corl{text-decoration:underline;color:#032f62}.markdown-body .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown-body hr::after,.markdown-body hr::before,.markdown-body::after,.markdown-body::before{display:table;content:&#34;&#34;}.markdown-body a{background-color:transparent;color:#0366d6;text-decoration:none}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body h1{margin:.67em 0}.markdown-body img{border-style:none}.markdown-body hr{box-sizing:content-box}.markdown-body input{font:inherit;margin:0;overflow:visible;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body dl dt,.markdown-body strong,.markdown-body table th{font-weight:600}.markdown-body code,.markdown-body pre{font-family:SFMono-Regular,Consolas,&#34;Liberation Mono&#34;,Menlo,Courier,monospace}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body a:hover{text-decoration:underline}.markdown-body td,.markdown-body th{padding:0}.markdown-body blockquote{margin:0}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body dd{margin-left:0}.markdown-body .pl-0{padding-left:0!important}.markdown-body .pl-1{padding-left:4px!important}.markdown-body .pl-2{padding-left:8px!important}.markdown-body .pl-3{padding-left:16px!important}.markdown-body .pl-4{padding-left:24px!important}.markdown-body .pl-5{padding-left:32px!important}.markdown-body .pl-6{padding-left:40px!important}.markdown-body&gt;:first-child{margin-top:0!important}.markdown-body&gt;:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:0}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{overflow:hidden;background:#e1e4e8;height:.25em;padding:0;margin:24px 0;border:0}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body blockquote&gt;:first-child{margin-top:0}.markdown-body blockquote&gt;:last-child{margin-bottom:0}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1{font-size:2em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li{word-wrap:break-all}.markdown-body li&gt;p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{border-spacing:0;border-collapse:collapse;display:block;width:100%;overflow:auto}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body code{padding:.2em .4em;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body pre{word-wrap:normal}.markdown-body pre&gt;code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,&#34;Liberation Mono&#34;,Menlo,Courier,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fafbfc;border:1px solid #d1d5da;border-bottom-color:#c6cbd1;border-radius:3px;box-shadow:inset 0 -1px 0 #c6cbd1}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body hr{border-bottom-color:#eee}
+body{width:auto;padding:16px}.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert h4{margin-top:0;color:inherit}.alert .alert-link{font-weight:700}.alert&gt;p,.alert&gt;ul{margin-bottom:0}.alert&gt;p+p{margin-top:5px}.alert-dismissable{padding-right:35px}.alert-dismissable .close{position:relative;top:-2px;right:-21px;color:inherit}.alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.alert-success hr{border-top-color:#c9e2b3}.alert-success .alert-link{color:#2b542c}.alert-info{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.alert-info hr{border-top-color:#a6e1ec}.alert-info .alert-link{color:#245269}.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.alert-warning hr{border-top-color:#f7e1b5}.alert-warning .alert-link{color:#66512c}.alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.alert-danger hr{border-top-color:#e4b9c0}.alert-danger .alert-link{color:#843534}</style>
+</head>
+<body>
+  <article class="markdown-body" id="body">
+    <!--
+title: 关于 JSDoc 插件
+order: 107
+author: yuer
+-->
+
+<h1 id="关于-jsdoc-插件">关于 JSDoc 插件</h1>
+<h2 id="目录">目录</h2>
+<ul>
+<li><a href="#%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%AF%E7%94%A8%E6%8F%92%E4%BB%B6">创建并启用插件</a></li>
+<li><a href="#%E5%88%9B%E5%BB%BASDoc3%E6%8F%92%E4%BB%B6">创建SDoc3插件</a><ul>
+<li><a href="#%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E7%A8%8B%E5%BA%8F">事件处理程序</a></li>
+<li><a href="#%E6%A0%87%E7%AD%BE%E5%AE%9A%E4%B9%89">标签定义</a></li>
+<li><a href="#%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E8%80%85">节点访问者</a></li>
+</ul>
+</li>
+<li><a href="#%E6%8A%A5%E5%91%8A%E9%94%99%E8%AF%AF">报告错误</a></li>
+</ul>
+<h2 id="创建并启用插件">创建并启用插件</h2>
+<p>创建并启用新 JSDoc 插件,需要两个步骤：</p>
+<ul>
+<li>创建一个包含你的插件代码的 JavaScript 模块.</li>
+<li>将该模块添加到 <a href="./about-configuring-jsdoc.html">JSDoc 配置文件</a>的 <code>plugins</code> 数组中。你可以指定一个绝对或相对路径。如果使用相对路径，JSDoc 按照相对于配置文件所在的目录，当前的工作目录和 JSDoc 安装目录的顺序搜索插件。
+例如，如果你的插件是在当前工作目录下，<code>plugins/shout.js</code> 文件中定义的，你应该在 JSDoc 配置文件中的 <code>plugins</code> 数组中添加字符串 <code>plugins/shout</code>。</li>
+</ul>
+<p>例如，在JSDoc配置文件中添加一个插件：</p>
+<pre><code>{
+  &quot;plugins&quot;: [&quot;plugins/shout&quot;]
+}</code></pre><p>JSDoc 按配置文件 <code>plugins</code> 数组中列出的顺序执行的插件。</p>
+<h2 id="创建sdoc3插件">创建SDoc3插件</h2>
+<p>JSDoc 3的插件系统广泛的控制着解析过程。一个插件可以通过执行以下任何一项操作，影响解析结果：</p>
+<ul>
+<li>定义事件处理程序</li>
+<li>定义标签</li>
+<li>定义一个抽象语法树节点的访问者</li>
+</ul>
+<h3 id="事件处理程序">事件处理程序</h3>
+<p>最高级别，一个插件可以注册具体命名事件的处理程序，让JSDoc触发。 JSDoc将一个事件对象传递给处理程序。你的插件模块要导出一个包含处理程序的 handlers 对象，例如：</p>
+<p>例如，事件处理程序插件 &#39;newDoclet&#39; 事件：</p>
+<pre><code>exports.handlers = {
+  newDoclet: function(e) {
+    // Do something when we see a new doclet
+  }
+};</code></pre><p>JSDoc 触发事件的顺序和底层代码是一样。</p>
+<p>事件处理程序插件可以通过设置事件对象的 <code>stopPropagation</code> 属性(<code>e.stopPropagation = true</code>)停止运行后面的插件。一个插件可以通过设置 <code>preventDefault</code> 属性（<code>e.preventDefault = true</code>）阻止触发事件。</p>
+<h4 id="event-parsebegin">Event: parseBegin</h4>
+<p>JSDoc 开始加载和解析源文件之前，<code>parseBegin</code> 事件被触发。你的插件可以通过修改事件的内容，来控制哪些文件将被 JSDoc 解析。</p>
+<p>注意：此事件在 JSDoc3.2 及更高版本有效。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>sourcefiles</code>：源文件的路径数组，这些源文件将被解析。</li>
+</ul>
+<h4 id="event-filebegin">Event: fileBegin</h4>
+<p>当解析器即将解析一个文件 <code>fileBegin</code> 事件触发。如果需要，你的插件可以使用此事件触发每个文件的初始化。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>：文件的名称。</li>
+</ul>
+<h4 id="event-beforeparse">Event: beforeParse</h4>
+<p><code>beforeParse</code> 事件在解析开始之前被触发。插件可以使用此方法来修改将被解析的源代码。例如，你的插件可以添加一个 JSDoc 注释，也可以删除不是有效 JavaScript 的预处理标记。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>：文件的名称。</li>
+<li><code>source</code>：文件的内容。</li>
+</ul>
+<p>下面是为一个函数增加了一个虚拟的 doclet 到源文件的例子，这样它会被解析并添加到文档。这样做，文档的方法就可以提供给用户，但在被文档化的源代码中不可能出现，如由外部超类所提供的方法，示例：</p>
+<pre><code>exports.handlers = {
+  beforeParse: function(e) {
+    var extraDoc = [
+      &#39;/**&#39;,
+      &#39; * Function provided by a superclass.&#39;,
+      &#39; * @name superFunc&#39;,
+      &#39; * @memberof ui.mywidget&#39;,
+      &#39; * @function&#39;,
+      &#39; */&#39;
+    ];
+    e.source += extraDoc.join(&#39;\n&#39;);
+  }
+};</code></pre><h4 id="event-jsdoccommentfound">Event: jsdocCommentFound</h4>
+<p>每当 JSDoc 注释被发现,<code>jsdocCommentFound</code> 事件就会被触发。注释可以或不与任何代码相关联。您可以在注释被处理之前使用此事件修改注释的内容。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>: 该文件的名称；</li>
+<li><code>comment</code>：JSDoc注释的文本；</li>
+<li><code>lineno</code>: 注释被发现的行号；</li>
+<li><code>columnno</code>: 找到注释的列号，JSDoc 3.5.0及更高版本中提供。</li>
+</ul>
+<h4 id="event-symbolfound">Event: symbolFound</h4>
+<p>当解析器在代码中遇到一个可能需要被文档化的标识符时，<code>symbolFound</code> 事件就会被触发。例如，解析器会为源文件中每个变量，函数和对象字面量触发一个 <code>symbolFound</code> 事件。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>: 该文件的名称。</li>
+<li><code>comment</code>: 与标识符相关联的任何注释文本。</li>
+<li><code>id</code>: 标识符的唯一ID。</li>
+<li><code>lineno</code>: 标识符被发现的行号。</li>
+<li><code>columnno</code>: 找到注释的列号，JSDoc 3.5.0及更高版本中提供。</li>
+<li><code>range</code>: 包含标识符相关联的源文件中第一个和最后一个字符的数字索引的一个数组。</li>
+<li><code>astnode</code>: 抽象语法树中标识符的节点。</li>
+<li><code>code</code>: 有关该代码的详细信息的对象。这个对象通常包含 <code>name</code>, <code>type</code>, 和 <code>node</code> 属性。对象也可能具有 <code>value</code>, <code>paramnames</code>, 或 <code>funcscope</code> 属性，这取决于标识符。</li>
+</ul>
+<h4 id="event-newdoclet">Event: newDoclet</h4>
+<p>newDoclet事件是最高级别的事件。新的 doclet 已被创建时，它就会被触发。这意味着一个 JSDoc 注释或标识符已被处理，并且实际传递给模板的 doclet 已被创建。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>doclet</code>: 已被创建的新 doclet 。</li>
+</ul>
+<p>所述的 doclet 的属性取决于 doclet 表示的注释或标识符。你可能会看到一些共同的属性包括：</p>
+<ul>
+<li><code>comment</code>: JSDoc 注释文本，或者，如果标识符没被描述，那么该值是一个空字符串。</li>
+<li><code>meta</code>: 对象，描述 doclet 如何关联源文件（例如，在源文件中的位置）。</li>
+<li><code>description</code>： 被记录的标识符的说明。</li>
+<li><code>kind</code>: 被记录的标识符的种类（例如，<code>class</code> 或者 <code>function</code>）。</li>
+<li><code>name</code>: 标识符的短名称（例如，<code>myMethod</code>）。</li>
+<li><code>longname</code>: 全名，其中包含成员信息（例如，<code>MyClass#myMethod</code>）。</li>
+<li><code>memberof</code>: 该标识符所读的模块，命名空间或类（例如，<code>MyClass</code>），或者，如果该标识符没有父级，那么该值是一个空字符串。</li>
+<li><code>scope</code>: 标识符在其父级内的作用域范围（例如，<code>global</code>, <code>static</code>, <code>instance</code>,或 <code>inner</code>）。</li>
+<li><code>undocumented</code>: 如果标识符没有 JSDoc 注释，设置为 <code>true</code>。</li>
+<li><code>defaultvalue</code>: 标识符的默认值。</li>
+<li><code>type</code>: 包含关于标识符类型详细信息的对象。</li>
+<li><code>params</code>: 包含参数列表的对象。</li>
+<li><code>tags</code>: 对象，包含 JSDoc 不识别的标记列表。只有当JSDoc的配置文件中 <code>allowUnknownTags</code> 设置为 <code>true</code> 时可用。</li>
+</ul>
+<p>要查看 JSDoc 为代码生成的 doclet，请使用 <a href="./about-commandline.html">-x命令行</a>选项运行 JSDoc。</p>
+<p>下面是一个 <code>newDoclet</code> 处理程序的一个例子说明：</p>
+<pre><code>exports.handlers = {
+  newDoclet: function(e) {
+    // e.doclet will refer to the newly created doclet
+    // you can read and modify properties of that doclet if you wish
+    if (typeof e.doclet.description === &#39;string&#39;) {
+      e.doclet.description = e.doclet.description.toUpperCase();
+    }
+  }
+};</code></pre><h4 id="event-filecomplete">Event: fileComplete</h4>
+<p>当解析器解析完一个文件时，<code>fileComplete</code> 事件就会被触发。你的插件可以使用这个事件来触发每个文件的清理。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>: 文件名称。</li>
+<li><code>source</code>: 该文件的内容。</li>
+</ul>
+<h4 id="event-parsecomplete">Event: parseComplete</h4>
+<p>JSDoc 解析所有指定的源文件之后，<code>parseComplete</code> 事件就会被触发。</p>
+<p>注意：此事件在 JSDoc3.2 及更高版本会被触发。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>sourcefiles</code>: 被解析的源代码文件的路径数组。</li>
+<li><code>doclets</code>: doclet对象的数组。见 newDoclet 事件，有关每个的 doclet 可以包含属性的详细信息。注意：这个属性在 JSDoc3.2.1 及更高版本中可用。</li>
+</ul>
+<h4 id="event-processingcomplete">Event: processingComplete</h4>
+<p>JSDoc 更新反映继承和借来的标识符的解析结果后，<code>processingComplete</code> 事件被触发。</p>
+<p>注意：此事件在 JSDoc3.2.1 及更高版本中会被触发。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>doclets</code>: doclet 对象的数组。见 newDoclet 事件，有关每个的 doclet 可以包含属性的详细信息。</li>
+</ul>
+<h3 id="标签定义">标签定义</h3>
+<p>添加标签到标签字典是影响文档生成的一个中级方式。在一个 <code>newDoclet</code> 事件被触发前，JSDoc 注释块被解析以确定可能存在的说明和任何 JSDoc 标签。当一个标签被发现，如果它已在标签字典被定义，它就会被赋予一个修改 doclet 的机会。</p>
+<p>插件可以通过导出一个 <code>defineTags</code> 函数来定义标签。该函数将传递一个可用于定义标签的字典，像这样：</p>
+<pre><code>exports.defineTags = function(dictionary) {
+  // define tags here
+};</code></pre><h4 id="the-dictionary（字典）">The Dictionary（字典）</h4>
+<p>字典提供了以下方法：</p>
+<ul>
+<li><code>defineTag(title, opts)</code>: 用于定义标签。第一个参数是标签的名称（例如，<code>param</code> 或 <code>overview</code>）。第二个参数是一个包含标签选项的对象。可以包含以下任一选项;每个选项的默认值都是 <code>false</code>：<ul>
+<li><code>canHaveType (boolean)</code>: 如果标签文本可以包含一个类型表达式，那么设置为 <code>true</code>（如 <code>@param {string} name - Description</code> 中的 <code>{string}</code>）。</li>
+<li><code>canHaveName (boolean)</code>: 如果标签文本可以包含一个名称，那么设置为 <code>true</code>（如 <code>@param {string} name - Description</code> 中的 <code>name</code>)。</li>
+<li><code>isNamespace (boolean)</code>: 如果该标签是应用 doclet 的长名称，作为命名空间，那么设置为 <code>true</code>。例如，<code>@module</code> 标签应设置该选项设置为 <code>true</code>，并在标签上使用 <code>@module myModuleName</code> 的结果为长名称 <code>module:myModuleName</code>。</li>
+<li><code>mustHaveValue (boolean)</code>: 如果该标签必须有一个值，那么设置为 <code>true</code>（如 <code>@name TheName</code> 中的 <code>TheName</code>)。</li>
+<li><code>mustNotHaveDescription (boolean)</code>: 如果该标签可能有一个值，但是不是必须有描述，那么设置为 <code>true</code>（如 <code>@tag {typeExpr} TheDescription</code> 中的 <code>TheDescription</code>)。</li>
+<li><code>mustNotHaveValue (boolean)</code>: 如果该标签必须没有值，那么设置为 <code>true</code>。</li>
+<li><code>onTagged (function)</code>: 当该标签被发现时，执行的回调函数。该函数传递两个参数：该 doclet 和该标签对象。</li>
+</ul>
+</li>
+<li><code>lookUp(tagName)</code>: 按名称检索标签对象。返回该标签对象，包括它的选项，如果标签没有定义，那么返回 <code>false</code>。</li>
+<li><code>isNamespace(tagName)</code>: 如果该标签是应用 doclet 的长名称，作为命名空间，那么返回 <code>true</code>。</li>
+<li><code>normalise(tagName)</code>: 返回标签的规范名称。例如，<code>@constant</code> 是 <code>@const</code> 标签的同义词;如果你调用 <code>normalise(&#39;const&#39;)</code>，那么返回结果是 <code>constant</code> 字符串。</li>
+<li><code>normalize(tagName)</code>: <code>normalise</code> 的同义词。在 JSDoc3.3.0 及更高版本中可用。</li>
+</ul>
+<p>标签的 <code>onTagged</code> 回调可以修改 doclet 或标签的内容。</p>
+<p>定义一个 onTagged 回调: </p>
+<pre><code>dictionary.defineTag(&#39;instance&#39;, {
+  onTagged: function(doclet, tag) {
+    doclet.scope = &quot;instance&quot;;
+  }
+});</code></pre><p><code>defineTag</code> 方法返回一个 <code>Tag</code> 对象，这个对象有一个 <code>synonym</code> 方法，这个方法可用于定义该标签的一个同义词。</p>
+<p>定义标签同义词: </p>
+<pre><code>dictionary.defineTag(&#39;exception&#39;, { /* options for exception tag */ })
+  .synonym(&#39;throws&#39;);</code></pre><h3 id="节点访问者">节点访问者</h3>
+<p>在最底层，插件作者可以通过定义一个访问的每个节点的节点访问者来处理在抽象语法树（AST）中的每个节点。通过使用 <code>node-visitor</code> 插件，您可以修改注释并触发任意一段代码的解析事件。</p>
+<p>插件可以通过导出一个包含 <code>visitNode</code> 函数的 <code>astNodeVisitor</code> 对象来定义节点访问者，像这样：</p>
+<pre><code>exports.astNodeVisitor = {
+  visitNode: function(node, e, parser, currentSourceName) {
+    // do all sorts of crazy things here
+  }
+};</code></pre><p>函数在每个节点上调用，具有以下参数：</p>
+<ul>
+<li><code>node</code>: AST的节点。AST节点是 JavaScript 对象,使用由 Mozilla 的解析器 API 定义的格式。您可以使用 Esprima 的解析器演示，查看为您的源代码创建的AST。</li>
+<li><code>e</code>: 事件。如果该节点是一个解析器处理，事件对象将已经被填充，在 <code>symbolFound</code> 事件上用相同的东西描述。否则，这将是空对象在其上设置各种属性。</li>
+<li><code>parser</code>: JSDoc 解析器实例。</li>
+<li><code>currentSourceName</code>: 被解析的文件名。</li>
+</ul>
+<h4 id="触发事情发生">触发事情发生</h4>
+<p>实现节点访问的首要原因是为了能够记录事情，那些不寻常的记录（创建类像函数调用），或者自动生成文档为未记录的代码。例如，一个插件可能看起来调用到 <code>_trigger</code> 方法，因为它知道这意味着一个事件被触发，然后生成文档因为这个事件。</p>
+<p>为了使事情发生了，<code>visitNode</code> 函数应该修改事件参数的属性。一般来说，目标是构建一个注释，然后得到一个事件触发。在分析器可以让所有的节点的访问都来看看节点之后，它会查看是否该事件对象有一个 <code>comment</code> 释属性和 <code>event</code> 属性。如果两个都有，在事件属性命名的事件被触发。该事件通常 <code>symbolFound</code> or <code>jsdocCommentFound</code>，但理论上，一个插件可以定义自己的事件和处理它们。</p>
+<p>与事件处理程序的插件，一个节点访问插件可以停止后面的插件，运行通过在事件对象上设置 <code>stopPropagation</code> 属性（<code>e.stopPropagation = true</code>）。一个插件可以通过设置的 <code>preventDefault</code> 属性停止事件触发（<code>e.preventDefault = true</code>）。</p>
+<h2 id="报告错误">报告错误</h2>
+<p>如果你的插件需要报告错误，使用在 <code>jsdoc/util/logger</code> 模块中的下列方法之一：</p>
+<ul>
+<li><code>logger.warn</code>： 发出警告给用户，可能出现的问题。</li>
+<li><code>logger.error</code>： 报告错误，从该插件可以恢复。</li>
+<li><code>logger.fatal</code>： 报告错误，应引起 JSDoc 停止运行。</li>
+</ul>
+<p>使用这些方法创建更好的用户体验,不是简单地抛出一个错误。</p>
+<p><strong>注意</strong>：请不要使用 <code>jsdoc/util/error</code> 模块报告错误。该模块使用，将在 JSDoc 的未来版本中删除。</p>
+<p>报告一个非致命错误：</p>
+<pre><code>var logger = require(&#39;jsdoc/util/logger&#39;);
+
+exports.handlers = {
+  newDoclet: function(e) {
+    // Your code here.
+
+    if (somethingBadHappened) {
+      logger.error(&#39;Oh, no, something bad happened!&#39;);
+    }
+  }
+};</code></pre>
+  </article>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSDoc中的命令行参数</title>
+  <style>.markdown-body hr::after,.markdown-body::after{clear:both}@font-face{font-family:octicons-link;src:url(data:font/woff;charset=utf-8;base64,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) format(&#39;woff&#39;)}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Helvetica,Arial,sans-serif,&#34;Apple Color Emoji&#34;,&#34;Segoe UI Emoji&#34;,&#34;Segoe UI Symbol&#34;;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body .pl-c{color:#6a737d}.markdown-body .pl-c1,.markdown-body .pl-s .pl-v{color:#005cc5}.markdown-body .pl-e,.markdown-body .pl-en{color:#6f42c1}.markdown-body .pl-s .pl-s1,.markdown-body .pl-smi{color:#24292e}.markdown-body .pl-ent{color:#22863a}.markdown-body .pl-k{color:#d73a49}.markdown-body .pl-pds,.markdown-body .pl-s,.markdown-body .pl-s .pl-pse .pl-s1,.markdown-body .pl-sr,.markdown-body .pl-sr .pl-cce,.markdown-body .pl-sr .pl-sra,.markdown-body .pl-sr .pl-sre{color:#032f62}.markdown-body .pl-smw,.markdown-body .pl-v{color:#e36209}.markdown-body .pl-bu{color:#b31d28}.markdown-body .pl-ii{color:#fafbfc;background-color:#b31d28}.markdown-body .pl-c2{color:#fafbfc;background-color:#d73a49}.markdown-body .pl-c2::before{content:&#34;^M&#34;}.markdown-body .pl-sr .pl-cce{font-weight:700;color:#22863a}.markdown-body .pl-ml{color:#735c0f}.markdown-body .pl-mh,.markdown-body .pl-mh .pl-en,.markdown-body .pl-ms{font-weight:700;color:#005cc5}.markdown-body .pl-mi{font-style:italic;color:#24292e}.markdown-body .pl-mb{font-weight:700;color:#24292e}.markdown-body .pl-md{color:#b31d28;background-color:#ffeef0}.markdown-body .pl-mi1{color:#22863a;background-color:#f0fff4}.markdown-body .pl-mc{color:#e36209;background-color:#ffebda}.markdown-body .pl-mi2{color:#f6f8fa;background-color:#005cc5}.markdown-body .pl-mdr{font-weight:700;color:#6f42c1}.markdown-body .pl-ba{color:#586069}.markdown-body .pl-sg{color:#959da5}.markdown-body .pl-corl{text-decoration:underline;color:#032f62}.markdown-body .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown-body hr::after,.markdown-body hr::before,.markdown-body::after,.markdown-body::before{display:table;content:&#34;&#34;}.markdown-body a{background-color:transparent;color:#0366d6;text-decoration:none}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body h1{margin:.67em 0}.markdown-body img{border-style:none}.markdown-body hr{box-sizing:content-box}.markdown-body input{font:inherit;margin:0;overflow:visible;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body dl dt,.markdown-body strong,.markdown-body table th{font-weight:600}.markdown-body code,.markdown-body pre{font-family:SFMono-Regular,Consolas,&#34;Liberation Mono&#34;,Menlo,Courier,monospace}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body a:hover{text-decoration:underline}.markdown-body td,.markdown-body th{padding:0}.markdown-body blockquote{margin:0}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body dd{margin-left:0}.markdown-body .pl-0{padding-left:0!important}.markdown-body .pl-1{padding-left:4px!important}.markdown-body .pl-2{padding-left:8px!important}.markdown-body .pl-3{padding-left:16px!important}.markdown-body .pl-4{padding-left:24px!important}.markdown-body .pl-5{padding-left:32px!important}.markdown-body .pl-6{padding-left:40px!important}.markdown-body&gt;:first-child{margin-top:0!important}.markdown-body&gt;:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:0}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{overflow:hidden;background:#e1e4e8;height:.25em;padding:0;margin:24px 0;border:0}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body blockquote&gt;:first-child{margin-top:0}.markdown-body blockquote&gt;:last-child{margin-bottom:0}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1{font-size:2em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li{word-wrap:break-all}.markdown-body li&gt;p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{border-spacing:0;border-collapse:collapse;display:block;width:100%;overflow:auto}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body code{padding:.2em .4em;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body pre{word-wrap:normal}.markdown-body pre&gt;code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,&#34;Liberation Mono&#34;,Menlo,Courier,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fafbfc;border:1px solid #d1d5da;border-bottom-color:#c6cbd1;border-radius:3px;box-shadow:inset 0 -1px 0 #c6cbd1}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body hr{border-bottom-color:#eee}
+body{width:auto;padding:16px}.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert h4{margin-top:0;color:inherit}.alert .alert-link{font-weight:700}.alert&gt;p,.alert&gt;ul{margin-bottom:0}.alert&gt;p+p{margin-top:5px}.alert-dismissable{padding-right:35px}.alert-dismissable .close{position:relative;top:-2px;right:-21px;color:inherit}.alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.alert-success hr{border-top-color:#c9e2b3}.alert-success .alert-link{color:#2b542c}.alert-info{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.alert-info hr{border-top-color:#a6e1ec}.alert-info .alert-link{color:#245269}.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.alert-warning hr{border-top-color:#f7e1b5}.alert-warning .alert-link{color:#66512c}.alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.alert-danger hr{border-top-color:#e4b9c0}.alert-danger .alert-link{color:#843534}</style>
+</head>
+<body>
+  <article class="markdown-body" id="body">
+    <!--
+title: JSDoc中的命令行参数
+order: 103
+author: yuer
+-->
+
+<h1 id="jsdoc中的命令行参数">JSDoc中的命令行参数</h1>
+<h2 id="目录">目录</h2>
+<ul>
+<li><a href="#%E7%A4%BA%E4%BE%8B">示例</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5">相关链接</a></li>
+</ul>
+<p>使用 JSDoc 最基本的，像这样使用：</p>
+<pre><code>/path/to/jsdoc yourSourceCodeFile.js anotherSourceCodeFile.js ...</code></pre><p>其中<code>...</code>是生成文档文件的路径。</p>
+<p>此外，可以提供一个 <a href="https://daringfireball.net/projects/markdown/syntax">Markdown file</a>（以“.md”结尾）或者一个名为“README”文件的路径，它将被添加到文档的头部。请参见<a href="./about-including-readme.html">these instructions</a>。</p>
+<p>JSDoc 支持大量的命令行选项，其中许多选项有长和短两种形式。或者，JSDoc 命令行选项可以在配置文件中指定。命令行选项：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>-a &lt;value&gt;</code>, <code>--access &lt;value&gt;</code></td>
+<td>只显示特定 access 方法属性的标识符： <code>private</code>, <code>protected</code>, <code>public</code>, or <code>undefined</code>, 或者 <code>all</code>（表示所有的访问级别）。默认情况下，显示除 <code>private</code> 标识符以外的所有标识符。</td>
+</tr>
+<tr>
+<td><code>-c &lt;value&gt;</code>, <code>--configure &lt;value&gt;</code></td>
+<td>JSDoc 配置文件的路径。默认为安装 JSDoc 目录下的 <code>conf.json</code> 或 <code>conf.json.EXAMPLE</code>。</td>
+</tr>
+<tr>
+<td><code>-d &lt;value&gt;</code>, <code>--destination &lt;value&gt;</code></td>
+<td>输出生成文档的文件夹路径。JSDoc 内置的 Haruki 模板，使用 console 将数据转储到控制台。默认为 <code>./out</code>。</td>
+</tr>
+<tr>
+<td><code>--debug</code></td>
+<td>打印日志信息，可以帮助调试 JSDoc 本身的问题。</td>
+</tr>
+<tr>
+<td><code>-e &lt;value&gt;</code>, <code>--encoding &lt;value&gt;</code></td>
+<td>当 JSDoc 阅读源代码时假定使用这个编码，默认为 <code>utf8</code>。</td>
+</tr>
+<tr>
+<td><code>-h</code>, <code>--help</code></td>
+<td>显示 JSDoc 的命令行选项的信息，然后退出。</td>
+</tr>
+<tr>
+<td><code>--match &lt;value&gt;</code></td>
+<td>只运行测试，其名称中包含 value。</td>
+</tr>
+<tr>
+<td><code>--nocolor</code></td>
+<td>当运行测试时，在控制台输出信息不要使用的颜色。在 Windows 中，这个选项是默认启用的。</td>
+</tr>
+<tr>
+<td><code>-p</code>, <code>--private</code></td>
+<td>将标记有<a href="./tags-private.html">@private 标签</a>的标识符也生成到文档中。默认情况下，不包括私有标识符。</td>
+</tr>
+<tr>
+<td><code>-P</code>, <code>--package</code></td>
+<td>包含项目名称，版本，和其他细节的 <code>package.json</code> 文件。默认为在源路径中找到的第一个 <code>package.json</code> 文件。</td>
+</tr>
+<tr>
+<td><code>--pedantic</code></td>
+<td>将错误视为致命错误，将警告视为错误。默认为 <code>false</code>。</td>
+</tr>
+<tr>
+<td><code>-q &lt;value&gt;</code>, <code>--query &lt;value&gt;</code></td>
+<td>一个查询字符串用来解析和存储到全局变量 <code>env.opts.query</code> 中。示例：foo=bar&amp;baz=true。</td>
+</tr>
+<tr>
+<td><code>-r</code>, <code>--recurse</code></td>
+<td>扫描源文件和导览时递归到子目录。</td>
+</tr>
+<tr>
+<td><code>-R</code>, <code>--readme</code></td>
+<td>用来包含到生成文档的 <code>README.md</code> 文件。默认为在源路径中找到的第一 <code>README.md</code> 文件。</td>
+</tr>
+<tr>
+<td><code>-t &lt;value&gt;</code>, <code>--template &lt;value&gt;</code></td>
+<td>用于生成输出文档的模板的路径。默认为 <code>templates/default</code>，JSDoc 内置的默认模板。</td>
+</tr>
+<tr>
+<td><code>-T</code>, <code>--test</code></td>
+<td>运行 JSDoc 的测试套件，并把结果打印到控制台。</td>
+</tr>
+<tr>
+<td><code>-u &lt;value&gt;</code>, <code>--tutorials &lt;value&gt;</code></td>
+<td>导览路径，JSDoc 要搜索的目录。如果省略，将不生成导览页。查看<a href="./about-tutorials.html">导览说明</a>，以了解更多信息。</td>
+</tr>
+<tr>
+<td><code>-v</code>, <code>--version</code></td>
+<td>显示 JSDoc 的版本号，然后退出。</td>
+</tr>
+<tr>
+<td><code>--verbose</code></td>
+<td>日志的详细信息到控制台 JSDoc 运行。默认为 <code>false</code>。</td>
+</tr>
+<tr>
+<td><code>-X</code>, <code>--explain</code></td>
+<td>以 JSON 格式转储所有的 doclet 到控制台，然后退出。</td>
+</tr>
+</tbody></table>
+<h2 id="示例">示例</h2>
+<p>使用配置文件 <code>/path/to/my/conf.json</code>，为 <code>./src</code> 目录的中文件生成文档，并保存输出到 <code>./docs</code> 目录中：</p>
+<pre><code class="language-shell">/path/to/jsdoc src -r -c /path/to/my/conf.json -d docs</code></pre>
+<p>运行所有 JSDoc 的测试，其名称包含 tag，并记录每个测试信息：</p>
+<pre><code>/path/to/jsdoc -T --match tag --verbose</code></pre><h2 id="相关链接">相关链接</h2>
+<ul>
+<li><a href="./about-configuring-jsdoc.html">使用配置文件配置 JSDoc</a></li>
+</ul>
+
+  </article>
+</body>
+</html>

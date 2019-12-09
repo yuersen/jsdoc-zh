@@ -1,0 +1,5125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSDOC</title>
+  <style>.markdown-body hr::after,.markdown-body::after{clear:both}@font-face{font-family:octicons-link;src:url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format(&#39;woff&#39;)}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Helvetica,Arial,sans-serif,&#34;Apple Color Emoji&#34;,&#34;Segoe UI Emoji&#34;,&#34;Segoe UI Symbol&#34;;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body .pl-c{color:#6a737d}.markdown-body .pl-c1,.markdown-body .pl-s .pl-v{color:#005cc5}.markdown-body .pl-e,.markdown-body .pl-en{color:#6f42c1}.markdown-body .pl-s .pl-s1,.markdown-body .pl-smi{color:#24292e}.markdown-body .pl-ent{color:#22863a}.markdown-body .pl-k{color:#d73a49}.markdown-body .pl-pds,.markdown-body .pl-s,.markdown-body .pl-s .pl-pse .pl-s1,.markdown-body .pl-sr,.markdown-body .pl-sr .pl-cce,.markdown-body .pl-sr .pl-sra,.markdown-body .pl-sr .pl-sre{color:#032f62}.markdown-body .pl-smw,.markdown-body .pl-v{color:#e36209}.markdown-body .pl-bu{color:#b31d28}.markdown-body .pl-ii{color:#fafbfc;background-color:#b31d28}.markdown-body .pl-c2{color:#fafbfc;background-color:#d73a49}.markdown-body .pl-c2::before{content:&#34;^M&#34;}.markdown-body .pl-sr .pl-cce{font-weight:700;color:#22863a}.markdown-body .pl-ml{color:#735c0f}.markdown-body .pl-mh,.markdown-body .pl-mh .pl-en,.markdown-body .pl-ms{font-weight:700;color:#005cc5}.markdown-body .pl-mi{font-style:italic;color:#24292e}.markdown-body .pl-mb{font-weight:700;color:#24292e}.markdown-body .pl-md{color:#b31d28;background-color:#ffeef0}.markdown-body .pl-mi1{color:#22863a;background-color:#f0fff4}.markdown-body .pl-mc{color:#e36209;background-color:#ffebda}.markdown-body .pl-mi2{color:#f6f8fa;background-color:#005cc5}.markdown-body .pl-mdr{font-weight:700;color:#6f42c1}.markdown-body .pl-ba{color:#586069}.markdown-body .pl-sg{color:#959da5}.markdown-body .pl-corl{text-decoration:underline;color:#032f62}.markdown-body .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown-body hr::after,.markdown-body hr::before,.markdown-body::after,.markdown-body::before{display:table;content:&#34;&#34;}.markdown-body a{background-color:transparent;color:#0366d6;text-decoration:none}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body h1{margin:.67em 0}.markdown-body img{border-style:none}.markdown-body hr{box-sizing:content-box}.markdown-body input{font:inherit;margin:0;overflow:visible;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body dl dt,.markdown-body strong,.markdown-body table th{font-weight:600}.markdown-body code,.markdown-body pre{font-family:SFMono-Regular,Consolas,&#34;Liberation Mono&#34;,Menlo,Courier,monospace}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body a:hover{text-decoration:underline}.markdown-body td,.markdown-body th{padding:0}.markdown-body blockquote{margin:0}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body dd{margin-left:0}.markdown-body .pl-0{padding-left:0!important}.markdown-body .pl-1{padding-left:4px!important}.markdown-body .pl-2{padding-left:8px!important}.markdown-body .pl-3{padding-left:16px!important}.markdown-body .pl-4{padding-left:24px!important}.markdown-body .pl-5{padding-left:32px!important}.markdown-body .pl-6{padding-left:40px!important}.markdown-body&gt;:first-child{margin-top:0!important}.markdown-body&gt;:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:0}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{overflow:hidden;background:#e1e4e8;height:.25em;padding:0;margin:24px 0;border:0}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body blockquote&gt;:first-child{margin-top:0}.markdown-body blockquote&gt;:last-child{margin-bottom:0}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1{font-size:2em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li{word-wrap:break-all}.markdown-body li&gt;p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{border-spacing:0;border-collapse:collapse;display:block;width:100%;overflow:auto}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body code{padding:.2em .4em;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body pre{word-wrap:normal}.markdown-body pre&gt;code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,&#34;Liberation Mono&#34;,Menlo,Courier,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fafbfc;border:1px solid #d1d5da;border-bottom-color:#c6cbd1;border-radius:3px;box-shadow:inset 0 -1px 0 #c6cbd1}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body hr{border-bottom-color:#eee}
+body{width:auto;padding:16px}.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert h4{margin-top:0;color:inherit}.alert .alert-link{font-weight:700}.alert&gt;p,.alert&gt;ul{margin-bottom:0}.alert&gt;p+p{margin-top:5px}.alert-dismissable{padding-right:35px}.alert-dismissable .close{position:relative;top:-2px;right:-21px;color:inherit}.alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.alert-success hr{border-top-color:#c9e2b3}.alert-success .alert-link{color:#2b542c}.alert-info{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.alert-info hr{border-top-color:#a6e1ec}.alert-info .alert-link{color:#245269}.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.alert-warning hr{border-top-color:#f7e1b5}.alert-warning .alert-link{color:#66512c}.alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.alert-danger hr{border-top-color:#e4b9c0}.alert-danger .alert-link{color:#843534}</style>
+</head>
+<body>
+  <article class="markdown-body" id="body">
+    <!--
+title: JSDOC
+order: 100
+author: yuer
+-->
+
+<h1 id="jsdoc">JSDOC</h1>
+<ul>
+<li><a >Official website</a></li>
+</ul>
+<h2 id="目录">目录</h2>
+<ul>
+<li>JSDoc3 入门<ul>
+<li><a >入门</a></li>
+<li><a >在 JSDoc 3中使用名称路径</a></li>
+<li><a >JSDOC 的命令行参数</a></li>
+<li><a >使用配置文件配置 JSDOC</a></li>
+<li><a >配置 JSDoc 的默认模板</a></li>
+<li><a >块标签和内联标签</a></li>
+<li><a >关于 JSDoc 插件</a></li>
+<li><a >使用 Markdown 插件</a></li>
+<li><a >Tutorials 教程</a></li>
+<li><a >包含 Package（包）文件</a></li>
+<li><a >包含 README 文件</a></li>
+</ul>
+</li>
+<li>JSDoc 示例<ul>
+<li><a >ES 2015 Classes</a></li>
+<li><a >ES 2015 Modules</a></li>
+<li><a >CommonJS Modules</a></li>
+<li><a >AMD Modules</a></li>
+</ul>
+</li>
+<li>块标签<ul>
+<li><a >@abstract</a></li>
+<li><a >@access</a></li>
+<li><a >@alias</a></li>
+<li><a >@async</a></li>
+<li><a >@augments</a></li>
+<li><a >@author</a></li>
+<li><a >@borrows</a></li>
+<li><a >@callback</a></li>
+<li><a >@class</a></li>
+<li><a >@classdesc</a></li>
+<li><a >@constant</a></li>
+<li><a >@constructs</a></li>
+<li><a >@copyright</a></li>
+<li><a >@default</a></li>
+<li><a >@deprecated</a></li>
+<li><a >@description</a></li>
+<li><a >@enum</a></li>
+<li><a >@event</a></li>
+<li><a >@example</a></li>
+<li><a >@exports</a></li>
+<li><a >@external</a></li>
+<li><a >@file</a></li>
+<li><a >@fires</a></li>
+<li><a >@function</a></li>
+<li><a >@generator</a></li>
+<li><a >@global</a></li>
+<li><a >@hideconstructor</a></li>
+<li><a >@ignore</a></li>
+<li><a >@implements</a></li>
+<li><a >@inheritdoc</a></li>
+<li><a >@inner</a></li>
+<li><a >@instance</a></li>
+<li><a >@interface</a></li>
+<li><a >@kind</a></li>
+<li><a >@lends</a></li>
+<li><a >@license</a></li>
+<li><a >@listens</a></li>
+<li><a >@member</a></li>
+<li><a >@memberof</a></li>
+<li><a >@mixes</a></li>
+<li><a >@mixin</a></li>
+<li><a >@module</a></li>
+<li><a >@name</a></li>
+<li><a >@namespace</a></li>
+<li><a >@override</a></li>
+<li><a >@package</a></li>
+<li><a >@param</a></li>
+<li><a >@private</a></li>
+<li><a >@property</a></li>
+<li><a >@protected</a></li>
+<li><a >@public</a></li>
+<li><a >@readonly</a></li>
+<li><a >@requires</a></li>
+<li><a >@returns</a></li>
+<li><a >@see</a></li>
+<li><a >@since</a></li>
+<li><a >@static</a></li>
+<li><a >@summary</a></li>
+<li><a >@this</a></li>
+<li><a >@throws</a></li>
+<li><a >@todo</a></li>
+<li><a >@tutorial</a></li>
+<li><a >@type</a></li>
+<li><a >@typedef</a></li>
+<li><a >@variation</a></li>
+<li><a >@version</a></li>
+<li><a >@yields</a></li>
+</ul>
+</li>
+<li>内联标签<ul>
+<li><a >@link</a></li>
+<li><a >@tutorial</a></li>
+</ul>
+</li>
+<li>贡献<ul>
+<li><a >JSDoc project on GitHub</a></li>
+<li><a >Use JSDoc project on GitHub</a></li>
+</ul>
+</li>
+</ul>
+<!--
+title: JSDoc 入门
+order: 101
+author: yuer
+-->
+
+<h1 id="jsdoc-入门">JSDoc 入门</h1>
+<h2 id="目录-1">目录</h2>
+<ul>
+<li><a >介绍</a></li>
+<li><a >向代码中添加文档注释</a></li>
+<li><a >生成网站</a></li>
+</ul>
+<h2 id="介绍">介绍</h2>
+<p>JSDoc 3 是一个用于 JavaScript 的API文档生成器，类似于 Javadoc 或 phpDocumentor。可以将文档注释直接添加到源代码中。JSDoc 工具将扫描您的源代码并为您生成一个 HTML 文档网站。</p>
+<h2 id="向代码中添加文档注释">向代码中添加文档注释</h2>
+<p>JSDoc 的目的是记录 JavaScript 应用程序或库的 API。假设您想要记录诸如模块、名称空间、类、方法、方法参数等内容。</p>
+<p>JSDoc注释通常应该放在记录代码之前。为了被 JSDoc 解析器识别，每个注释必须以 <code>/**</code> 序列开头。以 <code>/*</code>、<code>/***</code>开头或超过3颗星的注释将被忽略。这个特性用于控制解析注释块的功能。</p>
+<p>最简单的文档示例就是描述：</p>
+<pre><code>/** This is a description of the foo function. */
+function foo() {
+}</code></pre><p>添加一个描述很简单--只需在文档注释中键入所需的说明。</p>
+<p>可以使用特殊的 <code>JSDoc标签</code> 来提供更多信息。例如，如果函数是类的构造函数，则可以通过添加 <a >@constructor</a>标记来表示。</p>
+<pre><code>/**
+ * Represents a book.
+ * @constructor
+ */
+function Book(title, author) {
+}</code></pre><p>使用标签添加更多的信息。</p>
+<pre><code>/**
+ * Represents a book.
+ * @constructor
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ */
+function Book(title, author) {
+}</code></pre><h2 id="生成网站">生成网站</h2>
+<p>一旦你的代码是已注释的，你可以是用 JSDoc 3的工具从源文件中生成一个 HTML 网站。</p>
+<p>默认情况下，JSDoc 使用内置的“默认”模板将文档转换为 HTML。您可以根据自己的需要编辑此模板，或者创建一个全新的模板（如果您喜欢的话）。</p>
+<p>在命令行上运行文档生成器：</p>
+<pre><code>jsdoc book.js</code></pre><p>此命令将在当前工作目录中创建名为 <code>out/</code> 的目录。在该目录中，您将找到生成的 HTML 页面。</p>
+<!--
+title: JSDoc 3中使用名称路径
+order: 102
+author: yuer
+-->
+
+<h1 id="jsdoc-3中使用名称路径">JSDoc 3中使用名称路径</h1>
+<h2 id="目录-2">目录</h2>
+<ul>
+<li><a >名称路径</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="jsdoc3-中的名称路径">JSDoc3 中的名称路径</h2>
+<p>如果涉及到一个 JavaScript 变量，这个变量在文档中的其他地方，你必须提供一个唯一标识符映射到该变量。名称路径提供了一种这样做的方法，并且消除实例成员，静态成员和内部变量之间的歧义。</p>
+<p>JSDoc 3 中名称路径的基本语法示例：</p>
+<pre><code>myFunction
+MyConstructor
+MyConstructor#instanceMember
+MyConstructor.staticMember
+MyConstructor~innerMember // note that JSDoc 2 uses a dash</code></pre><p>下面给出了例子：一个名为&quot;say&quot;的<strong>实例方法</strong>，一个名为&quot;say&quot;的<strong>内部函数</strong>,和同样名为&quot;say&quot;的<strong>静态方法</strong>。这三种不同的方法,都是彼此独立地存在的。</p>
+<p>例如，使用一个文档化标签来描述你的代码</p>
+<pre><code class="language-javascript">/** @constructor */
+Person = function() {
+  this.say = function() {
+    return &quot;I&#39;m an instance.&quot;;
+  }
+
+  function say() {
+    return &quot;I&#39;m inner.&quot;;
+  }
+}
+Person.say = function() {
+  return &quot;I&#39;m static.&quot;;
+}
+
+var p = new Person();
+p.say();      // I&#39;m an instance.
+Person.say(); // I&#39;m static.
+// there is no way to directly access the inner function from here</code></pre>
+<p>你可以使用三种不同的名称路径语法来表示这三种不同的方法。</p>
+<p>例如，使用一个文档化标签来描述你的代码：</p>
+<pre><code>Person#say  // 名为&quot;say&quot;的实例方法
+Person.say  // 名为&quot;say&quot;的静态方法
+Person~say  // 名为&quot;say&quot;的内部函数</code></pre><p>你可能会惊讶，既然内部方法不能在它被定义的函数外部直接访问，那么为什么还有语法来引用这个内部方法，虽然这是正确的，这个“〜”语法很少使用，内部方法有可能被引用到另一种方法的容器中被返回出来，因此在你的代码其他地方的一些对象有可能借用这个内部方法。</p>
+<p>需要注意的是，如果一个构造函数有一个实例成员，这个实例成员也是一个构造器，那么你可以简单地将名称路径连接在一起，形成一个较长名路径名：</p>
+<p>例如，使用一个文档化标签来描述你的代码：</p>
+<pre><code>/** @constructor */
+Person = function() {
+  /** @constructor */
+  this.Idea = function() {
+    this.consider = function(){
+      return &quot;hmmm&quot;;
+    }
+  }
+}
+
+var p = new Person();
+var i = new p.Idea();
+i.consider();</code></pre><p>在这种情况下，引用名为&quot;consider&quot;的方法，你可以使用下面的名路径名：<code>Person#Idea#consider</code></p>
+<p>这种链接可与连接符号（<code>#</code>,<code>.</code>,<code>~</code>）任意组合使用。</p>
+<p><strong>特殊情况</strong>：模块，外部组件和事件。</p>
+<pre><code>/** A module. Its name is module:foo/bar.
+ * @module foo/bar
+ */
+
+/** The built in string object. Its name is external:String.
+ * @external String
+ */
+
+/** An event. Its name is module:foo/bar.event:MyEvent.
+ * @event module:foo/bar.event:MyEvent
+ */</code></pre><p>使用名称路径也有一些特殊的情况：<a >@module</a> 名称由&quot;module:&quot;前缀，<a >@external</a> 名称由&quot;external:&quot;前缀，<a >@event</a> 名称由&quot;event:&quot;前缀。</p>
+<p>在名称中，对象的名称路径中带有特殊字符。</p>
+<pre><code>/** @namespace */
+var chat = {
+  /**
+   * Refer to this by {@link chat.&quot;#channel&quot;}.
+   * @namespace
+   */
+  &quot;#channel&quot;: {
+    /**
+     * Refer to this by {@link chat.&quot;#channel&quot;.open}.
+     * @type {boolean}
+     * @defaultvalue
+     */
+    open: true,
+    /**
+     * Internal quotes have to be escaped by backslash. This is
+     * {@link chat.&quot;#channel&quot;.&quot;say-\&quot;hello\&quot;&quot;}.
+     */
+    &#39;say-&quot;hello&quot;&#39;: function (msg) {}
+  }
+};
+
+/**
+ * Now we define an event in our {@link chat.&quot;#channel&quot;} namespace.
+ * @event chat.&quot;#channel&quot;.&quot;op:announce-motd&quot;
+ */</code></pre><p>上面这个例子中，一个命名空间中的成员名称有带有特殊字符（哈希字符<code>#</code>号，破折号，双引号）。这种情况下，你需要这样引用这些名字：<code>chat.&quot;#channel&quot;</code>, <code>chat.&quot;#channel&quot;.&quot;op:announce-motd&quot;</code>，等等。在名称内部的双引号应该用反斜杠转义：<code>chat.&quot;#channel&quot;.&quot;say-\&quot;hello\&quot;&quot;</code>。</p>
+<h2 id="相关链接">相关链接</h2>
+<ul>
+<li><a >Block and inline tags</a></li>
+<li><a >{@link}</a></li>
+</ul>
+<!--
+title: JSDoc中的命令行参数
+order: 103
+author: yuer
+-->
+
+<h1 id="jsdoc中的命令行参数">JSDoc中的命令行参数</h1>
+<h2 id="目录-3">目录</h2>
+<ul>
+<li><a >示例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<p>使用 JSDoc 最基本的，像这样使用：</p>
+<pre><code>/path/to/jsdoc yourSourceCodeFile.js anotherSourceCodeFile.js ...</code></pre><p>其中<code>...</code>是生成文档文件的路径。</p>
+<p>此外，可以提供一个 <a >Markdown file</a>（以“.md”结尾）或者一个名为“README”文件的路径，它将被添加到文档的头部。请参见<a >these instructions</a>。</p>
+<p>JSDoc 支持大量的命令行选项，其中许多选项有长和短两种形式。或者，JSDoc 命令行选项可以在配置文件中指定。命令行选项：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>-a &lt;value&gt;</code>, <code>--access &lt;value&gt;</code></td>
+<td>只显示特定 access 方法属性的标识符： <code>private</code>, <code>protected</code>, <code>public</code>, or <code>undefined</code>, 或者 <code>all</code>（表示所有的访问级别）。默认情况下，显示除 <code>private</code> 标识符以外的所有标识符。</td>
+</tr>
+<tr>
+<td><code>-c &lt;value&gt;</code>, <code>--configure &lt;value&gt;</code></td>
+<td>JSDoc 配置文件的路径。默认为安装 JSDoc 目录下的 <code>conf.json</code> 或 <code>conf.json.EXAMPLE</code>。</td>
+</tr>
+<tr>
+<td><code>-d &lt;value&gt;</code>, <code>--destination &lt;value&gt;</code></td>
+<td>输出生成文档的文件夹路径。JSDoc 内置的 Haruki 模板，使用 console 将数据转储到控制台。默认为 <code>./out</code>。</td>
+</tr>
+<tr>
+<td><code>--debug</code></td>
+<td>打印日志信息，可以帮助调试 JSDoc 本身的问题。</td>
+</tr>
+<tr>
+<td><code>-e &lt;value&gt;</code>, <code>--encoding &lt;value&gt;</code></td>
+<td>当 JSDoc 阅读源代码时假定使用这个编码，默认为 <code>utf8</code>。</td>
+</tr>
+<tr>
+<td><code>-h</code>, <code>--help</code></td>
+<td>显示 JSDoc 的命令行选项的信息，然后退出。</td>
+</tr>
+<tr>
+<td><code>--match &lt;value&gt;</code></td>
+<td>只运行测试，其名称中包含 value。</td>
+</tr>
+<tr>
+<td><code>--nocolor</code></td>
+<td>当运行测试时，在控制台输出信息不要使用的颜色。在 Windows 中，这个选项是默认启用的。</td>
+</tr>
+<tr>
+<td><code>-p</code>, <code>--private</code></td>
+<td>将标记有<a >@private 标签</a>的标识符也生成到文档中。默认情况下，不包括私有标识符。</td>
+</tr>
+<tr>
+<td><code>-P</code>, <code>--package</code></td>
+<td>包含项目名称，版本，和其他细节的 <code>package.json</code> 文件。默认为在源路径中找到的第一个 <code>package.json</code> 文件。</td>
+</tr>
+<tr>
+<td><code>--pedantic</code></td>
+<td>将错误视为致命错误，将警告视为错误。默认为 <code>false</code>。</td>
+</tr>
+<tr>
+<td><code>-q &lt;value&gt;</code>, <code>--query &lt;value&gt;</code></td>
+<td>一个查询字符串用来解析和存储到全局变量 <code>env.opts.query</code> 中。示例：foo=bar&amp;baz=true。</td>
+</tr>
+<tr>
+<td><code>-r</code>, <code>--recurse</code></td>
+<td>扫描源文件和导览时递归到子目录。</td>
+</tr>
+<tr>
+<td><code>-R</code>, <code>--readme</code></td>
+<td>用来包含到生成文档的 <code>README.md</code> 文件。默认为在源路径中找到的第一 <code>README.md</code> 文件。</td>
+</tr>
+<tr>
+<td><code>-t &lt;value&gt;</code>, <code>--template &lt;value&gt;</code></td>
+<td>用于生成输出文档的模板的路径。默认为 <code>templates/default</code>，JSDoc 内置的默认模板。</td>
+</tr>
+<tr>
+<td><code>-T</code>, <code>--test</code></td>
+<td>运行 JSDoc 的测试套件，并把结果打印到控制台。</td>
+</tr>
+<tr>
+<td><code>-u &lt;value&gt;</code>, <code>--tutorials &lt;value&gt;</code></td>
+<td>导览路径，JSDoc 要搜索的目录。如果省略，将不生成导览页。查看<a >导览说明</a>，以了解更多信息。</td>
+</tr>
+<tr>
+<td><code>-v</code>, <code>--version</code></td>
+<td>显示 JSDoc 的版本号，然后退出。</td>
+</tr>
+<tr>
+<td><code>--verbose</code></td>
+<td>日志的详细信息到控制台 JSDoc 运行。默认为 <code>false</code>。</td>
+</tr>
+<tr>
+<td><code>-X</code>, <code>--explain</code></td>
+<td>以 JSON 格式转储所有的 doclet 到控制台，然后退出。</td>
+</tr>
+</tbody></table>
+<h2 id="示例">示例</h2>
+<p>使用配置文件 <code>/path/to/my/conf.json</code>，为 <code>./src</code> 目录的中文件生成文档，并保存输出到 <code>./docs</code> 目录中：</p>
+<pre><code class="language-shell">/path/to/jsdoc src -r -c /path/to/my/conf.json -d docs</code></pre>
+<p>运行所有 JSDoc 的测试，其名称包含 tag，并记录每个测试信息：</p>
+<pre><code>/path/to/jsdoc -T --match tag --verbose</code></pre><h2 id="相关链接-1">相关链接</h2>
+<ul>
+<li><a >使用配置文件配置 JSDoc</a></li>
+</ul>
+<!--
+title: 使用配置文件配置 JSDoc
+order: 104
+author: yuer
+-->
+
+<h1 id="使用配置文件配置-jsdoc">使用配置文件配置 JSDoc</h1>
+<h2 id="目录-4">目录</h2>
+<ul>
+<li><a >配置文件格式</a></li>
+<li><a >默认配置选项</a></li>
+<li><a >配置插件</a></li>
+<li><a >指定递归深度</a></li>
+<li><a >指定输入文件</a></li>
+<li><a >指定源类型</a></li>
+<li><a >将命令行选项合并到配置文件中</a></li>
+<li><a >配置标记和标记字典</a></li>
+<li><a >配置模板</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="配置文件格式">配置文件格式</h2>
+<p>要自定义 JSDoc 的行为，可以使用以下格式之一向 JSDoc 提供配置文件：</p>
+<ul>
+<li>一个JSON文件。在JSDoc 3.3.0及更高版本中，此文件可能包含注释。</li>
+<li>导出单个配置对象的 CommonJS 模块。JSDoc 3.5.0及更高版本支持这种格式。</li>
+</ul>
+<p>要使用配置文件运行 JSDoc，请使用 <a ><code>-c</code> 命令行选项</a>（例如，<code>jsdoc -c /path/To/conf.json</code> 或 <code>jsdoc -c /path/To/conf.js</code>）。</p>
+<p>下面的例子展示了一个简单的配置文件，它启用了 JSDoc 的 <a >Markdown 插件</a>。JSDoc 的配置选项将在下面的章节中详细说明。</p>
+<p>JSON 配置文件：</p>
+<pre><code>{
+  &quot;plugins&quot;: [&quot;plugins/markdown&quot;]
+}</code></pre><p>JS 配置文件：</p>
+<pre><code>&#39;use strict&#39;;
+module.exports = {
+  plugins: [&#39;plugins/markdown&#39;]
+};</code></pre><p>更多的信息，请查阅文件 <a >conf.json.EXAMPLE</a>。</p>
+<h2 id="默认配置选项">默认配置选项</h2>
+<p>如果不指定配置文件，JSDoc 将使用默认如下配置：</p>
+<pre><code>{
+  &quot;plugins&quot;: [],
+  &quot;recurseDepth&quot;: 10,
+  &quot;source&quot;: {
+    &quot;includePattern&quot;: &quot;.+\\.js(doc|x)?$&quot;,
+    &quot;excludePattern&quot;: &quot;(^|\\/|\\\\)_&quot;
+  },
+  &quot;sourceType&quot;: &quot;module&quot;,
+  &quot;tags&quot;: {
+    &quot;allowUnknownTags&quot;: true,
+    &quot;dictionaries&quot;: [&quot;jsdoc&quot;, &quot;closure&quot;]
+  },
+  &quot;templates&quot;: {
+    &quot;cleverLinks&quot;: false,
+    &quot;monospaceLinks&quot;: false
+  }
+}</code></pre><p>这意味着：</p>
+<ul>
+<li>无插件加载（<code>plugins</code>）;</li>
+<li>如果使用 <a >-r 命令行</a>标志启用递归，JSDoc 将搜索 10 层深的文件（<code>recurseDepth</code>）；</li>
+<li>只有以 <code>.js</code>、<code>.jsdoc</code> 和 <code>.jsx</code> 结尾的文件将会被处理（<code>source.includePattern</code>）；</li>
+<li>任何文件以下划线开始或开始下划线的目录都将被忽略（<code>source.excludePattern</code>）；</li>
+<li>JSDoc 支持使用 <a >ES2015 modules</a>（<code>sourceType</code>）；</li>
+<li>JSDoc 允许您使用无法识别的标签（<code>tags.allowUnknownTags</code>）；</li>
+<li>标准 JSDoc 标签和 <a >closure 标签</a>被启用（<code>tags.dictionaries</code>）；</li>
+<li><a >@link标签</a>呈现在纯文本（<code>templates.cleverLinks</code>，<code>templates.monospaceLinks</code>）。</li>
+</ul>
+<p>这些选项和其他选项将在这个页面中进一步解释。</p>
+<h2 id="配置插件">配置插件</h2>
+<p>要启用插件，将它们的路径（相对于 JSDoc 文件夹）添加到插件数组中。</p>
+<p>例如，以下 JSON 配置文件将启用 Markdown 插件（它将 Markdown 格式的文本转换为 HTML）和“summary”插件（它自动为每个 doclet 生成摘要）。</p>
+<p>带插件的JSON配置文件：</p>
+<pre><code>{
+  &quot;plugins&quot;: [
+    &quot;plugins/markdown&quot;,
+    &quot;plugins/summarize&quot;
+  ]
+}</code></pre><p>有关更多信息，请参阅 <a >plugin 参考</a>，并在 <a >JSDoc 的 <code>plugins</code> 目录</a>中查找 JSDoc 内置的插件。</p>
+<p>通过向配置文件中添加 <code>markdown</code> 对象来配置 <code>Markdown</code> 插件。有关详细信息，请参阅<a >配置 <code>Markdown</code> 插件</a>。</p>
+<h2 id="指定递归深度">指定递归深度</h2>
+<p><code>recurseDepth</code> 配置控制 JSDoc 递归源文件的层级数量。该属性在 JSDoc 3.5.0以及更高版本中使用。并且仅当还指定了 <code>-r</code> 命令行标志时才使用此选项，该标志告诉 JSDoc 递归搜索输入文件。</p>
+<pre><code>{
+  &quot;recurseDepth&quot;: 10
+}</code></pre><h2 id="指定输入文件">指定输入文件</h2>
+<p><code>source</code> 选项组结合给 JSDoc 命令行的路径，确定哪些文件要用 JSDoc 生成文档。</p>
+<pre><code>{
+  &quot;source&quot;: {
+    &quot;include&quot;: [ /* array of paths to files to generate documentation for */ ],
+    &quot;exclude&quot;: [ /* array of paths to exclude */ ],
+    &quot;includePattern&quot;: &quot;.+\\.js(doc|x)?$&quot;,
+    &quot;excludePattern&quot;: &quot;(^|\\/|\\\\)_&quot;
+  }
+}</code></pre><ul>
+<li><code>source.include</code>：可选的路径数组，JSDoc应该为它们生成文档。JSDoc 将会结合命令行上的路径和这些文件名，以形成文件组，并且扫描。如果路径是一个目录，可以使用 <code>-r</code> 选项来递归。</li>
+<li><code>source.exclude</code>：可选的路径数组，JSDoc 应该忽略的路径。在 JSDoc3.3.0 或更高版本，该数组可包括 <code>source.include</code> 路径中的子目录。</li>
+<li><code>source.includePattern</code>：一个可选的字符串，解释为一个正则表达式。如果存在，所有文件必须匹配这个正则表达式，以通过 JSDoc 进行扫描。默认情况下此选项设置为<code>.+.js(doc)?$</code>，这意味着只有以 <code>.js</code>、<code>.jsdoc</code> 和 <code>.jsx</code> 结尾的文件将被扫描。</li>
+<li><code>source.excludePattern</code>：一个可选的字符串，解释为一个正则表达式。如果存在的话，任何匹配这个正则表达式的文件将被忽略。默认设置是以下划线开头的文件（或以下划线开头的目录下的所有文件）将被忽略。</li>
+</ul>
+<p>这些选项中使用的顺序是：</p>
+<ol>
+<li>以命令行上给定的路径开始，并且在 <code>source.include</code> 中的所有文件（记得，使用 <code>-r</code> 命令行选项将在子目录中搜索）。</li>
+<li>对于在步骤1中找到的每个文件，如果正则表达式 <code>source.includePattern</code> 存在，该文件必须匹配，否则将被忽略。</li>
+<li>对于在步骤2中找到的每个文件，如果正则表达式 <code>source.excludePattern</code> 存在，任何匹配这个正则表达式的文件将被忽略。</li>
+<li>对于在步骤3中找到的每个文件，如果路径在 <code>source.exclude</code> 中，那么它将被忽略。</li>
+</ol>
+<p>经过这四个步骤的所有剩余文件由JSDoc进行解析。</p>
+<p>举个例子，假设有以下文件结构：</p>
+<pre><code>myProject/
+|- a.js
+|- b.js
+|- c.js
+|- _private
+|  |- a.js
+|- lib/
+   |- a.js
+   |- ignore.js
+   |- d.txt</code></pre><p>另外，假设配置文件如下：</p>
+<pre><code>{
+  &quot;source&quot;: {
+    &quot;include&quot;: [&quot;myProject/a.js&quot;, &quot;myProject/lib&quot;, &quot;myProject/_private&quot;],
+    &quot;exclude&quot;: [&quot;myProject/lib/ignore.js&quot;],
+    &quot;includePattern&quot;: &quot;.+\\.js(doc|x)?$&quot;,
+    &quot;excludePattern&quot;: &quot;(^|\\/|\\\\)_&quot;
+  }
+}</code></pre><p>在 <code>myProject</code> 根文件夹运行 <code>jsdoc myProject/c.js -c /path/to/my/conf.json -r</code>，然后 JSDoc 会为这些文件生产文档：</p>
+<ul>
+<li><code>myProject/a.js</code></li>
+<li><code>myProject/c.js</code></li>
+<li><code>myProject/lib/a.js</code></li>
+</ul>
+<p>原因如下：</p>
+<ul>
+<li>根据 <code>source.include</code> 和命令行中给定的路径，我们开始扫描文件<ul>
+<li><code>myProject/c.js</code> (来自命令行)</li>
+<li><code>myProject/a.js</code> (来自source.include)</li>
+<li><code>myProject/lib/a.js</code>, <code>myProject/lib/ignore.js</code>, <code>myProject/lib/d.txt</code> (来自source.include 并且使用 <code>-r</code> 选项)</li>
+<li><code>myProject/\_private/a.js</code> (来自source.include)</li>
+</ul>
+</li>
+<li>应用 <code>source.includePattern</code>，剩下除了 <code>myProject/lib/d.txt</code>，因为它没有以 <code>.js</code>，<code>.jsdoc</code> 或 <code>.jsx</code> 结束。</li>
+<li>应用 <code>source.excludePattern</code>，排除了 <code>myProject/\_private/a.js</code>。</li>
+<li>应用 <code>source.exclude</code>，排除了 <code>myProject/lib/ignore.js</code>。</li>
+</ul>
+<h2 id="指定源类型">指定源类型</h2>
+<p><code>sourceType</code> 选项影响 JSDoc 解析 JavaScript 文件的方式。此选项在 JSDoc 3.5.0及更高版本中可用，此选项接受以下值：</p>
+<ul>
+<li><code>module</code>（默认）：对大多数类型的JavaScript文件使用此值。</li>
+<li><code>script</code>：如果 JSDoc 在解析代码时以严格模式记录错误，例如删除不合格标识符，则使用此值。</li>
+</ul>
+<pre><code>{
+  &quot;sourceType&quot;: &quot;module&quot;
+}</code></pre><h2 id="将命令行选项合并到配置文件中">将命令行选项合并到配置文件中</h2>
+<p>可以将 JSDoc 的许多<a >命令行选项</a>放入配置文件中，而不是在命令行中指定它们。为此，将相关选项的长名称添加到配置文件的 <code>opts</code> 部分，并将值设置为该选项的值。</p>
+<p>在配置文件中设置的命令行选项:</p>
+<pre><code>{
+  &quot;opts&quot;: {
+    &quot;template&quot;: &quot;templates/default&quot;,  // same as -t templates/default
+    &quot;encoding&quot;: &quot;utf8&quot;,               // same as -e utf8
+    &quot;destination&quot;: &quot;./out/&quot;,          // same as -d ./out/
+    &quot;recurse&quot;: true,                  // same as -r
+    &quot;tutorials&quot;: &quot;path/to/tutorials&quot;, // same as -u path/to/tutorials
+  }
+}</code></pre><p>这样可以通过 <code>source.include</code> 和 <code>opts</code>，把所有的 JSDoc 的参数放在配置文件中，以便命令行简化为：</p>
+<pre><code>jsdoc -c /path/to/conf.json</code></pre><p>在命令行中所提供的选项优先级高于在配置文件中提供的选项。</p>
+<h2 id="配置标记和标记字典">配置标记和标记字典</h2>
+<p><code>tags</code> 选项控制哪些 JSDoc 标签允许被使用和解析。</p>
+<pre><code>{
+  &quot;tags&quot;: {
+    &quot;allowUnknownTags&quot;: true,
+    &quot;dictionaries&quot;: [&quot;jsdoc&quot;, &quot;closure&quot;]
+  }
+}</code></pre><p><code>tags.allowUnknownTags</code> 属性影响 JSDoc 如何处理无法识别的标签。如果将此选项设置为 <code>false</code>，JSDoc发现它不能识别（例如,<code>@foo</code>），JSDoc 将记录一个警告。默认情况下，此选项设置为 <code>true</code>。</p>
+<p><code>tags.dictionaries</code> 属性控制 JSDoc 识别哪些标签，以及 JSDoc 如何解析它识别标签。在 JSDoc3.3.0 或更高版本中，有两个内置的标签词典：</p>
+<ul>
+<li><code>jsdoc</code>: 核心JSDoc标签</li>
+<li><code>closure</code>: Closure Compiler 标签</li>
+</ul>
+<p>默认情况下，两个词典都是启用的。此外，在默认情况下，JSDoc 字典首先被解析;作为一个结果，如果 JSDoc 词典处理一个标签不同于 closure 词典，jsdoc版本的标签优先被采用。</p>
+<p>如果您在Closure Compiler 项目中使用JSDoc，并且你想要避免使用 Closure Compiler 无法识别的标签，更改 <code>tags.dictionaries</code> 设置为 <code>[&quot;closure&quot;]</code>。如果你想允许核心 JSDoc 标签, 但又想要确保 Closure Compiler 特定的标记使用 Closure Compiler 对其进行解释，您也可以更改此设置为 <code>[&quot;closure&quot;, &quot;jsdoc&quot;]</code>。</p>
+<h2 id="配置模板">配置模板</h2>
+<p><code>templates</code> 选项会影响外观和生成的文档内容。自定义模板可能不会实现所有的选项。请参阅<a >配置JSDoc的默认模板</a>中默认模板支持的附加选项。</p>
+<pre><code>{
+  &quot;templates&quot;: {
+    &quot;cleverLinks&quot;: false,
+    &quot;monospaceLinks&quot;: false
+  }
+}</code></pre><p>如果 <code>templates.monospaceLinks</code> 为 <code>true</code>，从 <code>@link</code> 标签生成的所有链接文本将会以等宽字体渲染。</p>
+<p>如果 <code>templates.cleverLinks</code> 为 <code>true</code>，如果“asdf”是一个URL，<code>{@link asdf}</code> 会以正常字体呈现，否则等宽。例如，<code>{@link http://github.com}</code> 将呈现以纯文本，但 <code>{@link MyNamespace.myFunction}</code> 将会是等宽。</p>
+<p>如果 <code>templates.cleverLinks</code> 为 <code>true</code>，它是引用,并且 <code>templates.monospaceLinks</code> 是被忽略的。</p>
+<h2 id="相关链接-2">相关链接</h2>
+<ul>
+<li><a >JSDOC 的命令行参数</a></li>
+<li><a >关于 JSDoc 插件</a></li>
+<li><a >使用 Markdown 插件</a></li>
+</ul>
+<!--
+title: 配置 JSDoc 的默认模板
+order: 105
+author: yuer
+-->
+
+<h1 id="配置-jsdoc-的默认模板">配置 JSDoc 的默认模板</h1>
+<h2 id="目录-5">目录</h2>
+<ul>
+<li><a >生成适合打印的文档</a></li>
+<li><a >复制静态文件到输出目录</a></li>
+<li><a >在页脚显示当前日期</a></li>
+<li><a >在导航栏中显示长文件名</a></li>
+<li><a >重写默认模板的布局文件</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<p>JSDoc 的默认模板中提供了几个选项，您可以使用自定义外观和内容来生成文档。 要使用这些选项，您必须<a >为JSDoc创建一个配置文件</a>，并在配置文件中设置相应的选项。</p>
+<h2 id="生成适合打印的文档">生成适合打印的文档</h2>
+<p>默认情况下，JSDoc 的默认模板为你的源文件生成适合打印的文档。在文档中，它还链接到那些适合的打印文件。</p>
+<p>要禁用适合打印的文件，设置选项 <code>templates.default.outputSourceFiles</code> 为 <code>false</code>。使用该选项也将删除文档中链接到源文件的连接。此选项在 JSDoc3.3.0 及更高版本上是可用的。</p>
+<h2 id="复制静态文件到输出目录">复制静态文件到输出目录</h2>
+<p>JSDoc的默认模板会自动复制一些静态文件，如 CSS 样式表，到输出目录。在 JSDoc3.3.0 或更高版本，你可以告诉默认模板复制附加静态文件到输出目录。例如，您可能希望复制一个图像的目录到输出目录，所以你可以在你的文档中显示这些图像。</p>
+<p>要将附加静态文件复制到输出目录，使用下列选项：</p>
+<ul>
+<li><code>templates.default.staticFiles.include</code>：一个路径的数组，其内容应复制到输出目录。子目录也将被复制。</li>
+<li><code>templates.default.staticFiles.exclude</code>：路径的数组，指明这些不应该被复制到输出目录。</li>
+<li><code>templates.default.staticFiles.includePattern</code>：正则表达式，指明要复制的文件。如果这个属性没有被定义，所有的文件将被复制。</li>
+<li><code>templates.default.staticFiles.excludePattern</code>：正则表达式，说明哪些文件跳过(不复制)。如果这个属性没有被定义，什么都不会被跳过。</li>
+</ul>
+<p>复制图片目录到输出目录, 例如，要复制 <code>./myproject/static</code> 目录中的所有静态文件到输出目录中：</p>
+<pre><code>{
+  &quot;templates&quot;: {
+    &quot;default&quot;: {
+      &quot;staticFiles&quot;: {
+        &quot;include&quot;: [
+          &quot;./myproject/static&quot;
+        ]
+      }
+    }
+  }
+}</code></pre><p>如果您的静态文件目录中包含 <code>./myproject/static/img/screen.png</code> 文件，您可以通过 HTML 标签 <code>&lt;img src=&quot;img/screen.png&quot;&gt;</code> 在您的文档中显示该图片。</p>
+<h2 id="在页脚显示当前日期">在页脚显示当前日期</h2>
+<p>默认情况下，JSDoc 的默认模板总是在生成文档的页脚显示当前日期。在JSDoc3.3.0或更高版本，可以通过设置选项 <code>templates.default.includeDate</code> 为 <code>false</code> 来忽略当前日期。</p>
+<h2 id="在导航栏中显示长文件名">在导航栏中显示长文件名</h2>
+<p>默认情况下，JSDoc 的默认模板在导航列中显示每个标识符缩写的名字。例如，标识符 <code>my.namespace.MyClass</code> 将简单地称为显示 <code>MyClass</code>。相反,要显示完整的长名称，设置选项 <code>templates.default.useLongnameInNav</code> 为 <code>true</code>。此选项在 JSDoc3.4.0 及更高版本中可用。</p>
+<h2 id="重写默认模板的布局文件">重写默认模板的布局文件</h2>
+<p>默认的模板使用名为 <code>layout.tmpl</code> 的文件指定每个生成文档的页面中的页眉和页脚。特别是，每个生产的文档页面会加载该文件定义了 CSS 和 JavaScript 文件。在 JSDoc3.3.0 或更高版本，可以指定使用自己的 <code>layout.tmpl</code> 文件，它允许你加载自己的自定义 CSS 和JavaScript 文件，去除或替代，标准的文件。</p>
+<p>要使用此功能，设置选项 <code>templates.default.layoutFile</code> 的路径到你的自定义布局文件。路径是相对于 <code>config.json</code> 文件，当前的工作目录，和 JSDoc 目录的相对路径，按照这个顺序。</p>
+<h2 id="相关链接-3">相关链接</h2>
+<ul>
+<li><a >使用配置文件配置 JSDoc</a></li>
+</ul>
+<!--
+title: 块标签和内联标签
+order: 106
+author: yuer
+-->
+
+<h1 id="块标签和内联标签">块标签和内联标签</h1>
+<h2 id="目录-6">目录</h2>
+<ul>
+<li><a >概述</a></li>
+<li><a >示例</a></li>
+</ul>
+<h2 id="概述">概述</h2>
+<p>JSDoc支持两种不同类型的标签：</p>
+<ul>
+<li>块标签(Block), 这是在一个JSDoc注释的最高级别。</li>
+<li>内联标签(inline), 块标签文本中的标签或说明。</li>
+</ul>
+<p>块标签通常会提供有关您的代码的详细信息，如一个函数接受的参数。内联标签通常链接到文件的其他部分，类似于HTML中的锚标记（<code>&lt;a&gt;</code>）。</p>
+<p>块标签总是以 at 符号（<code>@</code>）开头。除了 JSDoc 注释中最后一个块标记，每个块标签后面必须跟一个换行符。</p>
+<p>内联标签也以 at 符号（<code>@</code>）开。然而，内联标签及其文本必须用花括号（<code>{ and }</code>）括起来。 <code>{</code> 表示行内联标签的开始，而 <code>}</code> 表示内联标签的结束。如果你的标签文本中包含右花括号（<code>}</code>），则必须用反斜线（ <code>\</code> ）进行转义。在内联标签后,你并不需要使用一个换行符。</p>
+<p>大多数JSDoc标签是块标签。一般来说，当这个网站上说&quot;JSDoc 标签&quot;,我们真正的意思是&quot;块标签&quot;。</p>
+<h2 id="示例-1">示例</h2>
+<p>在下面的例子中， <code>@param</code> 是一个块标签，而 <code>{@link}</code> 是一个内联标签。</p>
+<p>例如，JSDoc 注释中的块标签和内联标签：</p>
+<pre><code>/**
+ * Set the shoe&#39;s color. Use {@link Shoe#setSize} to set the shoe size.
+ *
+ * @param {string} color - The shoe&#39;s color.
+ */
+Shoe.prototype.setColor = function(color) {
+  // ...
+};</code></pre><p>您可以在描述中使用内联标签，如上图所示，或在块标记中使用内联标签，如下图所示。</p>
+<p>例如，块标签内使用内嵌标签：</p>
+<pre><code>/**
+ * Set the shoe&#39;s color.
+ *
+ * @param {SHOE_COLORS} color - The shoe color. Must be an enumerated
+ * value of {@link SHOE_COLORS}.
+ */
+Shoe.prototype.setColor = function(color) {
+  // ...
+};</code></pre><p>当您在 JSDoc 注释中使用多个块标记，它们必须使用换行符将他们分开。</p>
+<p>例如，用换行符分隔的多个块标签：</p>
+<pre><code>/**
+ * Set the color and type of the shoelaces.
+ *
+ * @param {LACE_COLORS} color - The shoelace color.
+ * @param {LACE_TYPES} type - The type of shoelace.
+ */
+Shoe.prototype.setLaceType = function(color, type) {
+  // ...
+};</code></pre><!--
+title: 关于 JSDoc 插件
+order: 107
+author: yuer
+-->
+
+<h1 id="关于-jsdoc-插件">关于 JSDoc 插件</h1>
+<h2 id="目录-7">目录</h2>
+<ul>
+<li><a >创建并启用插件</a></li>
+<li><a >创建SDoc3插件</a><ul>
+<li><a >事件处理程序</a></li>
+<li><a >标签定义</a></li>
+<li><a >节点访问者</a></li>
+</ul>
+</li>
+<li><a >报告错误</a></li>
+</ul>
+<h2 id="创建并启用插件">创建并启用插件</h2>
+<p>创建并启用新 JSDoc 插件,需要两个步骤：</p>
+<ul>
+<li>创建一个包含你的插件代码的 JavaScript 模块.</li>
+<li>将该模块添加到 <a >JSDoc 配置文件</a>的 <code>plugins</code> 数组中。你可以指定一个绝对或相对路径。如果使用相对路径，JSDoc 按照相对于配置文件所在的目录，当前的工作目录和 JSDoc 安装目录的顺序搜索插件。
+例如，如果你的插件是在当前工作目录下，<code>plugins/shout.js</code> 文件中定义的，你应该在 JSDoc 配置文件中的 <code>plugins</code> 数组中添加字符串 <code>plugins/shout</code>。</li>
+</ul>
+<p>例如，在JSDoc配置文件中添加一个插件：</p>
+<pre><code>{
+  &quot;plugins&quot;: [&quot;plugins/shout&quot;]
+}</code></pre><p>JSDoc 按配置文件 <code>plugins</code> 数组中列出的顺序执行的插件。</p>
+<h2 id="创建sdoc3插件">创建SDoc3插件</h2>
+<p>JSDoc 3的插件系统广泛的控制着解析过程。一个插件可以通过执行以下任何一项操作，影响解析结果：</p>
+<ul>
+<li>定义事件处理程序</li>
+<li>定义标签</li>
+<li>定义一个抽象语法树节点的访问者</li>
+</ul>
+<h3 id="事件处理程序">事件处理程序</h3>
+<p>最高级别，一个插件可以注册具体命名事件的处理程序，让JSDoc触发。 JSDoc将一个事件对象传递给处理程序。你的插件模块要导出一个包含处理程序的 handlers 对象，例如：</p>
+<p>例如，事件处理程序插件 &#39;newDoclet&#39; 事件：</p>
+<pre><code>exports.handlers = {
+  newDoclet: function(e) {
+    // Do something when we see a new doclet
+  }
+};</code></pre><p>JSDoc 触发事件的顺序和底层代码是一样。</p>
+<p>事件处理程序插件可以通过设置事件对象的 <code>stopPropagation</code> 属性(<code>e.stopPropagation = true</code>)停止运行后面的插件。一个插件可以通过设置 <code>preventDefault</code> 属性（<code>e.preventDefault = true</code>）阻止触发事件。</p>
+<h4 id="event-parsebegin">Event: parseBegin</h4>
+<p>JSDoc 开始加载和解析源文件之前，<code>parseBegin</code> 事件被触发。你的插件可以通过修改事件的内容，来控制哪些文件将被 JSDoc 解析。</p>
+<p>注意：此事件在 JSDoc3.2 及更高版本有效。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>sourcefiles</code>：源文件的路径数组，这些源文件将被解析。</li>
+</ul>
+<h4 id="event-filebegin">Event: fileBegin</h4>
+<p>当解析器即将解析一个文件 <code>fileBegin</code> 事件触发。如果需要，你的插件可以使用此事件触发每个文件的初始化。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>：文件的名称。</li>
+</ul>
+<h4 id="event-beforeparse">Event: beforeParse</h4>
+<p><code>beforeParse</code> 事件在解析开始之前被触发。插件可以使用此方法来修改将被解析的源代码。例如，你的插件可以添加一个 JSDoc 注释，也可以删除不是有效 JavaScript 的预处理标记。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>：文件的名称。</li>
+<li><code>source</code>：文件的内容。</li>
+</ul>
+<p>下面是为一个函数增加了一个虚拟的 doclet 到源文件的例子，这样它会被解析并添加到文档。这样做，文档的方法就可以提供给用户，但在被文档化的源代码中不可能出现，如由外部超类所提供的方法，示例：</p>
+<pre><code>exports.handlers = {
+  beforeParse: function(e) {
+    var extraDoc = [
+      &#39;/**&#39;,
+      &#39; * Function provided by a superclass.&#39;,
+      &#39; * @name superFunc&#39;,
+      &#39; * @memberof ui.mywidget&#39;,
+      &#39; * @function&#39;,
+      &#39; */&#39;
+    ];
+    e.source += extraDoc.join(&#39;\n&#39;);
+  }
+};</code></pre><h4 id="event-jsdoccommentfound">Event: jsdocCommentFound</h4>
+<p>每当 JSDoc 注释被发现,<code>jsdocCommentFound</code> 事件就会被触发。注释可以或不与任何代码相关联。您可以在注释被处理之前使用此事件修改注释的内容。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>: 该文件的名称；</li>
+<li><code>comment</code>：JSDoc注释的文本；</li>
+<li><code>lineno</code>: 注释被发现的行号；</li>
+<li><code>columnno</code>: 找到注释的列号，JSDoc 3.5.0及更高版本中提供。</li>
+</ul>
+<h4 id="event-symbolfound">Event: symbolFound</h4>
+<p>当解析器在代码中遇到一个可能需要被文档化的标识符时，<code>symbolFound</code> 事件就会被触发。例如，解析器会为源文件中每个变量，函数和对象字面量触发一个 <code>symbolFound</code> 事件。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>: 该文件的名称。</li>
+<li><code>comment</code>: 与标识符相关联的任何注释文本。</li>
+<li><code>id</code>: 标识符的唯一ID。</li>
+<li><code>lineno</code>: 标识符被发现的行号。</li>
+<li><code>columnno</code>: 找到注释的列号，JSDoc 3.5.0及更高版本中提供。</li>
+<li><code>range</code>: 包含标识符相关联的源文件中第一个和最后一个字符的数字索引的一个数组。</li>
+<li><code>astnode</code>: 抽象语法树中标识符的节点。</li>
+<li><code>code</code>: 有关该代码的详细信息的对象。这个对象通常包含 <code>name</code>, <code>type</code>, 和 <code>node</code> 属性。对象也可能具有 <code>value</code>, <code>paramnames</code>, 或 <code>funcscope</code> 属性，这取决于标识符。</li>
+</ul>
+<h4 id="event-newdoclet">Event: newDoclet</h4>
+<p>newDoclet事件是最高级别的事件。新的 doclet 已被创建时，它就会被触发。这意味着一个 JSDoc 注释或标识符已被处理，并且实际传递给模板的 doclet 已被创建。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>doclet</code>: 已被创建的新 doclet 。</li>
+</ul>
+<p>所述的 doclet 的属性取决于 doclet 表示的注释或标识符。你可能会看到一些共同的属性包括：</p>
+<ul>
+<li><code>comment</code>: JSDoc 注释文本，或者，如果标识符没被描述，那么该值是一个空字符串。</li>
+<li><code>meta</code>: 对象，描述 doclet 如何关联源文件（例如，在源文件中的位置）。</li>
+<li><code>description</code>： 被记录的标识符的说明。</li>
+<li><code>kind</code>: 被记录的标识符的种类（例如，<code>class</code> 或者 <code>function</code>）。</li>
+<li><code>name</code>: 标识符的短名称（例如，<code>myMethod</code>）。</li>
+<li><code>longname</code>: 全名，其中包含成员信息（例如，<code>MyClass#myMethod</code>）。</li>
+<li><code>memberof</code>: 该标识符所读的模块，命名空间或类（例如，<code>MyClass</code>），或者，如果该标识符没有父级，那么该值是一个空字符串。</li>
+<li><code>scope</code>: 标识符在其父级内的作用域范围（例如，<code>global</code>, <code>static</code>, <code>instance</code>,或 <code>inner</code>）。</li>
+<li><code>undocumented</code>: 如果标识符没有 JSDoc 注释，设置为 <code>true</code>。</li>
+<li><code>defaultvalue</code>: 标识符的默认值。</li>
+<li><code>type</code>: 包含关于标识符类型详细信息的对象。</li>
+<li><code>params</code>: 包含参数列表的对象。</li>
+<li><code>tags</code>: 对象，包含 JSDoc 不识别的标记列表。只有当JSDoc的配置文件中 <code>allowUnknownTags</code> 设置为 <code>true</code> 时可用。</li>
+</ul>
+<p>要查看 JSDoc 为代码生成的 doclet，请使用 <a >-x命令行</a>选项运行 JSDoc。</p>
+<p>下面是一个 <code>newDoclet</code> 处理程序的一个例子说明：</p>
+<pre><code>exports.handlers = {
+  newDoclet: function(e) {
+    // e.doclet will refer to the newly created doclet
+    // you can read and modify properties of that doclet if you wish
+    if (typeof e.doclet.description === &#39;string&#39;) {
+      e.doclet.description = e.doclet.description.toUpperCase();
+    }
+  }
+};</code></pre><h4 id="event-filecomplete">Event: fileComplete</h4>
+<p>当解析器解析完一个文件时，<code>fileComplete</code> 事件就会被触发。你的插件可以使用这个事件来触发每个文件的清理。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>filename</code>: 文件名称。</li>
+<li><code>source</code>: 该文件的内容。</li>
+</ul>
+<h4 id="event-parsecomplete">Event: parseComplete</h4>
+<p>JSDoc 解析所有指定的源文件之后，<code>parseComplete</code> 事件就会被触发。</p>
+<p>注意：此事件在 JSDoc3.2 及更高版本会被触发。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>sourcefiles</code>: 被解析的源代码文件的路径数组。</li>
+<li><code>doclets</code>: doclet对象的数组。见 newDoclet 事件，有关每个的 doclet 可以包含属性的详细信息。注意：这个属性在 JSDoc3.2.1 及更高版本中可用。</li>
+</ul>
+<h4 id="event-processingcomplete">Event: processingComplete</h4>
+<p>JSDoc 更新反映继承和借来的标识符的解析结果后，<code>processingComplete</code> 事件被触发。</p>
+<p>注意：此事件在 JSDoc3.2.1 及更高版本中会被触发。</p>
+<p>该事件对象包含下列属性：</p>
+<ul>
+<li><code>doclets</code>: doclet 对象的数组。见 newDoclet 事件，有关每个的 doclet 可以包含属性的详细信息。</li>
+</ul>
+<h3 id="标签定义">标签定义</h3>
+<p>添加标签到标签字典是影响文档生成的一个中级方式。在一个 <code>newDoclet</code> 事件被触发前，JSDoc 注释块被解析以确定可能存在的说明和任何 JSDoc 标签。当一个标签被发现，如果它已在标签字典被定义，它就会被赋予一个修改 doclet 的机会。</p>
+<p>插件可以通过导出一个 <code>defineTags</code> 函数来定义标签。该函数将传递一个可用于定义标签的字典，像这样：</p>
+<pre><code>exports.defineTags = function(dictionary) {
+  // define tags here
+};</code></pre><h4 id="the-dictionary（字典）">The Dictionary（字典）</h4>
+<p>字典提供了以下方法：</p>
+<ul>
+<li><code>defineTag(title, opts)</code>: 用于定义标签。第一个参数是标签的名称（例如，<code>param</code> 或 <code>overview</code>）。第二个参数是一个包含标签选项的对象。可以包含以下任一选项;每个选项的默认值都是 <code>false</code>：<ul>
+<li><code>canHaveType (boolean)</code>: 如果标签文本可以包含一个类型表达式，那么设置为 <code>true</code>（如 <code>@param {string} name - Description</code> 中的 <code>{string}</code>）。</li>
+<li><code>canHaveName (boolean)</code>: 如果标签文本可以包含一个名称，那么设置为 <code>true</code>（如 <code>@param {string} name - Description</code> 中的 <code>name</code>)。</li>
+<li><code>isNamespace (boolean)</code>: 如果该标签是应用 doclet 的长名称，作为命名空间，那么设置为 <code>true</code>。例如，<code>@module</code> 标签应设置该选项设置为 <code>true</code>，并在标签上使用 <code>@module myModuleName</code> 的结果为长名称 <code>module:myModuleName</code>。</li>
+<li><code>mustHaveValue (boolean)</code>: 如果该标签必须有一个值，那么设置为 <code>true</code>（如 <code>@name TheName</code> 中的 <code>TheName</code>)。</li>
+<li><code>mustNotHaveDescription (boolean)</code>: 如果该标签可能有一个值，但是不是必须有描述，那么设置为 <code>true</code>（如 <code>@tag {typeExpr} TheDescription</code> 中的 <code>TheDescription</code>)。</li>
+<li><code>mustNotHaveValue (boolean)</code>: 如果该标签必须没有值，那么设置为 <code>true</code>。</li>
+<li><code>onTagged (function)</code>: 当该标签被发现时，执行的回调函数。该函数传递两个参数：该 doclet 和该标签对象。</li>
+</ul>
+</li>
+<li><code>lookUp(tagName)</code>: 按名称检索标签对象。返回该标签对象，包括它的选项，如果标签没有定义，那么返回 <code>false</code>。</li>
+<li><code>isNamespace(tagName)</code>: 如果该标签是应用 doclet 的长名称，作为命名空间，那么返回 <code>true</code>。</li>
+<li><code>normalise(tagName)</code>: 返回标签的规范名称。例如，<code>@constant</code> 是 <code>@const</code> 标签的同义词;如果你调用 <code>normalise(&#39;const&#39;)</code>，那么返回结果是 <code>constant</code> 字符串。</li>
+<li><code>normalize(tagName)</code>: <code>normalise</code> 的同义词。在 JSDoc3.3.0 及更高版本中可用。</li>
+</ul>
+<p>标签的 <code>onTagged</code> 回调可以修改 doclet 或标签的内容。</p>
+<p>定义一个 onTagged 回调: </p>
+<pre><code>dictionary.defineTag(&#39;instance&#39;, {
+  onTagged: function(doclet, tag) {
+    doclet.scope = &quot;instance&quot;;
+  }
+});</code></pre><p><code>defineTag</code> 方法返回一个 <code>Tag</code> 对象，这个对象有一个 <code>synonym</code> 方法，这个方法可用于定义该标签的一个同义词。</p>
+<p>定义标签同义词: </p>
+<pre><code>dictionary.defineTag(&#39;exception&#39;, { /* options for exception tag */ })
+  .synonym(&#39;throws&#39;);</code></pre><h3 id="节点访问者">节点访问者</h3>
+<p>在最底层，插件作者可以通过定义一个访问的每个节点的节点访问者来处理在抽象语法树（AST）中的每个节点。通过使用 <code>node-visitor</code> 插件，您可以修改注释并触发任意一段代码的解析事件。</p>
+<p>插件可以通过导出一个包含 <code>visitNode</code> 函数的 <code>astNodeVisitor</code> 对象来定义节点访问者，像这样：</p>
+<pre><code>exports.astNodeVisitor = {
+  visitNode: function(node, e, parser, currentSourceName) {
+    // do all sorts of crazy things here
+  }
+};</code></pre><p>函数在每个节点上调用，具有以下参数：</p>
+<ul>
+<li><code>node</code>: AST的节点。AST节点是 JavaScript 对象,使用由 Mozilla 的解析器 API 定义的格式。您可以使用 Esprima 的解析器演示，查看为您的源代码创建的AST。</li>
+<li><code>e</code>: 事件。如果该节点是一个解析器处理，事件对象将已经被填充，在 <code>symbolFound</code> 事件上用相同的东西描述。否则，这将是空对象在其上设置各种属性。</li>
+<li><code>parser</code>: JSDoc 解析器实例。</li>
+<li><code>currentSourceName</code>: 被解析的文件名。</li>
+</ul>
+<h4 id="触发事情发生">触发事情发生</h4>
+<p>实现节点访问的首要原因是为了能够记录事情，那些不寻常的记录（创建类像函数调用），或者自动生成文档为未记录的代码。例如，一个插件可能看起来调用到 <code>_trigger</code> 方法，因为它知道这意味着一个事件被触发，然后生成文档因为这个事件。</p>
+<p>为了使事情发生了，<code>visitNode</code> 函数应该修改事件参数的属性。一般来说，目标是构建一个注释，然后得到一个事件触发。在分析器可以让所有的节点的访问都来看看节点之后，它会查看是否该事件对象有一个 <code>comment</code> 释属性和 <code>event</code> 属性。如果两个都有，在事件属性命名的事件被触发。该事件通常 <code>symbolFound</code> or <code>jsdocCommentFound</code>，但理论上，一个插件可以定义自己的事件和处理它们。</p>
+<p>与事件处理程序的插件，一个节点访问插件可以停止后面的插件，运行通过在事件对象上设置 <code>stopPropagation</code> 属性（<code>e.stopPropagation = true</code>）。一个插件可以通过设置的 <code>preventDefault</code> 属性停止事件触发（<code>e.preventDefault = true</code>）。</p>
+<h2 id="报告错误">报告错误</h2>
+<p>如果你的插件需要报告错误，使用在 <code>jsdoc/util/logger</code> 模块中的下列方法之一：</p>
+<ul>
+<li><code>logger.warn</code>： 发出警告给用户，可能出现的问题。</li>
+<li><code>logger.error</code>： 报告错误，从该插件可以恢复。</li>
+<li><code>logger.fatal</code>： 报告错误，应引起 JSDoc 停止运行。</li>
+</ul>
+<p>使用这些方法创建更好的用户体验,不是简单地抛出一个错误。</p>
+<p><strong>注意</strong>：请不要使用 <code>jsdoc/util/error</code> 模块报告错误。该模块使用，将在 JSDoc 的未来版本中删除。</p>
+<p>报告一个非致命错误：</p>
+<pre><code>var logger = require(&#39;jsdoc/util/logger&#39;);
+
+exports.handlers = {
+  newDoclet: function(e) {
+    // Your code here.
+
+    if (somethingBadHappened) {
+      logger.error(&#39;Oh, no, something bad happened!&#39;);
+    }
+  }
+};</code></pre><!--
+title: 使用Markdown插件
+order: 108
+author: yuer
+-->
+
+<h1 id="使用markdown插件">使用Markdown插件</h1>
+<h2 id="目录-8">目录</h2>
+<ul>
+<li><a >概述</a></li>
+<li><a >启用markdown插件</a></li>
+<li><a >在额外的JSDoc标签中转换Markdown</a></li>
+<li><a >剔除markdown默认处理的标签</a></li>
+<li><a >用换行符换行文本</a></li>
+<li><a >添加ID属性到标题标签</a></li>
+</ul>
+<h2 id="概述-1">概述</h2>
+<p>JSDoc 包括 <code>Markdown</code> 插件，自动把 <code>Markdown</code> 格式文本转换成 HTML。你可以在任何 JSDoc 模板中使用这个插件。在 JSDoc3.2.2 及以后版本中，Markdown 插件使用了<a >marked Markdown</a> 解析器。</p>
+<p><strong>注意</strong>：当您启用 <code>Markdown</code> 插件，一定要在 JSDoc 注释的每行前面加上前导星号。如果省略前导星号，JSDoc 解析器可能会删除用于 <code>Markdown</code> 格式化的星号。</p>
+<p>默认情况下，JSDoc 会在以下 JSDoc 标签中查找 Markdown 格式的文本：</p>
+<ul>
+<li><a >@author</a></li>
+<li><a >@classdesc</a></li>
+<li><a >@description</a> (在 JSDoc 注释的开头包含未标记的描述)</li>
+<li><a >@param</a></li>
+<li><a >@property</a></li>
+<li><a >@returns</a></li>
+<li><a >@see</a></li>
+<li><a >@throws</a></li>
+</ul>
+<h2 id="启用markdown插件">启用Markdown插件</h2>
+<p>要启用 <code>Markdown</code> 插件，只要将字符串 <code>plugins/markdown</code> 添加到 <a >JSDoc 配置文件</a>的 <code>plugins</code> 数组中即可。</p>
+<p>示例，配置文件启用 Markdown 插件：</p>
+<pre><code>{
+  &quot;plugins&quot;: [&quot;plugins/markdown&quot;]
+}</code></pre><h2 id="在额外的jsdoc标签中转换markdown">在额外的JSDoc标签中转换Markdown</h2>
+<p>默认情况下，<code>Markdown</code> 插件只处理特定 JSDoc 标签的 <code>Markdown</code> 文本。您可以通过添加一个 <code>markdown.tags</code> 属性到 JSDoc 配置文件中，来处理的其他标签中的 <code>Markdown</code> 文本。<code>markdown.tags</code> 属性包含一个额外的 doclet 属性的数组，这个 doclet 属性可以包含 <code>Markdown</code> 文本。 （在大多数情况下，doclet 属性的名称相同的标签名。然而，一些标签存储方式不一样;例如，<code>@param</code> 标签存储在的 doclet 的 <code>params</code> 属性。如果你不知道如何标签的文本存储在一个 doclet 中，运行 JSDoc 使用 <code>-X/--explain</code>，打印每个的doclet 到控制台）</p>
+<p>例如，如果 <code>foo</code> 和 <code>bar</code> 标签接收在一个的 doclet 的 foo 和 bar 属性中存储值，你可以通过添加下面的设置到 JSDoc 配置文件，来使用 <code>Markdown</code> 处理这些标签。</p>
+<p>转换’foo’和’bar’标签中的 Markdown:</p>
+<pre><code>{
+  &quot;plugins&quot;: [&quot;plugins/markdown&quot;],
+  &quot;markdown&quot;: {
+    &quot;tags&quot;: [&quot;foo&quot;, &quot;bar&quot;]
+  }
+}</code></pre><h2 id="剔除markdown默认处理的标签">剔除Markdown默认处理的标签</h2>
+<p>为了防止 <code>Markdown</code> 插件处理任何默认 JSDoc 标签，添加一个 <code>markdown.excludeTags</code> 属性到 JSDoc 配置文件。该 <code>markdown.excludeTags</code> 属性包含不应该被 <code>Markdown</code> 文本处理的默认标签数组。</p>
+<p>例如，从 <code>Markdown</code> 处理排除 <code>author</code> 标签：</p>
+<pre><code>{
+  &quot;plugins&quot;: [&quot;plugins/markdown&quot;],
+  &quot;markdown&quot;: {
+    &quot;excludeTags&quot;: [&quot;author&quot;]
+  }
+}</code></pre><h2 id="用换行符换行文本">用换行符换行文本</h2>
+<p>默认情况下，<code>Markdown</code> 插件不处理换行符换行的文本。这是因为正常的 JSDoc 注释可以多行。如果更喜欢处理换行符换行的文本，设置 JSDoc 配置文件中的 <code>markdown.hardwrap</code> 属性为 <code>true</code>。此属性是在 JSDoc3.4.0 及更高版本中可用。</p>
+<h2 id="添加id属性到标题标签">添加ID属性到标题标签</h2>
+<p>默认情况下，<code>Markdown</code> 插件不会给每个 HTML 标题标签添加 <code>id</code> 属性。想要标题标签文本自动添加 ID 属性，设置 JSDoc 配置文件 <code>markdown.idInHeadings</code> 属性为 <code>true</code>。此属性是在 JSDoc3.4.0 及更高版本中可用。</p>
+<!--
+title: Tutorials 教程
+order: 109
+author: yuer
+-->
+
+<h1 id="tutorials-教程">Tutorials 教程</h1>
+<h2 id="目录-9">目录</h2>
+<ul>
+<li><a >添加教程</a></li>
+<li><a >配置标题，顺序和层次结构</a></li>
+<li><a >从API文档链接到教程</a></li>
+<li><a >@tutorial 块标签</a></li>
+<li><a >{@tutorial} 内联标签</a></li>
+</ul>
+<p>JSDoc 允许你的 API 文档的页面旁边包含教程。您可以使用此功能来为 API 提供详细的使用说明，如“入门”指南或实现一个功能的一步一步的过程。</p>
+<h2 id="添加教程">添加教程</h2>
+<p>添加教程到 API 文档，可以通过 <code>--tutorials</code> 或 <code>-u</code> 选项运行 JSDoc，并提供 JSDoc 要搜索的教程目录。例如：</p>
+<pre><code>jsdoc -u path/to/tutorials path/to/js/files</code></pre><p>JSDoc 在教程目录中搜索具有以下扩展名的文件：</p>
+<ul>
+<li><code>.htm</code></li>
+<li><code>.html</code></li>
+<li><code>.markdown</code> (转换 Markdown 为 HTML)</li>
+<li><code>.md</code> (转换 Markdown 为 HTML)</li>
+<li><code>.xhtml</code></li>
+<li><code>.xml</code> (作为HTML处理)</li>
+</ul>
+<p>JSDoc 还搜索 JSON 文件，这个 JSON 文件包含有关标题，排序，和教程的层次结构等信息，这些将在下面的部分中讨论。</p>
+<p>JSDoc 给每个教程分配一个标识符。该标识符是不带扩展名的文件名。例如，<code>/path/to/tutorials/overview.md</code> 分配的标识符是 <code>overview</code>。</p>
+<p>在教程文件中，可以使用 <code>{@link}</code> 和 <code>{@tutorial}</code> 内联标签来链接到文档的其他部分。JSDoc 将自动处理这些链接。</p>
+<h2 id="配置标题，顺序和层次结构">配置标题，顺序和层次结构</h2>
+<p>默认情况下，JSDoc 使用的文件名作为教程标题，并且所有的教程都在同一层次。您可以使用 JSON 文件为每个教程提供标题并指示文档中的教程应如何排序和分组。</p>
+<p>JSON 文件必须使用扩展 <code>.json</code>。在 JSON 文件，您可以使用教程标识符为每个教程提供两个属性：</p>
+<ul>
+<li><code>title</code>: 文档中显示的标题。</li>
+<li><code>children</code>: 子教程信息。</li>
+</ul>
+<p>在 JSDoc 3.2.0 或更高版本中，你可以使用以下格式的 JSON 文件：</p>
+<ol>
+<li>对象树，子教程定义在父级教程的 <code>children</code> 属性中。例如，<code>tutorial1</code> 有两个子教程 <code>childA</code> 和 <code>childB</code>，<code>tutorial2</code> 和 <code>tutorial1</code> 在同一层级上，并且 <code>tutorial2</code> 没有子教程：</li>
+</ol>
+<pre><code>{
+  &quot;tutorial1&quot;: {
+    &quot;title&quot;: &quot;Tutorial One&quot;,
+    &quot;children&quot;: {
+      &quot;childA&quot;: {
+        &quot;title&quot;: &quot;Child A&quot;
+      },
+      &quot;childB&quot;: {
+        &quot;title&quot;: &quot;Child B&quot;
+      }
+    }
+  },
+  &quot;tutorial2&quot;: {
+    &quot;title&quot;: &quot;Tutorial Two&quot;
+  }
+}</code></pre><ol start="2">
+<li>一个顶级对象，其属性都是教程对象，子教程在教程对象的 <code>children</code> 属性中列出名称。例如，<code>tutorial1</code> 有两个子教程 <code>childA</code> 和 <code>childB</code>，<code>tutorial2</code> 和 <code>tutorial1</code> 在同一层级上，并且 <code>tutorial2</code> 没有子教程：</li>
+</ol>
+<pre><code>{
+  &quot;tutorial1&quot;: {
+    &quot;title&quot;: &quot;Tutorial One&quot;,
+    &quot;children&quot;: [&quot;childA&quot;, &quot;childB&quot;]
+  },
+  &quot;tutorial2&quot;: {
+    &quot;title&quot;: &quot;Tutorial Two&quot;
+  },
+  &quot;childA&quot;: {
+    &quot;title&quot;: &quot;Child A&quot;
+  },
+  &quot;childB&quot;: {
+    &quot;title&quot;: &quot;Child B&quot;
+  }
+}</code></pre><p>您也可以为每个教程提供了一个单独的 <code>.json</code> 文件，使用教程标识符作为文件名。此方法已过时，不应该被用于新的项目。</p>
+<h2 id="从api文档链接到教程">从API文档链接到教程</h2>
+<p>有多种方式从 API 文档的链接到教程：</p>
+<h3 id="tutorial-块标签">@tutorial 块标签</h3>
+<p>如果在 JSDoc 注释中包含一个 <a >@tutorial</a> 块标签，生成的文件将包含一个链接，链接到您指定的教程。</p>
+<p>例如，使用 <code>@tutorial</code> 块标签:</p>
+<pre><code>/**
+ * Class representing a socket connection.
+ *
+ * @class
+ * @tutorial socket-tutorial
+ */
+function Socket() {}</code></pre><h3 id="tutorial-内联标签">{@tutorial} 内联标签</h3>
+<p>也可以在另一个标签的文本中使用 <a >{@tutorial} 内联标签</a>，链接到一个教程。默认情况下，JSDoc 将使用教程标题作为链接文字。</p>
+<p>例如，使用 <code>{@tutorial}</code> 内联标签:</p>
+<pre><code>/**
+ * Class representing a socket connection. See {@tutorial socket-tutorial}
+ * for an overview.
+ *
+ * @class
+ */
+function Socket() {}</code></pre><!--
+title: 包含 Package（包）文件
+order: 110
+author: yuer
+-->
+
+<h1 id="包含-package（包）文件">包含 Package（包）文件</h1>
+<h2 id="目录-10">目录</h2>
+<ul>
+<li><a >示例</a></li>
+</ul>
+<p>包文件包含的信息对你的项目文档是很有用的，比如该项目的名称和版本号。当 JSDoc 生成的文档的时候,可以自动使用项目中 <code>package.json</code> 文件中的信息。例如，默认的模板在文档中显示项目的名称和版本号。</p>
+<p>有两种方法可以将 <code>package.json</code> 文件中的信息合并到您的文档：</p>
+<ol>
+<li>在 JavaScript文件的源路径中，包含 <code>package.json</code> 文件的路径。JSDoc 将使用在源路径中发现的第一个 <code>package.json</code> 文件。</li>
+<li>使用 <code>-P/--package</code> 包命令行选项运行 JSDoc，指定 <code>package.json</code> 文件的路径。此选项在 JSDoc3.3.0 及更高版本中可用。</li>
+</ol>
+<p><code>-P/--package</code> 命令行选项优先于源路径。如果使用 <code>-P/--package</code> 命令行选项，JSDoc 会忽略源路径中任何的 <code>package.json</code> 文件。</p>
+<p><code>package.json</code> 文件必须使用 <a >npm 的包格式</a>。</p>
+<h2 id="示例-2">示例</h2>
+<p>在源路径中包含一个包文件:</p>
+<pre><code>jsdoc path/to/js path/to/package/package.json</code></pre><p>使用 <code>-P/--package</code> 选项：</p>
+<pre><code>jsdoc --package path/to/package/package-docs.json path/to/js</code></pre><!--
+title: 包含 README 文件
+order: 111
+author: yuer
+-->
+
+<h1 id="包含-readme-文件">包含 README 文件</h1>
+<h2 id="目录-11">目录</h2>
+<ul>
+<li><a >示例</a></li>
+</ul>
+<p>有两种方法可以将 <code>README</code> 文件中的信息合并到您的文档：</p>
+<ol>
+<li>在 JavaScript 文件的源路径中，包含一个名为 <code>README.md</code> 的 <code>Markdown</code> 文件的路径。JSDoc 将使用在源路径中发现的第一个 <code>README.md</code> 文件。</li>
+<li>使用 <code>-R/--readme</code> 包命令行选项运行 JSDoc，指定 <code>README</code> 文件的路径。此选项在 JSDoc3.3.0 及更高版本中可用。<code>README</code> 文件可以使用任何名称和扩展名，但它必须是 <code>Markdown</code> 格式。</li>
+</ol>
+<p><code>-R/--readme</code> 命令行选项优先于源路径。如果使用 <code>-R/--readme</code> 命令行选项，JSDoc 会忽略源路径中任何的 <code>README.md</code> 文件。</p>
+<p>如果正在使用 JSDoc 的默认模板，<code>README</code> 文件的内容将渲染成HTML，生成在文档 <code>index.html</code> 文件中。</p>
+<h2 id="示例-3">示例</h2>
+<p>在源路径中包含一个 <code>README</code> 文件:</p>
+<pre><code>jsdoc path/to/js path/to/readme/README.md</code></pre><p>使用 <code>-R/--readme</code> 选项：</p>
+<pre><code>jsdoc --readme path/to/readme/README path/to/js</code></pre><!--
+title: ES 2015 Classes
+order: 201
+author: yuer
+-->
+
+<h1 id="es-2015-classes">ES 2015 Classes</h1>
+<h2 id="目录-12">目录</h2>
+<ul>
+<li><a >文档化一个简单的类</a></li>
+<li><a >扩展类</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<p>JSDoc3 描述一个遵循 <a >ECMAScript 2015 规范</a>的类是很简单的。你并不需要使用诸如如 <code>@class</code> 和 <code>@constructor</code> 的标签来描述 ES2015 classes，JSDoc 通过分析你的代码会自动识别类和它们的构造函数。ES2015 classes 在 JSDoc3.4.0 及更高版本支持。</p>
+<h2 id="文档化一个简单的类">文档化一个简单的类</h2>
+<p>下面的例子演示了如何通过一个构造函数，两个实例方法和一个静态方法文档化一个简单的类：</p>
+<pre><code>/** Class representing a point. */
+class Point {
+  /**
+    * Create a point.
+    * @param {number} x - The x value.
+    * @param {number} y - The y value.
+    */
+  constructor(x, y) {
+    // ...
+  }
+
+  /**
+    * Get the x value.
+    * @return {number} The x value.
+    */
+  getX() {
+    // ...
+  }
+
+  /**
+    * Get the y value.
+    * @return {number} The y value.
+    */
+  getY() {
+    // ...
+  }
+
+  /**
+    * Convert a string containing two comma-separated numbers into a point.
+    * @param {string} str - The string containing two comma-separated numbers.
+    * @return {Point} A Point object.
+    */
+  static fromString(str) {
+    // ...
+  }
+}</code></pre><p>还可以记录类表达式中定义的类，将其分配给一个变量或常量：</p>
+<pre><code>/** Class representing a point. */
+const Point = class {
+  // and so on
+}</code></pre><h2 id="扩展类">扩展类</h2>
+<p>当您使用 <code>extends</code> 关键字来扩展一个现有的类的时候，你还需要告诉 JSDoc 哪个类是你要扩展的。 为此，您可以使用 <a >@augments</a> (或 <a >@extends</a>) 标签。</p>
+<p>例如，扩展如上所示 <code>Point</code> 类，扩展一个 ES2015 类：</p>
+<pre><code>/**
+ * Class representing a dot.
+ * @extends Point
+ */
+class Dot extends Point {
+  /**
+   * Create a dot.
+   * @param {number} x - The x value.
+   * @param {number} y - The y value.
+   * @param {number} width - The width of the dot, in pixels.
+   */
+  constructor(x, y, width) {
+    // ...
+  }
+
+  /**
+   * Get the dot&#39;s width.
+   * @return {number} The dot&#39;s width, in pixels.
+   */
+  getWidth() {
+    // ...
+  }
+}</code></pre><h2 id="相关链接-4">相关链接</h2>
+<ul>
+<li><a >@augments</a></li>
+</ul>
+<!--
+title: ES 2015 Modules
+order: 202
+author: yuer
+-->
+
+<h1 id="es-2015-modules">ES 2015 Modules</h1>
+<h2 id="目录-13">目录</h2>
+<ul>
+<li><a >模块标识符</a></li>
+<li><a >导出值</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<p>JSDoc3 能够记录遵循 <a >ECMAScript 2015规范的模块</a>。ES2015 模块在JSDoc3.4.0及更高版本中支持。</p>
+<h2 id="模块标识符">模块标识符</h2>
+<p>当描述一个 ES2015 module（模块）时，将使用 <a >@module</a> 标签来描述模块的标识符。例如，如果用户通过调用 <code>import * as myShirt from &#39;my/shirt&#39;</code> 加载模块，你会写一个包含 <code>@module my/shirt</code> 标签的 JSDoc 注释。</p>
+<p>如果使用 <code>@module</code> 标签不带值，JSDoc 会基于文件路径尝试猜测正确的模块标识符。</p>
+<p>当您使用一个 <a >JSDoc namepath</a>（名称路径）从另一个 JSDoc 注释中引用一个模块，您必须添加前缀 <code>module:</code>。例如，如果你想模块 <code>my/pants</code> 的文档连接到模块 <code>my/shirt</code>，您可以使用 <a >@see</a> 标签来描述 <code>my/pants</code>，如下：</p>
+<pre><code>/**
+  * Pants module.
+  * @module my/pants
+  * @see module:my/shirt
+  */</code></pre><p>同样，模块中每个成员的 <code>namepath</code> （名称路径）将以 <code>module:</code> 开始，后面跟模块名字。例如，如果你的 <code>my/pants</code> 模块输出一个 <code>Jeans</code> 类，并且 <code>Jeans</code> 有一个名为 <code>hem</code> 的实例方法，那么这个实例方法 <code>longname</code>（长名称）是 <code>module:my/pants.Jeans#hem</code>。</p>
+<h2 id="导出值">导出值</h2>
+<p>下面的示例演示如何在 ES2015 模块中描述不同种类的导出值。在多数情况下，你可以简单地在 <code>export</code> 语句上添加一个 JSDoc 注释来定义导出值。如果要以其他名称导出一个值，您可以在其 <code>export</code> 块中描述导出值。</p>
+<p>例如，文档化一个模块的导出值：</p>
+<pre><code>/** @module color/mixer */
+
+/** The name of the module. */
+export const name = &#39;mixer&#39;;
+
+/** The most recent blended color. */
+export var lastColor = null;
+
+/**
+  * Blend two colors together.
+  * @param {string} color1 - The first color, in hexadecimal format.
+  * @param {string} color2 - The second color, in hexadecimal format.
+  * @return {string} The blended color.
+  */
+export function blend(color1, color2) {}
+
+// convert color to array of RGB values (0-255)
+function rgbify(color) {}
+
+export {
+  /**
+    * Get the red, green, and blue values of a color.
+    * @function
+    * @param {string} color - A color, in hexadecimal format.
+    * @returns {Array.&lt;number&gt;} An array of the red, green, and blue values,
+    * each ranging from 0 to 255.
+    */
+  rgbify as toRgb
+}</code></pre><h2 id="相关链接-5">相关链接</h2>
+<ul>
+<li><a >在 JSDoc 3中使用名称路径</a></li>
+<li><a >@module</a></li>
+</ul>
+<!--
+title: CommonJS Modules
+order: 203
+author: yuer
+-->
+
+<h1 id="commonjs-modules">CommonJS Modules</h1>
+<h2 id="目录-14">目录</h2>
+<ul>
+<li><a >概述</a></li>
+<li><a >模块标识</a></li>
+<li><a >exports对象的属性</a></li>
+<li><a >值分配给局部变量</a></li>
+<li><a >值分配给module.exports</a><ul>
+<li><a >对象字面量分配给module.exports</a></li>
+<li><a >函数分配给module.exports</a></li>
+<li><a >字符串，数字，或布尔值分配给module.exports</a></li>
+</ul>
+</li>
+<li><a >值分配给module.exports和局部变量</a></li>
+<li><a >属性添加到this</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="概述-2">概述</h2>
+<p>为了帮助记录 <a >CommonJS modules</a>（模块），JSDoc 能理解很多在 CommonJS 的规范中使用的约定（例如，添加属性到 <code>exports</code> 对象）。此外，JSDoc 接受 <a >Node.js modules</a>（模块）的约定，它扩展了 CommonJS 的标准（例如，将值分配给 <code>module.exports</code>）。根据所遵循编码约定，可能需要提供一些额外的标签，以帮助 JSDoc 理解你的代码。</p>
+<p>本页面说明如何记录使用几种不同编码约定的 CommonJS 和 Node.js 的模块。如果你要记录异步模块定义（AMD）模块（比如大家熟知的&quot;RequireJS模块&quot;），请查看 <a >AMD Modules(模块)</a>。</p>
+<h2 id="模块标识">模块标识</h2>
+<p>在大多数情况下，CommonJS 或 Node.js 的模块应该包含一个独立的 JSDoc 注释,这个 JSDoc 注释应该包含 <a >@module</a> 标签。<code>@module</code> 标签的值应该是传递给 <code>require()</code> 函数的模块标识符。例如，如果用户通过调用 <code>require(&#39;my/shirt&#39;)</code> 来加载模块，你的 JSDoc 注释将包含 <code>@module my/shirt</code> 标签。</p>
+<p>如果你使用不带值的 <code>@module</code> 标签，JSDoc 会基于文件路径尝试猜测正确的模块标识符。</p>
+<p>当您使用 <a >JSDoc namepath</a> 从另一个 JSDoc 注释中引用一个模块，您必须添加前缀 <code>module:</code>。例如，如果你想模块 <code>my/pants</code> 的文档连接到模块 <code>my/shirt</code>，您可以使用 <a >@see</a> 标签来描述 <code>my/pants</code>，如下：</p>
+<pre><code>/**
+  * Pants module.
+  * @module my/pants
+  * @see module:my/shirt
+  */</code></pre><p>同样，模块中每个成员的 <code>namepath</code> （名称路径）将以 <code>module:</code> 开始，后面跟模块名字。例如，如果你的 <code>my/pants</code> 模块输出一个 <code>Jeans</code> 类，并且 <code>Jeans</code> 有一个名为 <code>hem</code> 的实例方法，那么这个实例方法 <code>longname</code>（长名称）是 <code>module:my/pants.Jeans#hem</code>。</p>
+<h2 id="exports对象的属性">exports对象的属性</h2>
+<p>最容易记录直接指定给 <code>exports</code> 对象的属性的符号。JSDoc 将自动识别模块导出这些符号。</p>
+<p>在下面的例子中，<code>my/shirt</code> 模块导出 <code>button</code> 和 <code>unbutton</code> 方法。JSDoc 会自动检测模块导出的这些方法。</p>
+<p>例如，方法添加到导出对象：</p>
+<pre><code>/**
+  * Shirt module.
+  * @module my/shirt
+  */
+
+/** Button the shirt. */
+exports.button = function() {
+  // ...
+};
+
+/** Unbutton the shirt. */
+exports.unbutton = function() {
+  // ...
+};</code></pre><h2 id="值分配给局部变量">值分配给局部变量</h2>
+<p>在一些情况下，导出的标识符在它被加入到 <code>exports</code> 对象之前，可以被分配给一个局部变量。例如，如果你的模块导出一个 <code>wash</code> 方法，而模块本身往往就叫做 <code>wash</code> 方法，您可以编写模块。</p>
+<p>例如，方法分配给局部变量并添加到导出对象:</p>
+<pre><code>/**
+  * Shirt module.
+  * @module my/shirt
+  */
+
+/** Wash the shirt. */
+var wash = exports.wash = function() {
+  // ...
+};</code></pre><p>在这种情况下，JSDoc 不会自动记录 <code>wash</code> 作为导出的方法，因为 JSDoc 注释呈现在局部变量 <code>wash</code> 之前，而不是呈现在 <code>exports.wash</code> 之前。一个解决办法是增加一个 <a >@alias</a> 标签，用来正确定义方法的长名称。在这种情况下，该方法是模块 <code>my/shirt</code> 的静态成员，所以正确的长名字是 <code>module:my/shirt.wash</code>：</p>
+<p>例如，长名称定义在 <code>@alias</code> 标签中：</p>
+<pre><code>/**
+  * Shirt module.
+  * @module my/shirt
+  */
+
+/**
+  * Wash the shirt.
+  * @alias module:my/shirt.wash
+  */
+var wash = exports.wash = function() {
+  // ...
+};</code></pre><p>另一种解决方案是将方法的 JSDoc 注释移动到 <code>exports.wash</code> 的上面。这种变化使得 JSDoc 检测到 <code>wash</code> 是由模块 <code>my/shirt</code> 导出的。</p>
+<p>例如，JSDoc 注释放在 <code>exports.wash</code> 之前：</p>
+<pre><code>/**
+  * Shirt module.
+  * @module my/shirt
+  */
+
+var wash =
+/** Wash the shirt. */
+exports.wash = function() {
+  // ...
+};</code></pre><h2 id="值分配给moduleexports">值分配给module.exports</h2>
+<p>在 Node.js 的模块中，您可以直接给 <code>module.exports</code> 赋值。本节介绍如何记录分配给 <code>module.exports</code> 的不同类型的值。</p>
+<h3 id="对象字面量分配给moduleexports">对象字面量分配给module.exports</h3>
+<p>如果一个模块将一个对象字面量分配给 <code>module.exports</code>。JSDoc 自动识别这个模块的 <code>exports</code> 只有这个值。此外，JSDoc 自动为每个属性设置正确的长名称。</p>
+<p>例如：对象字面量分配给&#39;module.exports&#39;：</p>
+<pre><code>/**
+ * Color mixer.
+ * @module color/mixer
+ */
+
+module.exports = {
+  /**
+    * Blend two colors together.
+    * @param {string} color1 - The first color, in hexadecimal format.
+    * @param {string} color2 - The second color, in hexadecimal format.
+    * @return {string} The blended color.
+    */
+  blend: function(color1, color2) {
+    // ...
+  },
+
+  /**
+    * Darken a color by the given percentage.
+    * @param {string} color - The color, in hexadecimal format.
+    * @param {number} percent - The percentage, ranging from 0 to 100.
+    * @return {string} The darkened color.
+    */
+  darken: function(color, percent) {
+    // ..
+  }
+};</code></pre><p>您也可以使用另一种模式，在 <code>module.exports</code> 对象字面量以外添加属性。</p>
+<p>例如，通过属性定义，分配给 <code>module.exports</code>：</p>
+<pre><code>/**
+ * Color mixer.
+ * @module color/mixer
+ */
+
+module.exports = {
+  /**
+    * Blend two colors together.
+    * @param {string} color1 - The first color, in hexadecimal format.
+    * @param {string} color2 - The second color, in hexadecimal format.
+    * @return {string} The blended color.
+    */
+  blend: function(color1, color2) {
+    // ...
+  }
+};
+
+/**
+  * Darken a color by the given percentage.
+  * @param {string} color - The color, in hexadecimal format.
+  * @param {number} percent - The percentage, ranging from 0 to 100.
+  * @return {string} The darkened color.
+  */
+module.exports.darken = function(color, percent) {
+// ..
+};</code></pre><h3 id="函数分配给moduleexports">函数分配给module.exports</h3>
+<p>如果你分配一个函数给 <code>module.exports</code>，JSDoc 将自动这个函数设置正确的长名称。</p>
+<p>例如，函数分配给&#39;module.exports&#39;：</p>
+<pre><code>/**
+  * Color mixer.
+  * @module color/mixer
+  */
+
+/**
+  * Blend two colors together.
+  * @param {string} color1 - The first color, in hexadecimal format.
+  * @param {string} color2 - The second color, in hexadecimal format.
+  * @return {string} The blended color.
+  */
+module.exports = function(color1, color2) {
+  // ...
+};</code></pre><p>同样的模式适用于构造函数。</p>
+<p>例如，构造函数分配给 &#39;module.exports&#39;：</p>
+<pre><code>/**
+  * Color mixer.
+  * @module color/mixer
+  */
+
+/** Create a color mixer. */
+module.exports = function ColorMixer() {
+  // ...
+};</code></pre><h3 id="字符串，数字，或布尔值分配给moduleexports">字符串，数字，或布尔值分配给module.exports</h3>
+<p>对于分配给 <code>module.exports</code> 值类型（字符串，数字和布尔值），必须在和 <code>@module</code> 标签同一 JSDoc注 释块中通过使用 <a >@type</a> 标签记录导出的值类型。</p>
+<p>例如，字符串分配给 &#39;module.exports&#39;:</p>
+<pre><code>/**
+  * Module representing the word of the day.
+  * @module wotd
+  * @type {string}
+  */
+
+module.exports = &#39;perniciousness&#39;;</code></pre><h2 id="值分配给moduleexports和局部变量">值分配给module.exports和局部变量</h2>
+<p>如果模块导出标识符不直接分配给 <code>module.exports</code>，可以使用 <a >@exports</a> 标签代替 <code>@module</code> 标签。<code>@exports</code> 标签告诉 JSDoc，这个标识符表示是模块导出的值。</p>
+<p>例如，对象字面量分配给一个局部变量和 <code>module.exports</code>：</p>
+<pre><code>/**
+  * Color mixer.
+  * @exports color/mixer
+  */
+var mixer = module.exports = {
+  /**
+    * Blend two colors together.
+    * @param {string} color1 - The first color, in hexadecimal format.
+    * @param {string} color2 - The second color, in hexadecimal format.
+    * @return {string} The blended color.
+    */
+  blend: function(color1, color2) {
+    // ...
+  }
+};</code></pre><h2 id="属性添加到this">属性添加到this</h2>
+<p>当一个模块添加属性到它的 <code>this</code> 对象，JSDoc 自动识别新的属性会被该模块导出。</p>
+<p>例如，属性添加到一个模块的&#39;this&#39;对象：</p>
+<pre><code>/**
+  * Module for bookshelf-related utilities.
+  * @module bookshelf
+  */
+
+/**
+  * Create a new Book.
+  * @class
+  * @param {string} title - The title of the book.
+  */
+this.Book = function(title) {
+  /** The title of the book. */
+  this.title = title;
+}</code></pre><h2 id="相关链接-6">相关链接</h2>
+<ul>
+<li><a >在 JSDoc 3中使用名称路径</a></li>
+<li><a >@exports</a></li>
+<li><a >@module</a></li>
+</ul>
+<!--
+title: AMD Modules
+order: 204
+author: yuer
+-->
+
+<h1 id="amd-modules">AMD Modules</h1>
+<h2 id="目录-15">目录</h2>
+<ul>
+<li><a >概述</a></li>
+<li><a >模块标识符</a></li>
+<li><a >函数返回一个对象字面量</a></li>
+<li><a >函数返回另一个函数</a></li>
+<li><a >模块声明在return语句中</a></li>
+<li><a >模块对象传递给一个函数</a></li>
+<li><a >多模块定义在一个文件中</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="概述-3">概述</h2>
+<p>JSDoc3 可以使用<a >异步模块定义AMD API</a>记录模块，这是由库实现的，如 <a >RequireJS</a>。本页面说明根据您的模块使用的编码约定，如何使用 JSDoc 记录 AMD 模块。</p>
+<p>如果你记录 CommonJS 或 Node.js 的模块，见 <a >CommonJS 模块</a>的说明。</p>
+<h2 id="模块标识符-1">模块标识符</h2>
+<p>当您记录一个 AMD 模块时，你要使用 <code>@exports</code> 标签或 <code>@module</code> 标签 来记录真实传递给 <code>require()</code> 函数的标识符。例如，如果用户通过调用 <code>require(&#39;my/shirt&#39;, /* callback */)</code> 来加载该模块，你会写一个包含 <code>@exports my/shirt</code> 或 <code>@module my/shirt</code> 标签的 JSDoc 注释。下面的例子可以帮助你决定使用哪些标签。</p>
+<p>如果你使用不带值的 <code>@exports</code> 或 <code>@module</code> 标签，JSDoc 会基于文件路径尝试猜测正确的模块标识符。</p>
+<p>当您使用 <a >JSDoc namepath</a> 从另一个JSDoc注释中引用一个模块，您必须添加前缀 <code>module:</code>。例如，如果你想模块 <code>my/pants</code> 的文档连接到模块 <code>my/shirt</code>，您可以使用 <a >@see</a> 标签来描述 <code>my/pants</code>，如下：</p>
+<pre><code>/**
+  * Pants module.
+  * @module my/pants
+  * @see module:my/shirt
+  */</code></pre><p>同样，模块中每个成员的 <code>namepath</code> （名称路径）将以 <code>module:</code> 开始，后面跟模块名字。例如，如果你的 <code>my/pants</code> 模块输出一个 <code>Jeans</code> 类，并且 <code>Jeans</code> 有一个名为 <code>hem</code> 的实例方法，那么这个实例方法 <code>longname</code>（长名称）是 <code>module:my/pants.Jeans#hem</code>。</p>
+<h2 id="函数返回一个对象字面量">函数返回一个对象字面量</h2>
+<p>如果你定义 AMD 模块作为一个函数，该函数返回一个对象字面量， 使用 <a >@exports</a> 标签来记录模块的名称。JSDoc 会自动检测该对象的属性是模块的成员。</p>
+<p>例如，函数返回一个对象字面量：</p>
+<pre><code>define(&#39;my/shirt&#39;, function() {
+ /**
+  * A module representing a shirt.
+  * @exports my/shirt
+  */
+  var shirt = {
+    /** The module&#39;s `color` property. */
+    color: &#39;black&#39;,
+
+    /**
+      * Create a new Turtleneck.
+      * @class
+      * @param {string} size - The size (`XS`, `S`, `M`, `L`, `XL`, or `XXL`).
+      */
+    Turtleneck: function(size) {
+      /** The class&#39;s `size` property. */
+      this.size = size;
+    }
+  };
+
+  return shirt;
+});</code></pre><h2 id="函数返回另一个函数">函数返回另一个函数</h2>
+<p>如果你定义模块作为一个函数，导出的另一个函数，比如构造函数，你可以使用一个独立的带有 <a >@module</a> 标签的注释来记录模块。然后，您可以使用一个 <a >@alias</a> 标签告诉 JSDoc 该函数使用相同的长名称作为模块。</p>
+<p>例如，函数返回另一个函数：</p>
+<pre><code>/**
+  * A module representing a jacket.
+  * @module my/jacket
+  */
+define(&#39;my/jacket&#39;, function() {
+  /**
+    * Create a new jacket.
+    * @class
+    * @alias module:my/jacket
+    */
+  var Jacket = function() {
+    // ...
+  };
+
+  /** Zip up the jacket. */
+  Jacket.prototype.zip = function() {
+    // ...
+  };
+
+  return Jacket;
+});</code></pre><h2 id="模块声明在return语句中">模块声明在return语句中</h2>
+<p>如果你在一个函数的 <code>return</code> 语句中声明你的模块对象，你可以使用一个独立的带有 <a >@module</a> 标签的注释来记录模块。然后，您可以使用一个 <a >@alias</a> 标签告诉 JSDoc 该函数使用相同的长名称作为模块。</p>
+<p>例如，模块声明在 <code>return</code> 语句中：</p>
+<pre><code class="language-js">/**
+  * Module representing a shirt.
+  * @module my/shirt
+  */
+
+define(&#39;my/shirt&#39;, function() {
+  // Do setup work here.
+
+  return /** @alias module:my/shirt */ {
+    /** Color. */
+    color: &#39;black&#39;,
+    /** Size. */
+    size: &#39;unisize&#39;
+  };
+});</code></pre>
+<h2 id="模块对象传递给一个函数">模块对象传递给一个函数</h2>
+<p>如果模块对象传递到定义你的模块的函数，你可以通过给函数参数添加 <a >@exports</a> 标签来记录模块。这种模式在 JSDoc3.3.0 及更高版本中支持。</p>
+<p>例如，模块对象传递给一个函数：</p>
+<pre><code>define(&#39;my/jacket&#39;, function(
+  /**
+    * Utility functions for jackets.
+    * @exports my/jacket
+    */
+  module) {
+
+  /**
+    * Zip up a jacket.
+    * @param {Jacket} jacket - The jacket to zip up.
+    */
+  module.zip = function(jacket) {
+    // ...
+  };
+});</code></pre><h2 id="多模块定义在一个文件中">多模块定义在一个文件中</h2>
+<p>如果在一个单一的 JavaScript 文件中定义多个 AMD 模块，你应该使用 <a >@exports</a> 标签来记录每个模块对象。</p>
+<p>例如，多模块定义在一个文件中：</p>
+<pre><code class="language-js">// one module
+define(&#39;html/utils&#39;, function() {
+  /**
+    * Utility functions to ease working with DOM elements.
+    * @exports html/utils
+    */
+  var utils = {
+    /**
+      * Get the value of a property on an element.
+      * @param {HTMLElement} element      - The element.
+      * @param {string}      propertyName - The name of the property.
+      * @return {*}           The value of the property.
+      */
+    getStyleProperty: function(element, propertyName) { }
+  };
+
+  /**
+    * Determine if an element is in the document head.
+    * @param {HTMLElement} element - The element.
+    * @return {boolean}     Set to `true` if the element is in the document head,
+    *                               `false` otherwise.
+    */
+  utils.isInHead = function(element) { }
+
+    return utils;
+  }
+);
+
+// another module
+define(&#39;tag&#39;, function() {
+    /** @exports tag */
+    var tag = {
+    /**
+      * Create a new Tag.
+      * @class
+      * @param {string} tagName - The name of the tag.
+      */
+    Tag: function(tagName) {
+      // ...
+    }
+  };
+
+  return tag;
+});</code></pre>
+<h2 id="相关链接-7">相关链接</h2>
+<ul>
+<li><a >在 JSDoc 3中使用名称路径</a></li>
+<li><a >@exports</a></li>
+<li><a >@module</a></li>
+</ul>
+<!--
+title: @abstract
+order: 301
+author: yuer
+-->
+
+<h1 id="abstract">@abstract</h1>
+<h2 id="目录-16">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="别名">别名</h2>
+<p><code>@virtual</code></p>
+<h2 id="概述-4">概述</h2>
+<p><code>@abstract</code> 标记标识必须由继承该成员的对象实现（或重写）的成员。</p>
+<h2 id="实例">实例</h2>
+<p>例如，父类的抽象方法，子类实现该方法：</p>
+<pre><code class="language-javascript">/**
+  * Generic dairy product.
+  * @constructor
+  */
+function DairyProduct() {}
+
+/**
+  * Check whether the dairy product is solid at room temperature.
+  * @abstract
+  * @return {boolean}
+  */
+DairyProduct.prototype.isSolid = function() {
+  throw new Error(&#39;must be implemented by subclass!&#39;);
+};
+
+/**
+  * Cool, refreshing milk.
+  * @constructor
+  * @augments DairyProduct
+  */
+function Milk() {}
+
+/**
+  * Check whether milk is solid at room temperature.
+  * @return {boolean} Always returns false.
+  */
+Milk.prototype.isSolid = function() {
+  return false;
+};</code></pre>
+<!--
+title: @access
+order: 302
+author: yuer
+-->
+
+<h1 id="access">@access</h1>
+<h2 id="目录-17">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法">语法</h2>
+<pre><code>@access &lt;package|private|protected|public&gt;</code></pre><h2 id="概述-5">概述</h2>
+<p><code>@access</code> 指定该成员的访问级别（包 <code>package</code>，私有 <code>private</code>，公共 <code>public</code>，或保护 <code>protected</code>）。你可以使用与 <code>@access</code> 标签同义的其他标签：</p>
+<ul>
+<li><code>@access package</code> 等价于 <code>@package</code>，属性在 JSDoc 3.5.0 以上版本可用;</li>
+<li><code>@access private</code> 等价于 <code>@private</code>;</li>
+<li><code>@access protected</code> 等价于 <code>@protected</code>;</li>
+<li><code>@access public</code> 等价于 <code>@public</code>;</li>
+</ul>
+<p>私有成员不会显示在生成的输出文档中，除非通过 <code>-p/--private</code> 命令行选项运行 JSDoc。在 JSDoc3.3.0 或更高版本，您还可以使用 <code>-a/--access</code> 命令行选项来改变这种行为。</p>
+<p>请注意，doclet 的访问级别不用于他们的 scope (作用域)。例如，如果 Parent 有一个名为 child 的内部变量，那么这个内部变量将被记录为 <code>@public</code>, child 变量仍然是被视为一个内部变量，其 namepath 为 <code>Parent~child</code>。 换一种说法，child 变量将有一个内部作用域，即使这个变量是公开的。 要更改 doclet 的作用域，请使用 <a ><code>@instance</code></a>, <a ><code>@static</code></a>, 和 <a ><code>@global</code></a> 标签。</p>
+<h2 id="实例-1">实例</h2>
+<p>可以使用与 <code>@access</code> 标签同义的其他标签：</p>
+<pre><code class="language-javascript">/** @constructor */
+function Thingy() {
+
+  /** @access private */
+  var foo = 0;
+
+  /** @access protected */
+  this._bar = 1;
+
+  /** @access package */
+  this.baz = 2;
+
+  /** @access public */
+  this.pez = 3;
+
+}
+
+// same as...
+
+/** @constructor */
+function OtherThingy() {
+
+  /** @private */
+  var foo = 0;
+
+  /** @protected */
+  this._bar = 1;
+
+  /** @package */
+  this.baz = 2;
+
+  /** @public */
+  this.pez = 3;
+
+}</code></pre>
+<h2 id="相关链接-8">相关链接</h2>
+<ul>
+<li><a >@global</a></li>
+<li><a >@instance</a></li>
+<li><a >@package</a></li>
+<li><a >@private</a></li>
+<li><a >@protected</a></li>
+<li><a >@public</a></li>
+<li><a >@static</a></li>
+</ul>
+<!--
+title: @alias
+order: 303
+author: yuer
+-->
+
+<h1 id="alias">@alias</h1>
+<h2 id="目录-18">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-1">语法</h2>
+<pre><code>@alias &lt;aliasNamepath&gt;</code></pre><h2 id="概述-6">概述</h2>
+<p><code>@alias</code> 标签标记成员有一个别名。如果该成员有不同的名称，JSDoc 把所有引用作为这个成员。如果你在一个内部函数中定义一个类的时候，这个标签是非常有用的;在这种情况下，您可以使用 <code>@alias</code> 标签告诉 JSDoc，这个类如何在您的应用程序中暴露出来。</p>
+<p>虽然 <code>@alias</code> 标签听起来类似于 <a >@name</a> 标签，但是他们的行为非常不同。<code>@name</code> 标签告诉 JSDoc 忽略与注释关联的所有代码。例如，当 JSDoc 处理下面的代码的时候，它忽略了 <code>bar</code> 的注释关联到一个 <code>foo</code> 函数：</p>
+<pre><code>/**
+  * Bar function.
+  * @name bar
+  */
+function foo() {}</code></pre><p><code>@alias</code> 标记告诉 JSDoc 这是一个伪装，成员 A 实际上叫做成员 B。例如，当 JSDoc 处理下面代码的时候，它承认 <code>foo</code> 是一个函数，然后在生产的文档中将 <code>foo</code> 改名为 <code>bar</code>：</p>
+<pre><code>/**
+  * Bar function.
+  * @alias bar
+  */
+function foo() {}</code></pre><h2 id="实例-2">实例</h2>
+<p>假设你正在使用类框架，希望当你定义一个类的时候，你只要传递一个构造函数。您可以使用 <code>@alias</code> 标签告诉 JSDoc，这个类如何在您的应用程序中暴露出来。</p>
+<p>在下面的例子中，在 <code>@alias</code> 标签告诉 JSDoc 处理匿名函数，就好像它是 <code>trackr.CookieManager</code> 类的构造函数。在这个函数中，JSDoc 将 <code>this</code> 关键字解释为 <code>trackr.CookieManager</code>，因此，“value”方法的 namepath(名称路径)为 <code>trackr.CookieManager＃value</code>。</p>
+<p>例如，匿名的构造函数使用 <code>@alias</code>:</p>
+<pre><code class="language-javascript">Klass(
+  &quot;trackr.CookieManager&quot;,
+
+  /**
+   * @class
+   * @alias trackr.CookieManager
+   * @param {Object} kv
+   */
+  function(kv) {
+    /** The value. */
+    this.value = kv;
+  }
+);</code></pre>
+<p>您也可以在一个立即调用的函数表达式（IIFE）中创建的成员中使用 <code>@alias</code> 标签。<code>@alias</code> 标签告诉 JSDoc，这些成员都暴露在 IIFE 作用域之外的。</p>
+<p>例如，命名空间的静态方法使用 <code>@alias</code>:</p>
+<pre><code class="language-javascript">/** @namespace */
+var Apple = {};
+
+(function(ns) {
+  /**
+   * @namespace
+   * @alias Apple.Core
+   */
+  var core = {};
+
+  /** Documented as Apple.Core.seed */
+  core.seed = function() {};
+
+  ns.Core = core;
+})(Apple);</code></pre>
+<p>对于那些对象字面量中定义的成员，可以使用 <code>@alias</code> 标签替代的 <a >@lends</a>标记。</p>
+<pre><code class="language-javascript">// Documenting objectA with @alias
+
+var objectA = (function() {
+  /**
+   * Documented as objectA
+   * @alias objectA
+   * @namespace
+   */
+  var x = {
+    /**
+     * Documented as objectA.myProperty
+     * @member
+     */
+    myProperty: &quot;foo&quot;
+  };
+
+  return x;
+})();
+
+// Documenting objectB with @lends
+
+/**
+ * Documented as objectB
+ * @namespace
+ */
+var objectB = (function() {
+  /** @lends objectB */
+  var x = {
+    /**
+     * Documented as objectB.myProperty
+     * @member
+     */
+    myProperty: &quot;bar&quot;
+  };
+
+  return x;
+})();</code></pre>
+<h2 id="相关链接-9">相关链接</h2>
+<ul>
+<li><a >@name</a></li>
+<li><a >@lends</a></li>
+</ul>
+<!--
+title: @async
+order: 304
+author: yuer
+-->
+
+<h1 id="async">@async</h1>
+<h2 id="目录-19">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-2">语法</h2>
+<pre><code>@async</code></pre><h2 id="概述-7">概述</h2>
+<p><code>@async</code> 标记表示函数是异步的，这意味着它是使用语法 <code>async function foo () {}</code> 声明的。不要将此标记用于其他类型的异步函数，例如提供回调的函数。JSDoc 3.5.0 及更高版本中提供了此标记。</p>
+<p>一般来说，不需要使用此标记，因为 JSDoc 会自动检测异步函数并在生成的文档中标识它们。但是，如果您正在为代码中没有出现的异步函数编写虚拟注释，则可以使用此标记告诉JSDoc该函数是异步的。</p>
+<h2 id="实例-3">实例</h2>
+<p>以下示例显示使用 <code>@async</code> 标记的虚拟注释：</p>
+<pre><code class="language-javascript">/**
+ * Download data from the specified URL.
+ *
+ * @async
+ * @function downloadData
+ * @param {string} url - The URL to download from.
+ * @return {Promise&lt;string&gt;} The data from the URL.
+ */</code></pre>
+<!--
+title: @augments
+order: 305
+author: yuer
+-->
+
+<h1 id="augments">@augments</h1>
+<h2 id="目录-20">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-1">别名</h2>
+<pre><code>@extends</code></pre><h2 id="语法-3">语法</h2>
+<pre><code>@augments &lt;namepath&gt;</code></pre><h2 id="概述-8">概述</h2>
+<p><code>@augments</code> 或 <code>@extends</code> 标签指明标识符继承自哪个父类，后面需要加父类名。你可以使用这个标签来记录基于类和并基于原型的继承。</p>
+<p>在 JSDoc3.3.0 或更高版本中，如果一个标识符继承自多个父类，并且多个父类有同名的成员，JSDoc 使用来自列出的 JSDoc 注释中最后一个父类的文档。</p>
+<h2 id="实例-4">实例</h2>
+<p>在下面的例子中，<code>Duck</code> 类被定义为 <code>Animal</code> 的子类。<code>Duck</code> 实例和 <code>Animal</code> 实例具有相同的属性，<code>speak</code> 方法是 <code>Duck</code> 实例所独有的。</p>
+<pre><code class="language-javascript">/**
+ * @constructor
+ */
+function Animal() {
+  /** Is this animal alive? */
+  this.alive = true;
+}
+
+/**
+ * @constructor
+ * @augments Animal
+ */
+function Duck() {}
+Duck.prototype = new Animal();
+
+/** What do ducks say? */
+Duck.prototype.speak = function() {
+  if (this.alive) {
+    alert(&quot;Quack!&quot;);
+  }
+};
+
+var d = new Duck();
+d.speak(); // Quack!
+d.alive = false;
+d.speak(); // (nothing)</code></pre>
+<p>在下面的例子中，<code>Duck</code> 类继承自 <code>Flyable</code> 和 <code>Bird</code> 类，这两个父类都定义了一个 <code>takeOff</code> 方法。由于 <code>@augments Bird</code> 是在 <code>Duck</code> 文档列表中最后，JSDoc 自动使用 <code>Bird#takeOff</code> 注释来记录 <code>Duck#takeOff</code>。</p>
+<p>例如，用重写方法来实现多重继承：</p>
+<pre><code class="language-javascript">/**
+ * Abstract class for things that can fly.
+ * @class
+ */
+function Flyable() {
+  this.canFly = true;
+}
+
+/** Take off. */
+Flyable.prototype.takeOff = function() {
+  // ...
+};
+
+/**
+ * Abstract class representing a bird.
+ * @class
+ */
+function Bird(canFly) {
+  this.canFly = canFly;
+}
+
+/** Spread your wings and fly, if possible. */
+Bird.prototype.takeOff = function() {
+  if (this.canFly) {
+    this._spreadWings()
+      ._run()
+      ._flapWings();
+  }
+};
+
+/**
+ * Class representing a duck.
+ * @class
+ * @augments Flyable
+ * @augments Bird
+ */
+function Duck() {}
+
+// Described in the docs as &quot;Spread your wings and fly, if possible.&quot;
+Duck.prototype.takeOff = function() {
+  // ...
+};</code></pre>
+<h2 id="相关链接-10">相关链接</h2>
+<ul>
+<li><a >@borrows</a></li>
+<li><a >@class</a></li>
+<li><a >@mixes</a></li>
+<li><a >@mixin</a></li>
+</ul>
+<!--
+title: @author
+order: 306
+author: yuer
+-->
+
+<h1 id="author">@author</h1>
+<h2 id="目录-21">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-4">语法</h2>
+<pre><code>@author &lt;name&gt; [&lt;emailAddress&gt;]</code></pre><h2 id="概述-9">概述</h2>
+<p><code>@author</code> 标签标识一个项目的作者。在 JSDoc3.2 和更高版本中，如果作者的名字后面跟着尖括号括起来的电子邮件地址， 默认模板将电子邮件地址转换为 <code>mailto:</code> 链接。</p>
+<h2 id="实例-5">实例</h2>
+<p>例如，描述项目的作者:</p>
+<pre><code class="language-javascript">/**
+ * @author Jane Smith &lt;jsmith@example.com&gt;
+ */
+function MyClass() {}</code></pre>
+<h2 id="相关链接-11">相关链接</h2>
+<ul>
+<li><a >@file</a></li>
+<li><a >@version</a></li>
+</ul>
+<!--
+title: @borrows
+order: 307
+author: yuer
+-->
+
+<h1 id="borrows">@borrows</h1>
+<h2 id="目录-22">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-5">语法</h2>
+<pre><code>@borrows &lt;that namepath&gt; as &lt;this namepath&gt;</code></pre><h2 id="概述-10">概述</h2>
+<p><code>@borrows</code> 标签允许将另一个标识符的描述添加到当前描述。</p>
+<p>如果你不止在一个地方引用同一个函数，但是你又不想重复添加同样的文档描述到多个地方，这个时候非常有用。</p>
+<h2 id="实例-6">实例</h2>
+<p>在这个例子中，<code>trstr</code> 函数存在文档，但 <code>util.trim</code> 只是使用不同的名称引用相同的功能。</p>
+<p>例如，复制 <code>trstr</code> 的文档描述给 <code>util.trim</code>:</p>
+<pre><code class="language-javascript">/**
+ * @namespace
+ * @borrows trstr as trim
+ */
+var util = {
+  trim: trstr
+};
+
+/**
+ * Remove whitespace from around a string.
+ * @param {string} str
+ */
+function trstr(str) {}</code></pre>
+<!--
+title: @callback
+order: 308
+author: yuer
+-->
+
+<h1 id="callback">@callback</h1>
+<h2 id="目录-23">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-6">语法</h2>
+<pre><code>@callback &lt;namepath&gt;</code></pre><h2 id="概述-11">概述</h2>
+<p><code>@Callback</code> 标签提供回调函数（可传递给其他函数）的描述，包括回调的参数和返回值。可以包涵任何一个能提供给 <a >@method</a>标签。</p>
+<p>一旦你定义了一个回调，你可以像 <a >@typedef</a> 标签所定义的自定义类型那样使用它。尤其是，你可以使用回调的名称作为类型名称。这样您可以使你明确指明函数参数应包含那个回调。</p>
+<p>如果你想要一个回调显示为某个特定类的类型定义，可以给回调加一个 <code>namepath</code>，指示它是某个类的一个内部函数。还可以定义一个引用多个类引用的全局的回调类型。</p>
+<h2 id="实例-7">实例</h2>
+<p>描述一个指定类回调:</p>
+<pre><code class="language-javascript">/**
+ * @class
+ */
+function Requester() {}
+
+/**
+ * Send a request.
+ * @param {Requester~requestCallback} cb - The callback that handles the response.
+ */
+Requester.prototype.send = function(cb) {
+  // code
+};
+
+/**
+ * This callback is displayed as part of the Requester class.
+ * @callback Requester~requestCallback
+ * @param {number} responseCode
+ * @param {string} responseMessage
+ */</code></pre>
+<p>描述一个全局回调:</p>
+<pre><code class="language-javascript">/**
+ * @class
+ */
+function Requester() {}
+
+/**
+ * Send a request.
+ * @param {requestCallback} cb - The callback that handles the response.
+ */
+Requester.prototype.send = function(cb) {
+  // code
+};
+
+/**
+ * This callback is displayed as a global member.
+ * @callback requestCallback
+ * @param {number} responseCode
+ * @param {string} responseMessage
+ */</code></pre>
+<h2 id="相关链接-12">相关链接</h2>
+<ul>
+<li><a >@function</a></li>
+<li><a >@typedef</a></li>
+</ul>
+<!--
+title: @class
+order: 309
+author: yuer
+-->
+
+<h1 id="class">@class</h1>
+<h2 id="目录-24">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-2">别名</h2>
+<pre><code>@constructor</code></pre><h2 id="语法-7">语法</h2>
+<pre><code>@class [&lt;type&gt; &lt;name&gt;]</code></pre><h2 id="概述-12">概述</h2>
+<p><code>@class</code> 标记将函数标记为构造函数，这意味着要使用 <code>new</code> 关键字调用它以返回实例。</p>
+<h2 id="实例-8">实例</h2>
+<p>一个函数构建一个 <code>Person</code> 实例：</p>
+<pre><code class="language-javascript">/**
+ * Creates a new Person.
+ * @class
+ */
+function Person() {}
+
+var p = new Person();</code></pre>
+<h2 id="相关链接-13">相关链接</h2>
+<ul>
+<li><a >@constructs</a></li>
+</ul>
+<!--
+title: @classdesc
+order: 310
+author: yuer
+-->
+
+<h1 id="classdesc">@classdesc</h1>
+<h2 id="目录-25">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-8">语法</h2>
+<pre><code>@classdesc &lt;some description&gt;</code></pre><h2 id="概述-13">概述</h2>
+<p><code>@classdesc</code> 标签用于为类提供一个描述，这样和构造函数的描述区分开来。@classdesc标签应该与 <a >@class</a> (或 <a >@constructor</a>)标签</p>
+<p>结合使用。</p>
+<p>在JSDoc 3 中 @classdesc标签的功能和以前版本中的@class标签的功能是重复的。截至第3版，@class标签的语法和功能和现在的@constructor标签是完全匹配的，并且@classdesc标签更明确地传达其目的：记录一类的描述。</p>
+<h2 id="实例-9">实例</h2>
+<p>如下所示，一个类有两个添加描述的地方，一个适用于函数本身，而另一个一般适用于类。</p>
+<p>一个同时具有构造函数描述和类说明的 doclet：</p>
+<pre><code class="language-javascript">/**
+ * This is a description of the MyClass constructor function.
+ * @class
+ * @classdesc This is a description of the MyClass class.
+ */
+function MyClass() {}</code></pre>
+<h2 id="相关链接-14">相关链接</h2>
+<ul>
+<li><a >@class</a></li>
+<li><a >@description</a></li>
+</ul>
+<!--
+title: @constant
+order: 311
+author: yuer
+-->
+
+<h1 id="constant">@constant</h1>
+<h2 id="目录-26">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-3">别名</h2>
+<pre><code>@const</code></pre><h2 id="语法-9">语法</h2>
+<pre><code>@constant [&lt;type&gt; &lt;name&gt;]</code></pre><h2 id="概述-14">概述</h2>
+<p><code>@constant</code> 标记用于将文档标记为属于常量的符号。</p>
+<h2 id="实例-10">实例</h2>
+<p>在这个实例中我们记录一个字符串常量。注意，虽然代码使用 <code>const</code> 关键字，对于 JSDoc 来说，这不是必需的。如果你的 JavaScript 宿主环境尚不支持常量声明，<code>@const</code> 描述可以很有效地用在 <code>var</code> 声明上。</p>
+<p>一个字符串常量表示红色：</p>
+<pre><code class="language-javascript">/** @constant
+    @type {string}
+    @default
+*/
+const RED = &quot;FF0000&quot;;
+
+/** @constant {number} */
+var ONE = 1;</code></pre>
+<p>注意，实例中在 <a >@type</a> 标签中提供了一个类型是可选的。另外可选的 <a >@default</a> 标签用在这里也一样，这里将自动添加任何指定的值（例如， &#39;FF0000&#39;）给文档。</p>
+<h2 id="相关链接-15">相关链接</h2>
+<ul>
+<li><a >@type</a></li>
+<li><a >@default</a></li>
+</ul>
+<!--
+title: @constructs
+order: 312
+author: yuer
+-->
+
+<h1 id="constructs">@constructs</h1>
+<h2 id="目录-27">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-10">语法</h2>
+<pre><code>@constructs [&lt;name&gt;]</code></pre><h2 id="概述-15">概述</h2>
+<p>当使用对象字面量形式定义类（例如使用 <a >@lends</a> 标签）时，可使用 <code>@constructs</code> 标签标明这个函数用来作为类的构造实例。</p>
+<h2 id="实例-11">实例</h2>
+<p><code>@constructs</code> 和 <code>@lends</code> 结合使用：</p>
+<pre><code class="language-javascript">var Person = makeClass(
+  /** @lends Person.prototype */
+  {
+    /** @constructs */
+    initialize: function(name) {
+      this.name = name;
+    },
+    /** Describe me. */
+    say: function(message) {
+      return this.name + &quot; says: &quot; + message;
+    }
+  }
+);</code></pre>
+<p>不和 <code>@lends</code> 结合使用的时候，你必须提供一个类的名称:</p>
+<pre><code class="language-javascript">makeClass(
+  &quot;Menu&quot;,
+  /**
+   * @constructs Menu
+   * @param items
+   */
+  function(items) {},
+  {
+    /** @memberof Menu# */
+    show: function() {}
+  }
+);</code></pre>
+<h2 id="相关链接-16">相关链接</h2>
+<ul>
+<li><a >@lends</a></li>
+</ul>
+<!--
+title: @copyright
+order: 313
+author: yuer
+-->
+
+<h1 id="copyright">@copyright</h1>
+<h2 id="目录-28">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-11">语法</h2>
+<pre><code>@copyright &lt;some copyright text&gt;</code></pre><h2 id="概述-16">概述</h2>
+<p><code>@copyright</code> 标签是用来描述一个文件的版权信息。一般和 <a >@file</a> 标签结合使用。</p>
+<h2 id="实例-12">实例</h2>
+<pre><code>/**
+ * @file This is my cool script.
+ * @copyright Michael Mathews 2011
+ */</code></pre><h2 id="相关链接-17">相关链接</h2>
+<ul>
+<li><a >@file</a></li>
+</ul>
+<!--
+title: @default
+order: 314
+author: yuer
+-->
+
+<h1 id="default">@default</h1>
+<h2 id="目录-29">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="别名-4">别名</h2>
+<pre><code>@defaultvalue</code></pre><h2 id="语法-12">语法</h2>
+<pre><code>@default [&lt;some value&gt;]</code></pre><h2 id="概述-17">概述</h2>
+<p><code>@default</code> 标签记录标识的赋值。可以在标签后面跟上他的值，或者当值是一个唯一被分配的简单值(可以是：一个字符串，数字，布尔值或null)的时候，可以让JSDoc从源代码中获取值，自动记录。</p>
+<h2 id="实例-13">实例</h2>
+<p>在本实例中,一个常量被记录。该常数的值为 <code>0xff0000</code>。通过添加 <code>@default</code> 标签，这个值将自动添加到文档。</p>
+<pre><code>/**
+ * @constant
+ * @default
+ */
+const RED = 0xff0000;</code></pre><!--
+title: @deprecated
+order: 315
+author: yuer
+-->
+
+<h1 id="deprecated">@deprecated</h1>
+<h2 id="目录-30">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-13">语法</h2>
+<pre><code>@deprecated [&lt;some text&gt;]</code></pre><h2 id="概述-18">概述</h2>
+<p><code>@deprecated</code> 标签指明一个标识在代码中已经被弃用。</p>
+<h2 id="实例-14">实例</h2>
+<p>可以单独使用的 <code>@deprecated</code> 标签，或包括一些文本，来详细说明为什么要弃用。</p>
+<pre><code>/**
+ * @deprecated since version 2.0
+ */
+function old() {}</code></pre><!--
+title: @description
+order: 316
+author: yuer
+-->
+
+<h1 id="description">@description</h1>
+<h2 id="目录-31">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-5">别名</h2>
+<pre><code>@desc</code></pre><h2 id="语法-14">语法</h2>
+<pre><code>@description &lt;some description&gt;</code></pre><h2 id="概述-19">概述</h2>
+<p><code>@description</code> 标记允许提供正在记录一般说明。描述可以包括 HTML 标记。如果启用了 <a >Markdown 插件</a>，它也可包括 Markdown 格式。</p>
+<h2 id="实例-15">实例</h2>
+<p>如果在注释开始的地方添加描述，那么可省略 <code>@description</code> 标签。</p>
+<pre><code class="language-javascript">/**
+ * Add two numbers.
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+function add(a, b) {
+  return a + b;
+}</code></pre>
+<p>通过使用 <code>@description</code> 标签添加的描述可放在 JSDoc 的任意地方。</p>
+<pre><code class="language-javascript">/**
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ * @description Add two numbers.
+ */
+function add(a, b) {
+  return a + b;
+}</code></pre>
+<p>如果 JSDoc注 释的开头同时有一个描述和一个带有 <code>@description</code> 标记的描述，那么用 <code>@description</code> 指定的描述将覆盖注释开头的描述。</p>
+<h2 id="相关链接-18">相关链接</h2>
+<ul>
+<li><a >@classdesc</a></li>
+<li><a >@summary</a></li>
+</ul>
+<!--
+title: @enum
+order: 317
+author: yuer
+-->
+
+<h1 id="enum">@enum</h1>
+<h2 id="目录-32">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-15">语法</h2>
+<pre><code>@enum [&lt;type&gt;]</code></pre><h2 id="概述-20">概述</h2>
+<p><code>@enum</code> 标记记录了一组静态属性，这些属性的值都属于同一类型。</p>
+<p>枚举类似于属性的集合，只是枚举记录在其自己的 doc 注释中，而属性记录在其容器的 doc 注释中。此标记通常与 <a >@readonly</a> 一起使用，因为枚举通常表示常量的集合。</p>
+<h2 id="实例-16">实例</h2>
+<p>这例子展示了如何记录一个表示具有三种可能状态的值的对象。请注意，如果您愿意，可以添加枚举成员的可选描述。还可以重写该类型，如“MAYBE”所示——默认情况下，枚举成员将使用与枚举本身相同的类型进行记录。</p>
+<p>一个数字枚举，表示的3种状态：</p>
+<pre><code>/**
+ * Enum for tri-state values.
+ * @readonly
+ * @enum {number}
+ */
+var triState = {
+  /** The true value */
+  TRUE: 1,
+  FALSE: -1,
+  /** @type {boolean} */
+  MAYBE: true
+};</code></pre><h2 id="相关链接-19">相关链接</h2>
+<ul>
+<li><a >@property</a></li>
+</ul>
+<!--
+title: @event
+order: 318
+author: yuer
+-->
+
+<h1 id="event">@event</h1>
+<h2 id="目录-33">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-16">语法</h2>
+<pre><code>@event &lt;className&gt;#[event:]&lt;eventName&gt;</code></pre><h2 id="概述-21">概述</h2>
+<p><code>@event</code> 标记可以触发的事件。典型事件由一个具有一组已定义属性的对象表示。</p>
+<p>使用 <code>@event</code> 标记定义特定类型的事件后，可以使用 <a ><code>@fires</code></a> 标记指示方法可以触发该事件。还可以使用 <a ><code>@listens</code></a> 标记表明用这个表示来侦听该事件。</p>
+<p>JSDoc 会自动将名称空间 <code>event:</code> 前置到每个事件的名称。通常，当链接到另一个 doclet 中的事件时，必须包含此命名空间（<code>@fires</code> 标签是一个特殊的例外，它可以让你忽略命名空间。）</p>
+<p>注意：JSDoc 3 使用 <code>@event doclet</code>来记录事件的内容。相反，JSDoc Toolkit 2 使用 <code>@event doclets</code> 来标识在发生同名事件时可以触发的函数。</p>
+<h2 id="实例-17">实例</h2>
+<p>下面的示例演示如何记录一个 Hurl 类中名为 snowball 事件。该事件包含一个带有单独属性的对象。</p>
+<p>将函数调用记录为事件：</p>
+<pre><code class="language-javascript">/**
+ * Throw a snowball.
+ *
+ * @fires Hurl#snowball
+ */
+Hurl.prototype.snowball = function() {
+  /**
+   * Snowball event.
+   *
+   * @event Hurl#snowball
+   * @type {object}
+   * @property {boolean} isPacked - Indicates whether the snowball is tightly packed.
+   */
+  this.emit(&quot;snowball&quot;, {
+    isPacked: this._snowball.isPacked
+  });
+};</code></pre>
+<p>使用一个命名 doclet 来描述一个事件：</p>
+<pre><code class="language-javascript">/**
+ * Throw a snowball.
+ *
+ * @fires Hurl#snowball
+ */
+Hurl.prototype.snowball = function() {
+  // ...
+};
+
+/**
+ * Snowball event.
+ *
+ * @event Hurl#snowball
+ * @type {object}
+ * @property {boolean} isPacked - Indicates whether the snowball is tightly packed.
+ */</code></pre>
+<h2 id="相关链接-20">相关链接</h2>
+<ul>
+<li><a >@fires</a></li>
+<li><a >@listens</a></li>
+</ul>
+<!--
+title: @example
+order: 319
+author: yuer
+-->
+
+<h1 id="example">@example</h1>
+<h2 id="目录-34">目录</h2>
+<ul>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="概述-22">概述</h2>
+<p>提供如何使用文档化项的示例。此标记后面的文本将显示为突出显示的代码。</p>
+<h2 id="实例-18">实例</h2>
+<p>注意，一个 doclet 中可以同时使用多个 <code>@example</code> 标签。</p>
+<pre><code class="language-javascript">/**
+ * Solves equations of the form a * x = b
+ * @example
+ * // returns 2
+ * globalNS.method1(5, 10);
+ * @example
+ * // returns 3
+ * globalNS.method(5, 15);
+ * @returns {Number} Returns the value of x for the equation.
+ */
+globalNS.method1 = function (a, b) {
+  return b / a;
+};</code></pre>
+<p><code>@example</code> 标签后面可以添加 <code>&lt;caption&gt;&lt;/caption&gt;</code> 标签作为示例的标题。</p>
+<pre><code class="language-javascript">/**
+ * Solves equations of the form a * x = b
+ * @example &lt;caption&gt;Example usage of method1.&lt;/caption&gt;
+ * // returns 2
+ * globalNS.method1(5, 10);
+ * @returns {Number} Returns the value of x for the equation.
+ */
+globalNS.method1 = function (a, b) {
+  return b / a;
+};</code></pre>
+<!--
+title: @exports
+order: 320
+author: yuer
+-->
+
+<h1 id="exports">@exports</h1>
+<h2 id="目录-35">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-17">语法</h2>
+<pre><code>@exports &lt;moduleName&gt;</code></pre><p>在 JSDoc3.3.0 或更高版本中，<code>&lt;moduleName&gt;</code> 可以包含 <code>module:</code> 前缀。在以前的版本中，必须忽略此前缀。</p>
+<h2 id="概述-23">概述</h2>
+<p>使用 <code>@exports</code> 标签描述除由 JavaScript 模块的 <code>exports</code> 或 <code>module.exports</code> 属性外导出的任何内容。</p>
+<h2 id="实例-19">实例</h2>
+<p>在模块中，当使用特定的 <code>exports</code> 模块，<code>@exports</code> 标签是不需要。JSDoc 会自动识别出该对象的导出成员。同样，JSDoc 会自动识别中的 Node.js 模块特定的 <code>module.exports</code> 属性。</p>
+<p>CommonJS 模块:</p>
+<pre><code class="language-javascript">/**
+ * A module that says hello!
+ * @module hello/world
+ */
+
+/** Say hello. */
+exports.sayHello = function() {
+  return &quot;Hello world&quot;;
+};</code></pre>
+<p>Node.js 模块:</p>
+<pre><code class="language-javascript">/**
+ * A module that shouts hello!
+ * @module hello/world
+ */
+
+/** SAY HELLO. */
+module.exports = function() {
+  return &quot;HELLO WORLD&quot;;
+};</code></pre>
+<p>AMD 模块导出一个字面量对象：</p>
+<pre><code class="language-javascript">define(function() {
+  /**
+   * A module that creates greeters.
+   * @module greeter
+   */
+
+  /**
+   * @constructor
+   * @param {string} subject - The subject to greet.
+   */
+  var exports = function(subject) {
+    this.subject = subject || &quot;world&quot;;
+  };
+
+  /** Say hello to the subject. */
+  exports.prototype.sayHello = function() {
+    return &quot;Hello &quot; + this.subject;
+  };
+
+  return exports;
+});</code></pre>
+<p>如果模块导出使用的是除 <code>exports</code> 或 <code>module.exports</code> 之外的其他方法方式，使用 <code>@exports</code> 标签来说明哪些成员用于导出。</p>
+<p>AMD 模块导出一个对象：</p>
+<pre><code class="language-js">define(function() {
+  /**
+   * A module that says hello!
+   * @exports hello/world
+   */
+  var ns = {};
+
+  /** Say hello. */
+  ns.sayHello = function() {
+    return &quot;Hello world&quot;;
+  };
+
+  return ns;
+});</code></pre>
+<h2 id="相关链接-21">相关链接</h2>
+<ul>
+<li><a >@module</a></li>
+<li><a >CommonJS Modules</a></li>
+<li><a >AMD Modules</a></li>
+</ul>
+<!--
+title: @external
+order: 321
+author: yuer
+-->
+
+<h1 id="external">@external</h1>
+<h2 id="目录-36">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="别名-6">别名</h2>
+<pre><code>@host</code></pre><h2 id="语法-18">语法</h2>
+<pre><code>@external &lt;nameOfExternal&gt;</code></pre><h2 id="概述-24">概述</h2>
+<p><code>@external</code> 标记标识在当前包外部定义的类、命名空间或模块。通过使用此标记，可以将包的扩展记录到外部符号，也可以向包的用户提供有关外部符号的信息。还可以在任何其他 JSDoc 标记中引用外部符号的 namepath。</p>
+<p>外部符号的 namepath 始终使用前缀 <code>external:</code>（例如，<code>{@link external:Foo}</code> 或 <code>@augments external:Foo</code>）。但是，可以从 <code>@external</code> 标记中省略此前缀。</p>
+<p>注意：只能在你的项目之外定义的最高级别的标识上添加 <code>@external</code> 标签，请参见“描述一个嵌套的外部标识”的例子。</p>
+<h2 id="实例-20">实例</h2>
+<p>以下示例显示如何将内置字符串对象作为外部对象以及新的实例方法 <code>external:String#rot13</code> 进行文档记录。</p>
+<p>记录添加到内置类的方法:</p>
+<pre><code>/**
+ * The built in string object.
+ * @external String
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String|String}
+ */
+
+/**
+ * Create a ROT13-encoded version of the string. Added by the `foo` package.
+ * @function external:String#rot13
+ * @example
+ * var greeting = new String(&#39;hello world&#39;);
+ * console.log( greeting.rot13() ); // uryyb jbeyq
+ */</code></pre><p>下面的例子中描述一个新 <code>starfairy</code> 功能如何添加到外部的 <code>jQuery.fn</code> 命名空间。</p>
+<p>描述的外部的命名空间：</p>
+<pre><code>/**
+ * The jQuery plugin namespace.
+ * @external &quot;jQuery.fn&quot;
+ * @see {@link http://learn.jquery.com/plugins/|jQuery Plugins}
+ */
+
+/**
+ * A jQuery plugin to make stars fly around your home page.
+ * @function external:&quot;jQuery.fn&quot;.starfairy
+ */</code></pre><p>在下面的例子中，<code>EncryptedRequest</code> 类被描述为内置的 <code>XMLHttpRequest</code> 类的子类。</p>
+<pre><code>/**
+ * The built-in class for sending HTTP requests.
+ * @external XMLHttpRequest
+ * @see https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+ */
+
+/**
+ * Extends the built-in `XMLHttpRequest` class to send data encoded with a secret key.
+ * @class EncodedRequest
+ * @extends external:XMLHttpRequest
+ */</code></pre><p>只能将 <code>@external</code> 标签添加到项目定义的最外最顶层。在下面的例子中，描述的是外部的 <code>security.TLS</code> 类。其结果是，<code>@external</code> 标签是用来描述外部的 <code>external:security</code> 命名空间，而不是外部类 <code>external:security.TLS</code>。</p>
+<p>记录一个嵌套的外部标识：</p>
+<pre><code>/**
+ * External namespace for security-related classes.
+ * @external security
+ * @see http://example.org/docs/security
+ */
+
+/**
+ * External class that provides Transport Layer Security (TLS) encryption.
+ * @class TLS
+ * @memberof external:security
+ */</code></pre><!--
+title: @file
+order: 322
+author: yuer
+-->
+
+<h1 id="file">@file</h1>
+<h2 id="目录-37">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-7">别名</h2>
+<pre><code>@fileoverview
+@overview</code></pre><h2 id="语法-19">语法</h2>
+<pre><code>@file &lt;descriptionOfFile&gt;</code></pre><h2 id="概述-25">概述</h2>
+<p><code>@file</code> 标签提供文件的说明。在文件开头的 JSDoc 注释部分使用该标签。</p>
+<h2 id="实例-21">实例</h2>
+<p>文件描述：</p>
+<pre><code>/**
+ * @file Manages the configuration settings for the widget.
+ * @author Rowina Sanela 
+ */</code></pre><h2 id="相关链接-22">相关链接</h2>
+<ul>
+<li><a >@author</a></li>
+<li><a >@version</a></li>
+</ul>
+<!--
+title: @fires
+order: 323
+author: yuer
+-->
+
+<h1 id="fires">@fires</h1>
+<h2 id="目录-38">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-8">别名</h2>
+<pre><code>@emits</code></pre><h2 id="语法-20">语法</h2>
+<pre><code>@fires &lt;className&gt;#[event:]&lt;eventName&gt;</code></pre><h2 id="概述-26">概述</h2>
+<p><code>@fires</code> 标记表示方法在调用时可以触发指定类型的事件。使用 <a >@event</a>标记来记录事件的内容。</p>
+<h2 id="实例-22">实例</h2>
+<p>方法将触发 &quot;drain&quot; 事件：</p>
+<pre><code>/**
+ * Drink the milkshake.
+ *
+ * @fires Milkshake#drain
+ */
+Milkshake.prototype.drink = function() {
+  // ...
+};</code></pre><h2 id="相关链接-23">相关链接</h2>
+<ul>
+<li><a >@event</a></li>
+<li><a >@listens</a></li>
+</ul>
+<!--
+title: @function
+order: 324
+author: yuer
+-->
+
+<h1 id="function">@function</h1>
+<h2 id="目录-39">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="别名-9">别名</h2>
+<pre><code>@func
+@method</code></pre><h2 id="语法-21">语法</h2>
+<pre><code>@function [&lt;functionName&gt;]</code></pre><h2 id="概述-27">概述</h2>
+<p>将一个对象标记为一个函数，即使在解析器看来它可能不是一个函数。它将 doclet 的 <a >@kind</a> 设置为 <code>&#39;function&#39;</code>。</p>
+<h2 id="实例-23">实例</h2>
+<p>使用 <code>@function</code> 标记为一个函数：</p>
+<pre><code>/** @function */
+var paginate = paginateFactory(pages);</code></pre><p>如果没有 <code>@function</code> 标记，<code>paginate</code> 对象将被记录为泛型对象（一个 <a >@member</a>），因为从检查代码行中无法判断 <code>paginate</code> 在运行时将保存哪种类型的值。</p>
+<p>使用带函数名的 <code>@function</code>：</p>
+<pre><code>/** @function myFunction */
+
+// the above is the same as:
+/** @function
+ * @name myFunction 
+ */</code></pre><h2 id="相关链接-24">相关链接</h2>
+<ul>
+<li><a >@kind</a></li>
+<li><a >@member</a></li>
+<li><a >@name</a></li>
+</ul>
+<!--
+title: @generator
+order: 325
+author: yuer
+-->
+
+<h1 id="generator">@generator</h1>
+<h2 id="目录-40">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-22">语法</h2>
+<pre><code>@generator</code></pre><h2 id="概述-28">概述</h2>
+<p><code>@generator</code> 标记表示函数是一个生成器函数，这意味着它是使用语法函数 <code>*foo () {}</code> 声明的。JSDoc 3.5.0 及更高版本中提供了此标记。</p>
+<p>一般来说，不需要使用此标记，因为 JSDoc 会自动检测生成器函数并在生成的文档中标识它们。但是，如果您正在为代码中没有出现的生成器函数编写虚拟注释，则可以使用此标记告诉 JSDoc 该函数是生成器函数。</p>
+<h2 id="实例-24">实例</h2>
+<p>以下示例显示使用 <code>@generator</code> 标记的虚拟注释。</p>
+<p>带有 <code>@generator</code> 标记的虚拟注释:</p>
+<pre><code>/**
+ * Generate numbers in the Fibonacci sequence.
+ *
+ * @generator
+ * @function fibonacci
+ * @yields {number} The next number in the Fibonacci sequence.
+ */</code></pre><!--
+title: @global
+order: 326
+author: yuer
+-->
+
+<h1 id="global">@global</h1>
+<h2 id="目录-41">目录</h2>
+<p>-<a >语法</a>
+-<a >概述</a>
+-<a >实例</a>
+-<a >相关链接</a></p>
+<h2 id="语法-23">语法</h2>
+<pre><code>@global</code></pre><h2 id="概述-29">概述</h2>
+<p><code>@global</code> 标记指定一个符号应作为全局符号出现在文档中。JSDoc 忽略源文件中符号的实际作用域。此标记对于在本地定义然后指定给全局符号的符号特别有用。</p>
+<h2 id="实例-25">实例</h2>
+<p>使用 <code>@global</code> 标签来指定一个标识应记录为全局。</p>
+<p>将内部变量记录为全局变量:</p>
+<pre><code class="language-javascript">(function() {
+  /** @global */
+  var foo = &#39;hello foo&#39;;
+
+  this.foo = foo;
+}).apply(window);</code></pre>
+<h2 id="相关链接-25">相关链接</h2>
+<ul>
+<li><a >@inner</a></li>
+<li><a >@instance</a></li>
+<li><a >@memberof</a></li>
+<li><a >@static</a></li>
+</ul>
+<!--
+title: @hideconstructor
+order: 327
+author: yuer
+-->
+
+<h1 id="hideconstructor">@hideconstructor</h1>
+<h2 id="目录-42">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-24">语法</h2>
+<pre><code>@hideconstructor</code></pre><h2 id="概述-30">概述</h2>
+<p><code>@hideconstructor</code> 标记告诉 JSDoc 生成的文档不应该显示类的构造函数。JSDoc 3.5.0 及更高版本中提供了此标记。</p>
+<p>对于 ES2015 之前的类，请将此标记与 <a >@class</a> 或 <a >@constructor</a>标记结合使用。</p>
+<p>对于 ES2015 类，请在构造函数的 JSDoc 注释中使用此标记。如果类没有显式构造函数，请在类的 JSDoc 注释中使用此标记。</p>
+<h2 id="实例-26">实例</h2>
+<p>ES2015 之前的类带有 <code>@hideconstructor</code>:</p>
+<pre><code class="language-javascript">/**
+ * @classdesc Toaster singleton.
+ * @class
+ * @hideconstructor
+ */
+var Toaster = (function() {
+  var instance = null;
+
+  function Toaster() {}
+
+  /**
+   * Toast an item.
+   *
+   * @alias toast
+   * @memberof Toaster
+   * @instance
+   * @param {BreadyThing} item - The item to toast.
+   * @return {Toast} A toasted bready thing.
+   */
+  Toaster.prototype.toast = function(item) {};
+
+  return {
+    /**
+     * Get the Toaster instance.
+     *
+     * @alias Toaster.getInstance
+     * @returns {Toaster} The Toaster instance.
+     */
+    getInstance: function() {
+      if (instance === null) {
+        instance = new Toaster();
+        delete instance.constructor;
+      }
+
+      return instance;
+    }
+  };
+})();</code></pre>
+<p>ES2015 类带有 <code>@hideconstructor</code>:</p>
+<pre><code class="language-javascript">/**
+ * Waffle iron singleton.
+ */
+class WaffleIron {
+  // Private field declarations
+  #instance = null;
+
+  /**
+   * Create the waffle iron.
+   *
+   * @hideconstructor
+   */
+  constructor() {
+    if (#instance) {
+      return #instance;
+    }
+
+    /**
+     * Cook a waffle.
+     *
+     * @param {Batter} batter - The waffle batter.
+     * @return {Waffle} The cooked waffle.
+     */
+    this.cook = function(batter) {};
+
+    this.#instance = this;
+  }
+
+  /**
+   * Get the WaffleIron instance.
+   *
+   * @return {WaffleIron} The WaffleIron instance.
+   */
+  getInstance() {
+    return new WaffleIron();
+  }
+}</code></pre>
+<h2 id="相关链接-26">相关链接</h2>
+<ul>
+<li><a >@class</a></li>
+</ul>
+<!--
+title: @ignore
+order: 328
+author: yuer
+-->
+
+<h1 id="ignore">@ignore</h1>
+<h2 id="目录-43">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-25">语法</h2>
+<pre><code>@ignore</code></pre><h2 id="概述-31">概述</h2>
+<p><code>@ignore</code> 标签表示在代码中的注释不应该出现在文档中，注释会被直接忽略。这个标签优先于所有其他标签。</p>
+<p>对于大多数 JSDoc 模板来说，包括默认模板，<code>@ignore</code> 标签具有以下效果：</p>
+<ul>
+<li>如果您和 <a >@class</a> 或 <a >@module</a> 标签结合使用 <code>@ignore</code> 标签，整个类或模块的 JSDoc 注释文档会被省略。</li>
+<li>如果您和 <a >@namespace</a> 标签结合使用 <code>@ignore</code> 标签，必须将 <code>@ignore</code> 标签添加到任意子类和命名空间中。否则，会显示子类和命名空间的文档，但不完整。</li>
+</ul>
+<h2 id="实例-27">实例</h2>
+<p>在下面的例子中，<code>Jacket</code> 和 <code>Jacket#color</code> 将不会出现在文档中。</p>
+<p>在 Class 中使用 <code>@ignore</code> 标签：</p>
+<pre><code>/**
+ * @class
+ * @ignore
+ */
+function Jacket() {
+  /** The jacket&#39;s color. */
+  this.color = null;
+}</code></pre><p>在下面的例子中， <code>Clothes</code> 命名空间包含一个 <code>Jacket</code> 类。<code>@ignore</code> 标签必须添加到 <code>Clothes</code> 和 <code>Clothes.Jacket</code> 中。<code>Clothes</code>, <code>Clothes.Jacket</code> 和 <code>Clothes.Jacket#color</code> 将不会出现在文档。</p>
+<p>带子类的命名空间：</p>
+<pre><code class="language-javascript">/**
+ * @namespace
+ * @ignore
+ */
+var Clothes = {
+  /**
+   * @class
+   * @ignore
+   */
+  Jacket: function() {
+    /** The jacket&#39;s color. */
+    this.color = null;
+  }
+};</code></pre>
+<!--
+title: @implements
+order: 329
+author: yuer
+-->
+
+<h1 id="implements">@implements</h1>
+<h2 id="目录-44">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-26">语法</h2>
+<pre><code>@implements {typeExpression}</code></pre><h2 id="概述-32">概述</h2>
+<p><code>@implements</code> 标签表示一个标识实现一个接口。</p>
+<p>添加 <code>@implements</code> 标签到实现接口（例如，一个构造函数）的顶层标识。不需要将 <code>@implements</code> 标签添加到实现接口（例如，实现的实例方法）的每个成员上。</p>
+<p>如果没有在实现的接口中描述这个标识，JSDoc 会自动使用该接口文档的标识。</p>
+<h2 id="实例-28">实例</h2>
+<p>在下面的例子中，<code>TransparentColor</code> 类实现 <code>Color</code> 接口，并添加了 <code>TransparentColor#rgba</code> 方法。</p>
+<p>使用 <code>@implements</code> 标签：</p>
+<pre><code class="language-javascript">/**
+ * Interface for classes that represent a color.
+ *
+ * @interface
+ */
+function Color() {}
+
+/**
+ * Get the color as an array of red, green, and blue values, represented as
+ * decimal numbers between 0 and 1.
+ *
+ * @returns {Array&lt;number&gt;} An array containing the red, green, and blue values,
+ * in that order.
+ */
+Color.prototype.rgb = function() {
+  throw new Error(&quot;not implemented&quot;);
+};
+
+/**
+ * Class representing a color with transparency information.
+ *
+ * @class
+ * @implements {Color}
+ */
+function TransparentColor() {}
+
+// inherits the documentation from `Color#rgb`
+TransparentColor.prototype.rgb = function() {
+  // ...
+};
+
+/**
+ * Get the color as an array of red, green, blue, and alpha values, represented
+ * as decimal numbers between 0 and 1.
+ *
+ * @returns {Array&lt;number&gt;} An array containing the red, green, blue, and alpha
+ * values, in that order.
+ */
+TransparentColor.prototype.rgba = function() {
+  // ...
+};</code></pre>
+<h2 id="相关链接-27">相关链接</h2>
+<ul>
+<li><a >@interface</a></li>
+</ul>
+<!--
+title: @inheritdoc
+order: 330
+author: yuer
+-->
+
+<h1 id="inheritdoc">@inheritdoc</h1>
+<h2 id="目录-45">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-27">语法</h2>
+<pre><code>@inheritdoc</code></pre><h2 id="概述-33">概述</h2>
+<p><code>@inheritdoc</code> 标记表示应该从其父类继承其文档。JSDoc 注释中包含的任何其他标记都将被忽略。</p>
+<p>提供此标记是为了与 <a >Closure Compiler</a> 兼容。默认情况下，如果不向符号添加 JSDoc 注释，标识符将从其父级继承文档。</p>
+<p><code>@inheritdoc</code> 标记的存在意味着 <a >@override</a> 标记的存在。</p>
+<h2 id="实例-29">实例</h2>
+<p>下面的例子显示了一个类的描述如何从它的父类继承文档。</p>
+<p>一个类继承自他的父类：</p>
+<pre><code class="language-javascript">/**
+ * @classdesc Abstract class representing a network connection.
+ * @class
+ */
+function Connection() {}
+
+/**
+ * Open the connection.
+ */
+Connection.prototype.open = function() {
+  // ...
+};
+
+/**
+ * @classdesc Class representing a socket connection.
+ * @class
+ * @augments Connection
+ */
+function Socket() {}
+
+/** @inheritdoc */
+Socket.prototype.open = function() {
+  // ...
+};</code></pre>
+<p>省略 <code>Socket#open</code> 的 JSDoc 注 释，可以得到同样的结果。</p>
+<p>不带 <code>@inheritdoc</code> 标记的继承文档:</p>
+<pre><code class="language-javascript">/**
+ * @classdesc Abstract class representing a network connection.
+ * @class
+ */
+function Connection() {}
+
+/**
+ * Open the connection.
+ */
+Connection.prototype.open = function() {
+  // ...
+};
+
+/**
+ * @classdesc Class representing a socket connection.
+ * @class
+ * @augments Connection
+ */
+function Socket() {}
+
+Socket.prototype.open = function() {
+  // ...
+};</code></pre>
+<h2 id="相关链接-28">相关链接</h2>
+<ul>
+<li><a >@override</a></li>
+</ul>
+<!--
+title: {@link}
+order: 331
+author: yuer
+-->
+
+<h1 id="link">{@link}</h1>
+<h2 id="目录-46">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >链接格式化</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-10">别名</h2>
+<pre><code>{@linkcode}
+{@linkplain}</code></pre><h2 id="语法-28">语法</h2>
+<pre><code>{@link namepathOrURL}
+[link text]{@link namepathOrURL}
+{@link namepathOrURL|link text}
+{@link namepathOrURL link text (after the first space)}</code></pre><h2 id="概述-34">概述</h2>
+<p><code>{@link}</code> 内联标记创建指向指定的 <code>namepath</code> 或 <code>URL</code> 的链接。使用 <code>{@link}</code> 标记时，还可以使用几种不同格式之一提供链接文本。如果不提供任何链接文本，JSDoc 将使用 <code>namepath</code> 或 <code>URL</code> 作为链接文本。</p>
+<p>如果需要链接到教程，请使用 <a >{@tutorial}</a> 内联标记而不是 <code>{@link}</code> 标记。</p>
+<h2 id="链接格式化">链接格式化</h2>
+<p>默认情况下，<code>{@link}</code> 生成标准的 HTML 锚点标记。但是，你可能更愿意在某些环节用等宽字体呈现，或指定单个链接的格式。您可以使用 <code>{@link}</code> 标签的同义词来控制链接的格式：</p>
+<ul>
+<li><code>{@linkcode}</code>：强制使用等宽字体链接文本。</li>
+<li><code>{@linkplain}</code>：强制显示为正常的文本，没有等宽字体链接文本。</li>
+</ul>
+<p>您还可以在 JSDoc 的配置文件中设置下列选项之一;详情参见<a >配置 JSDoc</a>：</p>
+<ul>
+<li><code>templates.cleverLinks</code>: 如果设置为 <code>true</code>，链接 URL 使用普通的文本，并链接到代码中使用等宽字体。</li>
+<li><code>templates.monospaceLinks</code>: 当设置为 <code>true</code> 时，除了用 <code>{@linkplain}</code> 标记创建的链接外，所有链接都使用一个单空间字体。</li>
+</ul>
+<p>注意：尽管默认的 JSDoc 模板正确地呈现了所有这些标记，但是其他模板可能无法识别 <code>{@linkcode}</code> 和 <code>{@linkplain}</code> 标记。此外，其他模板可能会忽略链接呈现的配置选项。</p>
+<h2 id="实例-30">实例</h2>
+<p>下面的例子显示了提供给 <code>{@link}</code> 标签链接文本的所有方式。</p>
+<p>提供链接文本：</p>
+<pre><code>/**
+ * See {@link MyClass} and [MyClass&#39;s foo property]{@link MyClass#foo}.
+ * Also, check out {@link http://www.google.com|Google} and
+ * {@link https://github.com GitHub}.
+ */
+function myFunction() {}</code></pre><p>默认情况下，上面的例子中输出类似以下内容。</p>
+<p><code>@link</code> 标签输出：</p>
+<pre><code>See &lt;a href=&quot;MyClass.html&quot;&gt;MyClass&lt;/a&gt; and &lt;a href=&quot;MyClass.html#foo&quot;&gt;MyClass&#39;s foo
+property&lt;/a&gt;. Also, check out &lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt; and
+&lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;.</code></pre><p>如果配置属性 <code>templates.cleverLinks</code> 设置为 <code>true</code>，上面的例子会输出：</p>
+<pre><code>See &lt;a href=&quot;MyClass.html&quot;&gt;&lt;code&gt;MyClass&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;MyClass.html#foo&quot;&gt;
+&lt;code&gt;MyClass&#39;s foo property&lt;/code&gt;&lt;/a&gt;. Also, check out
+&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt; and &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;.</code></pre><h2 id="相关链接-29">相关链接</h2>
+<ul>
+<li><a >使用配置文件配置 JSDOC</a></li>
+<li><a >在 JSDoc 3中使用名称路径</a></li>
+</ul>
+<!--
+title: @tutorial
+order: 332
+author: yuer
+-->
+
+<h1 id="tutorial">@tutorial</h1>
+<h2 id="目录-47">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-29">语法</h2>
+<pre><code>{@tutorial tutorialID}
+[link text]{@tutorial tutorialID}
+{@tutorial tutorialID|link text}
+{@tutorial tutorialID link text (after the first space)}</code></pre><h2 id="概述-35">概述</h2>
+<p><code>{@tutorial}</code> 内联标记创建指向您指定的教程标识符的链接。使用 <code>{@tutorial}</code> 标记时，还可以使用几种不同格式之一提供链接文本。如果不提供任何链接文本，JSDoc 将使用教程的标题作为链接文本。</p>
+<p>如果需要链接到 <code>namepath</code> 或 <code>URL</code>，请使用 <a >{@link}</a>内联标记，而不是 <code>{@tutorial}</code> 标记。</p>
+<h2 id="实例-31">实例</h2>
+<p>以下示例显示了为 <code>{@tutorial}</code> 标记提供链接文本的所有方法。</p>
+<p>提供链接文本:</p>
+<pre><code class="language-js">/**
+ * See {@tutorial gettingstarted} and [Configuring the Dashboard]{@tutorial dashboard}.
+ * For more information, see {@tutorial create|Creating a Widget} and
+ * {@tutorial destroy Destroying a Widget}.
+ */
+function myFunction() {}</code></pre>
+<p>如果定义了所有这些教程，并且 <code>Getting Started</code> 教程的标题是 <code>“Getting Started”</code>，则上面的示例将生成类似于以下内容的输出：</p>
+<pre><code class="language-html">See &lt;a href=&quot;tutorial-gettingstarted.html&quot;&gt;Getting Started&lt;/a&gt; and
+&lt;a href=&quot;tutorial-dashboard.html&quot;&gt;Configuring the Dashboard&lt;/a&gt;.
+For more information, see &lt;a href=&quot;tutorial-create.html&quot;&gt;Creating a Widget&lt;/a&gt; and
+&lt;a href=&quot;tutorial-destroy.html&quot;&gt;Destroying a Widget&lt;/a&gt;.</code></pre>
+<h2 id="相关链接-30">相关链接</h2>
+<ul>
+<li><a >@tutorial</a></li>
+</ul>
+<!--
+title: @inner
+order: 333
+author: yuer
+-->
+
+<h1 id="inner">@inner</h1>
+<h2 id="目录-48">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-30">语法</h2>
+<pre><code>@inner</code></pre><h2 id="概述-36">概述</h2>
+<p>使用 <code>@inner</code> 标记会将符号标记为其父符号的内部成员。这意味着它可以被 <code>“Parent~Child”</code> 引用。</p>
+<p>使用 <code>@inner</code> 将覆盖 doclet 的默认作用域（除非它在全局作用域中，在这种情况下它将保持全局作用域）。</p>
+<h2 id="实例-32">实例</h2>
+<p>使用 <code>@inner</code> 使一个虚拟的 doclet 作为内部成员：</p>
+<pre><code>/** @namespace MyNamespace */
+/**
+ * myFunction is now MyNamespace~myFunction.
+ * @function myFunction
+ * @memberof MyNamespace
+ * @inner
+ */</code></pre><p>注意，在上面的代码我们也可以使用 <code>&quot;@function MyNamespace~myFunction&quot;</code>，代替 <a >@memberof</a>和 <code>@inner</code> 标签。</p>
+<p>使用 <code>@inner</code>:</p>
+<pre><code>/** @namespace */
+var MyNamespace = {
+  /**
+   * foo is now MyNamespace~foo rather than MyNamespace.foo.
+   * @inner
+   */
+  foo: 1
+};</code></pre><p>在上面的例子中，我们使用 <code>@inner</code> 迫使一个命名空间的成员被描述作为内部成员（默认情况下，这是一个静态成员）。这意味着，<code>foo</code> 现在有了 <code>MyNamespace~foo</code> 新名字，而不是 <code>MyNamespace.foo</code>。</p>
+<h2 id="相关链接-31">相关链接</h2>
+<ul>
+<li><a >@global</a></li>
+<li><a >@instance</a></li>
+<li><a >@static</a></li>
+</ul>
+<!--
+title: @instance
+order: 334
+author: yuer
+-->
+
+<h1 id="instance">@instance</h1>
+<h2 id="目录-49">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-31">语法</h2>
+<pre><code>@instance</code></pre><h2 id="概述-37">概述</h2>
+<p>使用 <code>@instance</code> 标记会将符号标记为其父符号的实例成员。这意味着它可以被称为 <code>Parent#Child</code>。</p>
+<p>使用 <code>@instance</code> 将覆盖 doclet 的默认作用域（除非它在全局作用域中，在这种情况下，它将保持全局作用域）。</p>
+<h2 id="实例-33">实例</h2>
+<p>下面的例子是 <code>@function MyNamespace#myFunction</code> 的一个普通写法。</p>
+<p>使用 <code>@instance</code> 使一个虚拟的 doclet 作为实例成员:</p>
+<pre><code>/** @namespace MyNamespace */
+/**
+ * myFunction is now MyNamespace#myFunction.
+ * @function myFunction
+ * @memberof MyNamespace
+ * @instance
+ */</code></pre><p>更有用的是，可以使用 <code>@instance</code> 标记覆盖 JSDoc 推断的范围。例如，可以指示静态成员用作实例成员。</p>
+<p>使用 <code>@instance</code> 标识实例成员:</p>
+<pre><code>/** @namespace */
+var BaseObject = {
+  /**
+   * foo is now BaseObject#foo rather than BaseObject.foo.
+   * @instance
+   */
+  foo: null
+};
+
+/** Generates BaseObject instances. */
+function fooFactory(fooValue) {
+  var props = { foo: fooValue };
+  return Object.create(BaseObject, props);
+}</code></pre><h2 id="相关链接-32">相关链接</h2>
+<ul>
+<li><a >@global</a></li>
+<li><a >@inner</a></li>
+<li><a >@static</a></li>
+</ul>
+<!--
+title: @interface
+order: 335
+author: yuer
+-->
+
+<h1 id="interface">@interface</h1>
+<h2 id="目录-50">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-32">语法</h2>
+<p>用作 JSDoc 标签字典 (默认开启):</p>
+<pre><code>@interface [&lt;name&gt;]</code></pre><p>用作 Closure Compiler 标签字典:</p>
+<pre><code>@interface</code></pre><h2 id="概述-38">概述</h2>
+<p><code>@interface</code> 标签使一个标识符作为其他标识符的一个实现接口。 例如，你的代码可能定义一个父类，它的方法和属性被去掉。您可以将 <code>@interface</code> 标签添加到父类，以指明子类必须实现父类的方法和属性。</p>
+<p>作为接口，<code>@interface</code> 标记应该添加到顶层标识符（例如，一个构造函数）。你并不需要将 <code>@interface</code> 标签添加加到实现接口（例如，实现的实例方法）的每个成员上。</p>
+<p>如果您使用的是 JSDoc 标记字典（默认启用），你还可以定义一个接口的虚拟注释，而不是为接口编写代码。见一个例子“定义一个接口的虚拟注释”。</p>
+<h2 id="实例-34">实例</h2>
+<p>在下面的例子中，<code>Color</code> 函数表示其它类可以实现的接口。</p>
+<p>使用 <code>@interface</code> 标签：</p>
+<pre><code>/**
+ * Interface for classes that represent a color.
+ *
+ * @interface
+ */
+function Color() {}
+
+/**
+ * Get the color as an array of red, green, and blue values, represented as
+ * decimal numbers between 0 and 1.
+ *
+ * @returns {Array&lt;number&gt;} An array containing the red, green, and blue values,
+ * in that order.
+ */
+Color.prototype.rgb = function() {
+  throw new Error(&#39;not implemented&#39;);
+};</code></pre><p>下面的例子使用虚拟注释，而不是代码，来定义 <code>Color</code> 接口。</p>
+<p>虚拟注释来定义一个接口：</p>
+<pre><code>/**
+ * Interface for classes that represent a color.
+ *
+ * @interface Color
+ */
+
+/**
+ * Get the color as an array of red, green, and blue values, represented as
+ * decimal numbers between 0 and 1.
+ *
+ * @function
+ * @name Color#rgb
+ * @returns {Array&lt;number&gt;} An array containing the red, green, and blue values,
+ * in that order.
+ */</code></pre><h2 id="相关链接-33">相关链接</h2>
+<ul>
+<li><a >@implements</a></li>
+</ul>
+<!--
+title: @kind
+order: 336
+author: yuer
+-->
+
+<h1 id="kind">@kind</h1>
+<h2 id="目录-51">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-33">语法</h2>
+<pre><code>@kind &lt;kindName&gt;</code></pre><p><code>&lt;kindName&gt;</code> 取值为：</p>
+<ul>
+<li><code>class</code></li>
+<li><code>constant</code></li>
+<li><code>event</code></li>
+<li><code>external</code></li>
+<li><code>file</code></li>
+<li><code>function</code></li>
+<li><code>member</code></li>
+<li><code>mixin</code></li>
+<li><code>module</code></li>
+<li><code>namespace</code></li>
+<li><code>typedef</code></li>
+</ul>
+<h2 id="概述-39">概述</h2>
+<p><code>@kind</code> 标签是用来指明什么样的标识符被描述（例如，一类或模块）。标识符 <code>kind</code> 不同于标识符 <code>type</code>（例如，字符串或布尔）。</p>
+<p>通常你不需要 <code>@kind</code> 标签，因为标识符的 <code>kind</code> 是由 doclet 的其他标记来确定。例如，使用 <a >@class</a> 标签自动意味着 <code>@kind class</code>，使用 <a >@namespace</a> 标签则意味着 <code>@kind namespace</code>。</p>
+<h2 id="实例-35">实例</h2>
+<p>使用 <code>@kind</code>：</p>
+<pre><code>// The following examples produce the same result:
+
+/**
+ * A constant.
+ * @kind constant
+ */
+const asdf = 1;
+
+/**
+ * A constant.
+ * @constant
+ */
+const asdf = 1;</code></pre><p><code>kind</code> 标签可能引起冲突（例如，使用 <a >@module</a>，表示他的 <code>kind</code> 为 <code>module</code>，同时，又使用了 <code>@kind constant</code>，表示他的 <code>kind</code> 为 <code>constant</code>），在这种情况下最后的标签决定 <code>kind</code> 的值。</p>
+<p>冲突的 <code>@kind</code> 语句：</p>
+<pre><code>/**
+ * This will show up as a constant
+ * @module myModule
+ * @kind constant
+ */
+
+/**
+ * This will show up as a module.
+ * @kind constant
+ * @module myModule
+ */</code></pre><h2 id="相关链接-34">相关链接</h2>
+<ul>
+<li><a >@type</a></li>
+</ul>
+<!--
+title: @lends
+order: 337
+author: yuer
+-->
+
+<h1 id="lends">@lends</h1>
+<h2 id="目录-52">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-34">语法</h2>
+<pre><code>@lends &lt;namepath&gt;</code></pre><h2 id="概述-40">概述</h2>
+<p><code>@lends</code> 标签允许将一个字面量对象的所有成员标记为某个标识符的成员，就像他们是给定名称的标识符成员。如果要将对象文字传递给从其成员创建命名类的函数，则可能需要执行此操作。</p>
+<h2 id="实例-36">实例</h2>
+<p>在本例中，我们希望使用一个 <code>helper</code> 函数来创建一个名为 <code>Person</code> 的类，以及名为 <code>initialize</code> 和 <code>say</code> 的实例方法。这与一些流行的框架处理类创建的方式类似。</p>
+<p>示例类:</p>
+<pre><code class="language-javascript">// We want to document this as being a class
+var Person = makeClass(
+  // We want to document these as being methods
+  {
+    initialize: function(name) {
+      this.name = name;
+    },
+    say: function(message) {
+      return this.name + &quot; says: &quot; + message;
+    }
+  }
+);</code></pre>
+<p>如果没有任何注释，JSDoc 将无法识别这段代码使用两个方法创建一个 <code>Person</code> 类。要记录这些方法，我们必须在 doc 注释中紧靠对象文本之前使用 <code>@lends</code> 标记。<code>@lends</code> 标记告诉 JSDoc，该对象文本的所有成员名称都被“借用”给一个名为 <code>Person</code> 的变量。我们还必须为每种方法添加注释。</p>
+<p>下面的例子让我们更接近我们想要的：</p>
+<pre><code class="language-javascript">/** @class */
+var Person = makeClass(
+  /** @lends Person */
+  {
+    /**
+     * Create a `Person` instance.
+     * @param {string} name - The person&#39;s name.
+     */
+    initialize: function(name) {
+      this.name = name;
+    },
+    /**
+     * Say something.
+     * @param {string} message - The message to say.
+     * @returns {string} The complete message.
+     */
+    say: function(message) {
+      return this.name + &quot; says: &quot; + message;
+    }
+  }
+);</code></pre>
+<p>现在名为 <code>initialize</code> 和 <code>say</code> 的函数会被文档化，但它们被标记为 <code>Person</code> 类的静态方法。这可能是你期望的，但有种情况下我们想要 <code>initialize</code> 和 <code>say</code> 属于 <code>Person</code> 类的实例。所以，我们通过少做改动,使其成为原型的方法。</p>
+<p>标记为实例方法:</p>
+<pre><code class="language-javascript">/** @class */
+var Person = makeClass(
+  /** @lends Person.prototype */
+  {
+    /**
+     * Create a `Person` instance.
+     * @param {string} name - The person&#39;s name.
+     */
+    initialize: function(name) {
+      this.name = name;
+    },
+    /**
+     * Say something.
+     * @param {string} message - The message to say.
+     * @returns {string} The complete message.
+     */
+    say: function(message) {
+      return this.name + &quot; says: &quot; + message;
+    }
+  }
+);</code></pre>
+<p>最后一步：我们的类框架使用借出的 <code>initialize</code> 函数来构造 <code>Person</code> 实例，但是 <code>Person</code> 实例没有自己的 <code>initialize</code> 方法。解决方案是将 <code>@constructs</code> 标记添加到借出的函数中。记住也要删除 <code>@class</code> 标记，否则会记录两个类。</p>
+<p>与构造器一起记录:</p>
+<pre><code class="language-javascript">var Person = makeClass(
+  /** @lends Person.prototype */
+  {
+    /**
+     * Create a `Person` instance.
+     * @constructs
+     * @param {string} name - The person&#39;s name.
+     */
+    initialize: function(name) {
+      this.name = name;
+    },
+    /**
+     * Say something.
+     * @param {string} message - The message to say.
+     * @returns {string} The complete message.
+     */
+    say: function(message) {
+      return this.name + &quot; says: &quot; + message;
+    }
+  }
+);</code></pre>
+<h2 id="相关链接-35">相关链接</h2>
+<ul>
+<li><a >@borrows</a></li>
+<li><a >@constructs</a></li>
+</ul>
+<!--
+title: @license
+order: 338
+author: yuer
+-->
+
+<h1 id="license">@license</h1>
+<h2 id="目录-53">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-35">语法</h2>
+<pre><code>@license &lt;identifier&gt;</code></pre><h2 id="概述-41">概述</h2>
+<p><code>@license</code> 标记标识应用于代码任何部分的软件许可证。</p>
+<p>您可以使用任何文本来标识正在使用的许可证。如果代码使用标准的开源许可证，请考虑使用<a >the Software Package Data Exchange (SPDX) License List</a>中的相应标识符。</p>
+<p>一些 JavaScript 处理工具，比如 Google 的 Closure 编译器，会自动保存任何包含 <code>@license</code> 标记的 JSDoc 注释。如果您正在使用其中一个工具，您可能希望添加一个独立的 JSDoc 注释，该注释包括 <code>@license</code> 标记以及许可证的整个文本，以便许可证文本将包含在生成的JavaScript 文件中。</p>
+<h2 id="实例-37">实例</h2>
+<p>在Apache 2.0 许可下分发的模块：</p>
+<pre><code>/**
+ * Utility functions for the foo package.
+ * @module foo/util
+ * @license Apache-2.0
+ */</code></pre><p>一个独立的 JSDoc 注释块，包含完整的MIT许可:</p>
+<pre><code>/**
+ * @license
+ * Copyright (c) 2015 Example Corporation Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the &quot;Software&quot;), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */</code></pre><!--
+title: @listens
+order: 339
+author: yuer
+-->
+
+<h1 id="listens">@listens</h1>
+<h2 id="目录-54">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-36">语法</h2>
+<pre><code>@listens &lt;eventName&gt;</code></pre><h2 id="概述-42">概述</h2>
+<p><code>@listens</code> 标记指示符号侦听指定的事件。使用 <a >@event</a>标记来记录事件的内容。</p>
+<h2 id="实例-38">实例</h2>
+<p>下面的示例演示了如何记录名为 <code>module:hurler~event:snowball</code> 的事件，还有一个方法命名为 <code>module:playground/monitor.reportThrowage</code> 来监听事件。</p>
+<p>描述一个事件和它的监听器:</p>
+<pre><code class="language-javascript">define(&quot;hurler&quot;, [], function() {
+  /**
+   * Event reporting that a snowball has been hurled.
+   *
+   * @event module:hurler~snowball
+   * @property {number} velocity - The snowball&#39;s velocity, in meters per second.
+   */
+
+  /**
+   * Snowball-hurling module.
+   *
+   * @module hurler
+   */
+  var exports = {
+    /**
+     * Attack an innocent (or guilty) person with a snowball.
+     *
+     * @method
+     * @fires module:hurler~snowball
+     */
+    attack: function() {
+      this.emit(&quot;snowball&quot;, { velocity: 10 });
+    }
+  };
+
+  return exports;
+});
+
+define(&quot;playground/monitor&quot;, [], function() {
+  /**
+   * Keeps an eye out for snowball-throwers.
+   *
+   * @module playground/monitor
+   */
+  var exports = {
+    /**
+     * Report the throwing of a snowball.
+     *
+     * @method
+     * @param {module:hurler~event:snowball} e - A snowball event.
+     * @listens module:hurler~event:snowball
+     */
+    reportThrowage: function(e) {
+      this.log(&quot;snowball thrown: velocity &quot; + e.velocity);
+    }
+  };
+
+  return exports;
+});</code></pre>
+<h2 id="相关链接-36">相关链接</h2>
+<ul>
+<li><a >@event</a></li>
+<li><a >@fires</a></li>
+</ul>
+<!--
+title: @member
+order: 340
+author: yuer
+-->
+
+<h1 id="member">@member</h1>
+<h2 id="目录-55">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="别名-11">别名</h2>
+<pre><code>@var</code></pre><h2 id="语法-37">语法</h2>
+<pre><code>@member [&lt;type&gt;] [&lt;name&gt;]</code></pre><h2 id="概述-43">概述</h2>
+<p><code>@member</code> 标记标识没有特殊类型的任意成员，例如“类”、“函数”或“常量”。成员可以选择具有类型和名称。</p>
+<h2 id="实例-39">实例</h2>
+<p><code>Data#point</code> 上使用 <code>@member</code>：</p>
+<pre><code>/** @class */
+function Data() {
+  /** @member {Object} */
+  this.point = {};
+}</code></pre><p>下面是使用 <code>@var</code> 的一个例子，<code>@member</code> 的别名，来描述一个（虚拟）变量&#39;foo&#39;。</p>
+<pre><code>/**
+ * A variable in the global namespace called &#39;foo&#39;.
+ * @var {number} foo
+ */</code></pre><p>上面的例子等价于：</p>
+<pre><code>/**
+ * A variable in the global namespace called &#39;foo&#39;.
+ * @type {number}
+ */
+var foo;</code></pre><!--
+title: @memberof
+order: 341
+author: yuer
+-->
+
+<h1 id="memberof">@memberof</h1>
+<h2 id="目录-56">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-38">语法</h2>
+<pre><code>@memberof &lt;parentNamepath&gt;
+@memberof! &lt;parentNamepath&gt;</code></pre><h2 id="概述-44">概述</h2>
+<p><code>@memberof</code> 标签标明成员隶属于哪一个父级标识符。</p>
+<p>默认情况下，<code>@memberof</code> 标签标注的标识符是静态成员。对于内部成员和实例成员，你可以使用对应名称路径的符号，或明确标注 <a >@inner</a> 或 <a >@instance</a> 标签。</p>
+<p>“强制的” <code>@memberof</code> 标签，<code>@memberof!</code> 强制对象被记录为属于特定的父级标识符，即使它有不同的父级标识符。</p>
+<h2 id="实例-40">实例</h2>
+<p>在下面的示例中，<code>hammer</code> 函数通常被记录为全局函数。这是因为，事实上，它是一个全局函数，但它也是 <code>Tools</code> 命名空间的一个成员，这就是您想要记录它的方式。解决方案是添加 <code>@memberof</code> 标记。</p>
+<p>使用 <code>@memberof</code>:</p>
+<pre><code class="language-js">/** @namespace */
+var Tools = {};
+
+/** @memberof Tools */
+var hammer = function() {};
+
+Tools.hammer = hammer;</code></pre>
+<p>对于类的实例成员，可以使用语法：<code>&quot;@memberof ClassName.prototype&quot;</code> 或者 <code>&quot;@memberof ClassName#&quot;</code>。另外也可以组合使用 <code>&quot;@memberof ClassName&quot;</code> 和 <code>@instance</code> 达到同样的效果。</p>
+<p>在类原型上使用 <code>@memberof</code>：</p>
+<pre><code class="language-js">/** @class Observable */
+create(&quot;Observable&quot;, {
+  /**
+   * This will be a static member, Observable.cache.
+   * @memberof Observable
+   */
+  cache: [],
+
+  /**
+   * This will be an instance member, Observable#publish.
+   * @memberof Observable.prototype
+   */
+  publish: function(msg) {},
+
+  /**
+   * This will also be an instance member, Observable#save.
+   * @memberof Observable#
+   */
+  save: function() {},
+
+  /**
+   * This will also be an instance member, Observable#end.
+   * @memberof Observable
+   * @instance
+   */
+  end: function() {}
+});</code></pre>
+<p>下面的示例使用强制 <code>@memberof</code> 标签，<code>@memberof!</code>，来描述对象(<code>Data#point</code>)的属性，它是一个类（Data）的实例成员。</p>
+<p>当您使用 <a >@property</a> 标签记录一个属性的时候，则无法使用其 longname 连接到这个属性。我们可以使用 <a >@alias</a> 和 <code>@memberof!</code> 来强制属性为可连接，告诉 JSDoc <code>Data#point.y</code> 应记录为 <code>Data#</code> 的成员 <code>point.y</code> 而不是 <code>Data#</code> 的 <code>point</code> 中的一员 <code>y</code>。</p>
+<p>为对象属性使用 <code>@memberof!</code>：</p>
+<pre><code class="language-js">/** @class */
+function Data() {
+  /**
+   * @type {object}
+   * @property {number} y This will show up as a property of `Data#point`,
+   * but you cannot link to the property as {@link Data#point.y}.
+   */
+  this.point = {
+    /**
+     * The @alias and @memberof! tags force JSDoc to document the
+     * property as `point.x` (rather than `x`) and to be a member of
+     * `Data#`. You can link to the property as {@link Data#point.x}.
+     * @alias point.x
+     * @memberof! Data#
+     */
+    x: 0,
+    y: 1
+  };
+}</code></pre>
+<h2 id="相关链接-37">相关链接</h2>
+<ul>
+<li><a >@name</a></li>
+</ul>
+<!--
+title: @mixes
+order: 342
+author: yuer
+-->
+
+<h1 id="mixes">@mixes</h1>
+<h2 id="目录-57">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-39">语法</h2>
+<pre><code>@mixes &lt;OtherObjectPath&gt;</code></pre><h2 id="概述-45">概述</h2>
+<p><code>@mixes</code> 标签指示当前对象混入了 <code>OtherObjectPath</code> 对象的所有成员,被混入的对象就是一个 <a >@mixin</a>。</p>
+<h2 id="实例-41">实例</h2>
+<p>用 <code>@mixin</code> 标签描述一个混入：</p>
+<pre><code class="language-js">/**
+ * This provides methods used for event handling. It&#39;s not meant to
+ * be used directly.
+ *
+ * @mixin
+ */
+var Eventful = {
+  /**
+   * Register a handler function to be called whenever this event is fired.
+   * @param {string} eventName - Name of the event.
+   * @param {function(Object)} handler - The handler to call.
+   */
+  on: function(eventName, handler) {
+    // code...
+  },
+
+  /**
+   * Fire an event, causing all handlers for that event name to run.
+   * @param {string} eventName - Name of the event.
+   * @param {Object} eventData - The data provided to each handler.
+   */
+  fire: function(eventName, eventData) {
+    // code...
+  }
+};</code></pre>
+<p>现在，我们添加一个 <code>FormButton</code> 类，并且调用 <code>mix</code> 函数，将 <code>Eventful</code> 的所有功能混入到 <code>FormButton</code>，这样 <code>FormButton</code> 也可以触发事件和监听了。我们使用 <code>@mixes</code> 标签，以表明 <code>FormButton</code> 混入了 <code>Eventful</code> 的功能。</p>
+<p>使用 <code>@mixes</code> 标签：</p>
+<pre><code class="language-js">/**
+ * @constructor FormButton
+ * @mixes Eventful
+ */
+var FormButton = function() {
+  // code...
+};
+FormButton.prototype.press = function() {
+  this.fire(&#39;press&#39;, {});
+}
+mix(Eventful).into(FormButton.prototype);</code></pre>
+<h2 id="相关链接-38">相关链接</h2>
+<ul>
+<li><a >@borrows</a></li>
+<li><a >@class</a></li>
+<li><a >@mixin</a></li>
+</ul>
+<!--
+title: @mixin
+order: 343
+author: yuer
+-->
+
+<h1 id="mixin">@mixin</h1>
+<h2 id="目录-58">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-40">语法</h2>
+<pre><code>@mixin [&lt;MixinName&gt;]</code></pre><h2 id="概述-46">概述</h2>
+<p><code>@mixin</code> 标签提供旨在被添加到其他对象的功能。然后，可以将 <a >@mixes</a> 标签添加到使用了该 mixin（混入）的对象上。</p>
+<h2 id="实例-42">实例</h2>
+<p>使用 <code>@mixin</code> :</p>
+<pre><code class="language-js">/**
+ * This provides methods used for event handling. It&#39;s not meant to
+ * be used directly.
+ *
+ * @mixin
+ */
+var Eventful = {
+  /**
+   * Register a handler function to be called whenever this event is fired.
+   * @param {string} eventName - Name of the event.
+   * @param {function(Object)} handler - The handler to call.
+   */
+  on: function(eventName, handler) {
+    // code...
+  },
+
+  /**
+   * Fire an event, causing all handlers for that event name to run.
+   * @param {string} eventName - Name of the event.
+   * @param {Object} eventData - The data provided to each handler.
+   */
+  fire: function(eventName, eventData) {
+    // code...
+  }
+};</code></pre>
+<h2 id="相关链接-39">相关链接</h2>
+<ul>
+<li><a >@borrows</a></li>
+<li><a >@class</a></li>
+<li><a >@mixes</a></li>
+</ul>
+<!--
+title: @module
+order: 344
+author: yuer
+-->
+
+<h1 id="module">@module</h1>
+<h2 id="目录-59">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-41">语法</h2>
+<pre><code>@module [[{&lt;type&gt;}] &lt;moduleName&gt;]</code></pre><p>在 JSDoc3.3.0 或更高版本中，<code>&lt;moduleName&gt;</code> 可能包括 <code>module:</code> 前缀。在以前的版本中，必须忽略此前缀。</p>
+<p>注意：如果你提供了一个type，那 必须同时提供模块名称 <code>&lt;moduleName&gt;</code>。</p>
+<h2 id="概述-47">概述</h2>
+<p><code>@module</code> 可以将当前文件标注为一个模块，默认情况下文件内的所有标识符都隶属于此模块，除非文档另有说明。</p>
+<p>使用 <code>module:moduleName</code> 链接到模块（例如，<a >@link</a> 或 <a >@see</a> 标记内）。例如，<code>@module foo/bar</code> 可以使用 <code>{@link module:foo/bar}</code> 链接到。</p>
+<p>如果未提供模块名称，则该名称将从模块的路径和文件名派生。例如，假设我有一个文件 <code>test.js</code>，位于 <code>src</code> 目录中，它包含 <code>/** @module */</code>。下面是运行 JSDoc 的一些场景以及 test.js 的结果模块名：</p>
+<p>如果没有提供导出模块的名称：</p>
+<pre><code># from src/
+jsdoc ./test.js   # module name &#39;test&#39;
+
+# from src&#39;s parent directory:
+jsdoc src/test.js # module name &#39;src/test&#39;
+jsdoc -r src/     # module name &#39;test&#39;</code></pre><h2 id="实例-43">实例</h2>
+<p>下面的示例演示了在一个模块中用于标识的 <code>namepaths</code>。第一个标识符是模块私有的，或“内部”变量 - 它只能在模块内访问。第二个标识符是由模块导出一个静态函数。</p>
+<p>使用基础的 <code>@module</code>:</p>
+<pre><code>/** @module myModule */
+
+/** will be module:myModule~foo */
+var foo = 1;
+
+/** will be module:myModule.bar */
+var bar = function() {};</code></pre><p>当一个导出的标识符被定义为 <code>module.exports</code>，<code>exports</code>，或 <code>this</code> 中的成员，JSDoc 会推断该标识符是模块的静态成员。</p>
+<p>在下面的例子中，<code>Book</code> 类被描述为一个静态成员，<code>module:bookshelf.Book</code>，带有一个实例成员，<code>module:bookshelf.Book#title</code>。</p>
+<p>定义导出的标识符为 <code>this</code> 的成员：</p>
+<pre><code>/** @module bookshelf */
+/** @class */
+this.Book = function (title) {
+  /** The title. */
+  this.title = title;
+};</code></pre><p>在下面的例子中，两个函数有 <code>namepaths</code>（名称路径）<code>module:color/mixer.blend</code> 和 <code>module:color/mixer.darken</code>。</p>
+<p>定义导出的标识符为 <code>module.exports</code> 或 <code>exports</code> 的成员:</p>
+<pre><code>/** @module color/mixer */
+module.exports = {
+  /** Blend two colours together. */
+  blend: function (color1, color2) {}
+};
+/** Darkens a color. */
+exports.darken = function (color, shade) {};</code></pre><p>更多例子查看<a >描述 JavaScript 模块</a>。</p>
+<h2 id="相关链接-40">相关链接</h2>
+<ul>
+<li><a >@exports</a></li>
+<li><a >CommonJS Modules</a></li>
+<li><a >AMD Modules</a></li>
+</ul>
+<!--
+title: @name
+order: 345
+author: yuer
+-->
+
+<h1 id="name">@name</h1>
+<h2 id="目录-60">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-42">语法</h2>
+<pre><code>@name &lt;namePath&gt;</code></pre><h2 id="概述-48">概述</h2>
+<p><code>@name</code> 标签强制 JSDoc 使用这个给定的名称，而忽略实际代码里的名称。这个标签最好用于&quot;虚拟注释&quot;，而不是在代码中随时可见的标签，如在运行时期间产生的方法。</p>
+<p>当您使用 <code>@name</code> 标签，必须提供额外的标签，来告诉 JSDoc 什么样的标识符将被文档化;该标识符是否是另一个标识符的成员，等等。如果不提供这些信息，标识符将不会被正确文档化。</p>
+<p>警告：通过使用 <code>@name</code> 标签告诉 JSDoc 忽略实际代码，隔离文档注释。在许多情况下，最好是使用 <a >@alias</a> 标签代替，这个标签只是改变了标识符的名称，但是保留了标识符的其他信息。</p>
+<h2 id="实例-44">实例</h2>
+<p>下面的例子演示了如何使用 <code>@name</code> 标签描述一个函数，JSDoc 通常不会识别。</p>
+<p>使用 <code>@name</code> 标签：</p>
+<pre><code>/**
+ * @name highlightSearchTerm
+ * @function
+ * @global
+ * @param {string} term - The search term to highlight.
+ */
+eval(&quot;window.highlightSearchTerm = function(term) {};&quot;)</code></pre><h2 id="相关链接-41">相关链接</h2>
+<ul>
+<li><a >在 JSDoc 3中使用名称路径</a></li>
+<li><a >@alias</a></li>
+</ul>
+<!--
+title: @namespace
+order: 346
+author: yuer
+-->
+
+<h1 id="namespace">@namespace</h1>
+<h2 id="目录-61">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-43">语法</h2>
+<pre><code>@namespace [[{&lt;type&gt;}] &lt;SomeName&gt;]</code></pre><h2 id="概述-49">概述</h2>
+<p><code>@namespace</code> 标记表示对象为其成员创建命名空间。您还可以编写一个虚拟 JSDoc 注释来定义代码使用的命名空间。</p>
+<p>如果一个命名空间是由除对象字面量以为的标识符定义的，您可以包括一个 <code>type</code> 的表达式，跟在 <code>@namespace</code> 标签后面。如果 <code>@namespace</code> 标签包括一个 <code>type</code>，那么它也必须包含一个名称。</p>
+<p>您可能需要描述一个命名空间，其名称中包含特殊字符，如&quot;#&quot; 或 &quot;!&quot;。在这些情况下，当你的描述或链接到这个命名空间时，你必须将命名空间中特殊符号部分使用双引号括起来。详情参见下面的例子。</p>
+<h2 id="实例-45">实例</h2>
+<p>对象上使用 <code>@namespace</code> 标签：</p>
+<pre><code>/**
+ * My namespace.
+ * @namespace
+ */
+var MyNamespace = {
+  /** documented as MyNamespace.foo */
+  foo: function() {},
+  /** documented as MyNamespace.bar */
+  bar: 1
+};</code></pre><p>为虚拟注释加上 <code>@namespace</code> 标签：</p>
+<pre><code>/**
+ * A namespace.
+ * @namespace MyNamespace
+ */
+
+/**
+ * A function in MyNamespace (MyNamespace.myFunction).
+ * @function myFunction
+ * @memberof MyNamespace
+ */</code></pre><p>如果 <code>@namespace</code> 的名称包括特殊字符，你必须将命名空间中特殊符号部分使用双引号括起来。如果名称已经包含一个或多个双引号，那么使用反斜线（<code>\</code>）转义双引号。</p>
+<p>在特殊的成员名称上使用 <code>@namespace</code> 标签：</p>
+<pre><code>/** @namespace window */
+
+/**
+ * Shorthand for the alert function.
+ * Refer to it as {@link window.&quot;!&quot;} (note the double quotes).
+ */
+window[&quot;!&quot;] = function(msg) { alert(msg); };</code></pre><h2 id="相关链接-42">相关链接</h2>
+<ul>
+<li><a >@module</a></li>
+</ul>
+<!--
+title: @override
+order: 347
+author: yuer
+-->
+
+<h1 id="override">@override</h1>
+<h2 id="目录-62">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-44">语法</h2>
+<pre><code>@override</code></pre><h2 id="概述-50">概述</h2>
+<p><code>@override</code> 标签指明一个标识符覆盖其父类同名的标识符。</p>
+<p>这个标签为 <a >Closure Compiler</a>提供了兼容性。默认情况下，JSDoc 自动识别，覆盖其父类同名的标识符。</p>
+<p>如果您的 JSDoc 注释块包含 <a >@inheritdoc</a> 标签，就不需要在包含 <code>@Override</code> 标签了。<code>@inheritdoc</code> 标签的存在就意味着 <code>@override</code> 的存在。</p>
+<h2 id="实例-46">实例</h2>
+<p>下面的例子说明一个方法如何重写父类的方法。</p>
+<p>重写父类方法：</p>
+<pre><code class="language-js">/**
+ * @classdesc Abstract class representing a network connection.
+ * @class
+ */
+function Connection() {}
+
+/**
+ * Open the connection.
+ */
+Connection.prototype.open = function() {
+  // ...
+};
+
+/**
+ * @classdesc Class representing a socket connection.
+ * @class
+ * @augments Connection
+ */
+function Socket() {}
+
+/**
+ * Open the socket.
+ * @override
+ */
+Socket.prototype.open = function() {
+  // ...
+};</code></pre>
+<h2 id="相关链接-43">相关链接</h2>
+<ul>
+<li><a >@inheritdoc</a></li>
+</ul>
+<!--
+title: @package
+order: 348
+author: yuer
+-->
+
+<h1 id="package">@package</h1>
+<h2 id="目录-63">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-45">语法</h2>
+<p>使用 JSDoc 标记字典（默认情况下启用）:</p>
+<pre><code>@package</code></pre><p>使用 <a >Closure Compiler</a> 编译器标记字典:</p>
+<pre><code>@package [{typeExpression}]</code></pre><h2 id="概述-51">概述</h2>
+<p><code>@package</code> 标记将符号内容标记为 package private。通常，此标记指示符号仅可用于与此符号的源文件位于同一目录中的代码。JSDoc 3.5.0 及更高版本中提供了此标记。</p>
+<p>默认情况下，文档中将显示用 <code>@package</code> 标记标记的符号。在 JSDoc 3.3.0 和更高版本中，可以使用 <code>-a/--access</code> 命令行选项来更改此行为。</p>
+<p><code>@package</code> 标记等同于 <code>@access package</code>。</p>
+<h2 id="实例-47">实例</h2>
+<p>在下面的示例中，实例成员 <code>Thingy#_bar</code> 显示在生成的文档中，但带有一个注释，指示它是包专用的</p>
+<p>使用 <code>@package</code> 标记:</p>
+<pre><code class="language-js">/** @constructor */
+function Thingy() {
+  /** @package */
+  this._bar = 1;
+}</code></pre>
+<h2 id="相关链接-44">相关链接</h2>
+<ul>
+<li><a >@access</a></li>
+<li><a >@global</a></li>
+<li><a >@instance</a></li>
+<li><a >@private</a></li>
+<li><a >@protected</a></li>
+<li><a >@public</a></li>
+<li><a >@static</a></li>
+</ul>
+<!--
+title: @param
+order: 349
+author: yuer
+-->
+
+<h1 id="param">@param</h1>
+<h2 id="目录-64">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-12">别名</h2>
+<pre><code>@arg
+@argument</code></pre><h2 id="语法-46">语法</h2>
+<pre><code>@param [&lt;type&gt;] &lt;name&gt; [&lt;description&gt;]</code></pre><h2 id="概述-52">概述</h2>
+<p><code>@param</code> 标记提供函数参数的名称、类型和描述。</p>
+<p><code>@param</code> 标记要求您指定要记录的参数的名称。您还可以包括括在大括号中的参数类型和参数说明。</p>
+<p>参数类型可以是内置的 JavaScript 类型，例如字符串或对象，也可以是代码中另一个符号的 JSDoc namepath。如果您已经在 namepath 中为该符号编写了文档，JSDoc 将自动链接到该符号的文档。您还可以使用类型表达式来指示参数不可为空或可以接受任何类型；有关详细信息，请参阅 <a >@type</a> 标记文档。</p>
+<p>如果您提供了一个描述，那么可以通过在描述之前插入一个连字符，使 JSDoc 注释更具可读性。务必在连字符前后加一个空格。</p>
+<h2 id="实例-48">实例</h2>
+<h3 id="名称-类型-和说明">名称, 类型, 和说明</h3>
+<p>下面的示例演示如何在 <code>@param</code> 标签中包含名称，类型，和说明。</p>
+<p>只注释变量名称:</p>
+<pre><code>/**
+ * @param somebody
+ */
+function sayHello(somebody) {
+  alert(&#39;Hello &#39; + somebody);
+}</code></pre><p>注释变量名和变量类型:</p>
+<pre><code>/**
+ * @param {string} somebody
+ */
+function sayHello(somebody) {
+  alert(&#39;Hello &#39; + somebody);
+}</code></pre><p>注释变量名、变量类型和变量说明:</p>
+<pre><code>/**
+ * @param {string} somebody Somebody&#39;s name.
+ */
+function sayHello(somebody) {
+  alert(&#39;Hello &#39; + somebody);
+}</code></pre><p>可以在变量说明前加个连字符，使之更加容易阅读:</p>
+<pre><code>/**
+ * @param {string} somebody - Somebody&#39;s name.
+ */
+function sayHello(somebody) {
+  alert(&#39;Hello &#39; + somebody);
+}</code></pre><h3 id="具有属性的参数">具有属性的参数</h3>
+<p>如果参数需要具有特定属性，则可以通过提供额外的 <code>@param</code> 标记来记录该属性。例如，如果希望 <code>employee</code> 参数具有 <code>name</code> 和 <code>department</code> 属性，则可以按如下方式记录该参数.</p>
+<p>记录参数的属性:</p>
+<pre><code>/**
+ * Assign the project to an employee.
+ * @param {Object} employee - The employee who is responsible for the project.
+ * @param {string} employee.name - The name of the employee.
+ * @param {string} employee.department - The employee&#39;s department.
+ */
+Project.prototype.assign = function(employee) {
+  // ...
+};</code></pre><p>如果一个参数在没有显式名称的情况下被解构，您可以给这个对象一个合适的名称并记录它的属性。</p>
+<p>记录解构参数:</p>
+<pre><code>/**
+ * Assign the project to an employee.
+ * @param {Object} employee - The employee who is responsible for the project.
+ * @param {string} employee.name - The name of the employee.
+ * @param {string} employee.department - The employee&#39;s department.
+ */
+Project.prototype.assign = function({ name, department }) {
+  // ...
+};</code></pre><p>还可以将此语法与 JSDoc 的数组参数语法相结合。例如，如果可以将多个 <code>employees</code> 分配给一个 <code>project</code>。</p>
+<p>记录数组中值的属性：</p>
+<pre><code>/**
+ * Assign the project to a list of employees.
+ * @param {Object[]} employees - The employees who are responsible for the project.
+ * @param {string} employees[].name - The name of an employee.
+ * @param {string} employees[].department - The employee&#39;s department.
+ */
+Project.prototype.assign = function(employees) {
+  // ...
+};</code></pre><h3 id="可选参数和默认值">可选参数和默认值</h3>
+<p>下面的例子说明如何描述一个参数是可选的，并且具有默认值。</p>
+<p>一个可选参数（使用 JSDoc 语法）：</p>
+<pre><code class="language-js">/**
+ * @param {string} [somebody] - Somebody&#39;s name.
+ */
+function sayHello(somebody) {
+  if (!somebody) {
+    somebody = &quot;John Doe&quot;;
+  }
+  alert(&quot;Hello &quot; + somebody);
+}</code></pre>
+<p>一个可选参数（ 使用Google Closure Compiler 语法）：</p>
+<pre><code class="language-js">/**
+ * @param {string=} somebody - Somebody&#39;s name.
+ */
+function sayHello(somebody) {
+  if (!somebody) {
+    somebody = &#39;John Doe&#39;;
+  }
+  alert(&#39;Hello &#39; + somebody);
+}</code></pre>
+<p>一个可选参数和默认值：</p>
+<pre><code class="language-js">/**
+ * @param {string} [somebody=John Doe] - Somebody&#39;s name.
+ */
+function sayHello(somebody) {
+  if (!somebody) {
+    somebody = &#39;John Doe&#39;;
+  }
+  alert(&#39;Hello &#39; + somebody);
+}</code></pre>
+<h3 id="多种类型和可重复参数">多种类型和可重复参数</h3>
+<p>下面的例子演示了如何使用类型的表达式来表示一个参数可以接受多种类型（或任何类型），还有一个参数可以被多次使用。有关 JSDoc 支持的类型表达式细节请参阅 <a >@type</a> 标签文档。</p>
+<p>允许一个类型或另一个类型：</p>
+<pre><code class="language-js">/**
+ * @param {(string|string[])} [somebody=John Doe] - Somebody&#39;s name, or an array of names.
+ */
+function sayHello(somebody) {
+  if (!somebody) {
+    somebody = &#39;John Doe&#39;;
+  } else if (Array.isArray(somebody)) {
+    somebody = somebody.join(&#39;, &#39;);
+  }
+  alert(&#39;Hello &#39; + somebody);
+}</code></pre>
+<p>允许任何类型：</p>
+<pre><code class="language-js">/**
+ * @param {*} somebody - Whatever you want.
+ */
+function sayHello(somebody) {
+  console.log(&#39;Hello &#39; + JSON.stringify(somebody));
+}</code></pre>
+<p>可重复使用的参数：</p>
+<pre><code class="language-js">/**
+ * Returns the sum of all numbers passed to the function.
+ * @param {...number} num - A positive or negative number.
+ */
+function sum(num) {
+  var i = 0, n = arguments.length, t = 0;
+  for (; i &lt; n; i++) {
+    t += arguments[i];
+  }
+  return t;
+}</code></pre>
+<h3 id="回调函数">回调函数</h3>
+<p>如果参数接受一个回调函数，您可以使用 <a >@callback</a> 标签来定义一个回调类型，然后回调类型包含到 <code>@param</code> 标签中。</p>
+<pre><code class="language-js">/**
+ * This callback type is called `requestCallback` and is displayed as a global symbol.
+ *
+ * @callback requestCallback
+ * @param {number} responseCode
+ * @param {string} responseMessage
+ */
+
+/**
+ * Does something asynchronously and executes the callback on completion.
+ * @param {requestCallback} cb - The callback that handles the response.
+ */
+function doSomethingAsynchronously(cb) {
+  // code
+};</code></pre>
+<h2 id="相关链接-45">相关链接</h2>
+<ul>
+<li><a >@callback</a></li>
+<li><a >@returns</a></li>
+<li><a >@type</a></li>
+<li><a >@typedef</a></li>
+</ul>
+<!--
+title: @private
+order: 350
+author: yuer
+-->
+
+<h1 id="private">@private</h1>
+<h2 id="目录-65">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-47">语法</h2>
+<p>使用 JSDoc 标记字典（默认情况下启用）:</p>
+<pre><code>@private</code></pre><p>使用 <a >Closure Compiler</a> 编译器标记字典:</p>
+<pre><code>@private [{typeExpression}]</code></pre><h2 id="概述-53">概述</h2>
+<p><code>@private</code> 标记将符号标记为 <code>private</code>，或不用于一般用途。除非使用 <code>-p/--private</code> 命令行选项运行 JSDoc，否则生成的输出中不会显示私有成员。在 JSDoc 3.3.0 和更高版本中，还可以使用 <code>-a/--access</code> 命令行选项来更改此行为。</p>
+<p><code>@private</code> 标记不被子成员继承。例如，如果 <code>@private</code> 标记添加到命名空间，命名空间的成员仍然会输出到生成的文档中;因为命名空间是私有的，成员的 <code>namepath</code> 不包含在命名空间中。</p>
+<p><code>@private</code> 标记等同于 <code>@access private</code>。</p>
+<h2 id="实例-49">实例</h2>
+<p>在下面的例子中，<code>Documents</code> 和 <code>Documents.Newspaper</code> 会被输出到生成的文档中，但是 <code>Documents.Diary</code> 不会。</p>
+<pre><code class="language-js">/** @namespace */
+var Documents = {
+  /**
+   * An ordinary newspaper.
+   */
+  Newspaper: 1,
+  /**
+   * My diary.
+   * @private
+   */
+  Diary: 2
+};</code></pre>
+<h2 id="相关链接-46">相关链接</h2>
+<ul>
+<li><a >@access</a></li>
+<li><a >@global</a></li>
+<li><a >@instance</a></li>
+<li><a >@package</a></li>
+<li><a >@protected</a></li>
+<li><a >@public</a></li>
+<li><a >@static</a></li>
+</ul>
+<!--
+title: @property
+order: 351
+author: yuer
+-->
+
+<h1 id="property">@property</h1>
+<h2 id="目录-66">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-13">别名</h2>
+<pre><code>@prop</code></pre><h2 id="语法-48">语法</h2>
+<pre><code>@property &lt;type&gt; &lt;name&gt; [&lt;description&gt;]</code></pre><h2 id="概述-54">概述</h2>
+<p><code>@property</code> 标记是一种方便地记录类、命名空间或其他对象的静态属性列表的方法。</p>
+<p>通常，JSDoc 模板将创建一个完整的新页面，以显示有关嵌套命名空间层次结构的每个级别的信息。有时，您真正想要的是在同一页上列出所有属性，包括嵌套属性。</p>
+<p>请注意，属性标记必须在文档注释中使用，例如它们是命名空间或类的属性。此标记用于静态属性的简单集合，不允许为每个属性提供 <code>@examples</code> 或类似的复杂信息，仅提供类型、名称和描述。</p>
+<h2 id="实例-50">实例</h2>
+<p>在这个例子中，我们有一个名为 <code>config</code> 的命名空间。我们想要所有有关默认属性及嵌套值的信息，输出到与 <code>config</code> 同一个页面上。</p>
+<p>描述命名空间的默认属性及嵌套属性：</p>
+<pre><code class="language-js">/**
+ * @namespace
+ * @property {object}  defaults               - The default values for parties.
+ * @property {number}  defaults.players       - The default number of players.
+ * @property {string}  defaults.level         - The default level for the party.
+ * @property {object}  defaults.treasure      - The default treasure.
+ * @property {number}  defaults.treasure.gold - How much gold the party starts with.
+ */
+var config = {
+  defaults: {
+    players: 1,
+    level:   &#39;beginner&#39;,
+    treasure: {
+      gold: 0
+    }
+  }
+};</code></pre>
+<p>下面的示例演示如何指示属性是可选的。</p>
+<pre><code>/**
+ * User type definition
+ * @typedef {Object} User
+ * @property {string} email
+ * @property {string} [nickName]
+ */</code></pre><h2 id="相关链接-47">相关链接</h2>
+<ul>
+<li><a >@enum</a></li>
+<li><a >@member</a></li>
+</ul>
+<!--
+title: @protected
+order: 352
+author: yuer
+-->
+
+<h1 id="protected">@protected</h1>
+<h2 id="目录-67">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-49">语法</h2>
+<p>使用 JSDoc 标记字典（默认情况下启用）:</p>
+<pre><code>@protected</code></pre><p>使用 <a >Closure Compiler</a> 编译器标记字典:</p>
+<pre><code>@protected [{typeExpression}]</code></pre><h2 id="概述-55">概述</h2>
+<p><code>@protected</code> 标记将符号标记为受保护。通常，此标记表示符号仅在当前模块中可用或应仅使用。</p>
+<p>默认情况下，文档中将显示用 <code>@protected</code> 标记标记的符号。在 JSDoc 3.3.0 和更高版本中，可以使用 <code>-a/--access</code> 命令行选项来更改此行为。</p>
+<p><code>@protected</code> 标记等同于 <code>@access protected</code>。</p>
+<h2 id="实例-51">实例</h2>
+<p>在下面的例子中，该实例成员 <code>Thingy#_bar</code> 会被导出到生成的文档中，但使用注释说明它是被保护的。</p>
+<p>使用 <code>@protected</code> 标签：</p>
+<pre><code class="language-js">/** @constructor */
+function Thingy() {
+  /** @protected */
+  this._bar = 1;
+}</code></pre>
+<h2 id="相关链接-48">相关链接</h2>
+<ul>
+<li><a >@access</a></li>
+<li><a >@global</a></li>
+<li><a >@instance</a></li>
+<li><a >@package</a></li>
+<li><a >@private</a></li>
+<li><a >@public</a></li>
+<li><a >@static</a></li>
+</ul>
+<!--
+title: @public
+order: 353
+author: yuer
+-->
+
+<h1 id="public">@public</h1>
+<h2 id="目录-68">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-50">语法</h2>
+<pre><code>@public</code></pre><h2 id="概述-56">概述</h2>
+<p><code>@public</code> 标签标记标识符为公开的。</p>
+<p>默认情况下，JSDoc 把所有标识符当做公开的，因此使用这个标记一般不会影响生成的文档。 然而，你可能更愿意明确地使用 <code>@public</code> 标签，这样可以更加清晰的标明你要公开的标识符。</p>
+<p>在 JSDoc3 中，<code>@public</code> 标签不影响标识符的作用域。使用 <a >@instance</a>, <a >@static</a>, 和 <a >@global</a> 标签会改变标识符的作用域。</p>
+<h2 id="实例-52">实例</h2>
+<p>使用 <code>@public</code> 标签：</p>
+<pre><code class="language-js">/**
+ * The Thingy class is available to all.
+ * @public
+ * @class
+ */
+function Thingy() {
+  /**
+   * The Thingy~foo member. Note that &#39;foo&#39; is still an inner member
+   * of &#39;Thingy&#39;, in spite of the @public tag.
+   * @public
+   */
+  var foo = 0;
+}</code></pre>
+<h2 id="相关链接-49">相关链接</h2>
+<ul>
+<li><a >@access</a></li>
+<li><a >@global</a></li>
+<li><a >@instance</a></li>
+<li><a >@package</a></li>
+<li><a >@private</a></li>
+<li><a >@protected</a></li>
+<li><a >@static</a></li>
+</ul>
+<!--
+title: @readonly
+order: 354
+author: yuer
+-->
+
+<h1 id="readonly">@readonly</h1>
+<h2 id="目录-69">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-51">语法</h2>
+<pre><code>@readonly</code></pre><h2 id="概述-57">概述</h2>
+<p>标记一个标识符为只读。JSDoc 不会检查某个代码是否真是只读的，只要标上 <code>@readonly</code>，在文档中就体现为只读的。</p>
+<h2 id="实例-53">实例</h2>
+<p>使用 <code>@readonly</code> 标签：</p>
+<pre><code>/**
+ * A constant.
+ * @readonly
+ * @const {number}
+ */
+const FOO = 1;</code></pre><p>带有 <code>@readonly</code> 标签的 <code>getter</code>:</p>
+<pre><code class="language-js">/**
+ * Options for ordering a delicious slice of pie.
+ * @namespace
+ */
+var pieOptions = {
+  /**
+   * Plain.
+   */
+  plain: &quot;pie&quot;,
+  /**
+   * A la mode.
+   * @readonly
+   */
+  get aLaMode() {
+    return this.plain + &quot; with ice cream&quot;;
+  }
+};</code></pre>
+<!--
+title: @requires
+order: 355
+author: yuer
+-->
+
+<h1 id="requires">@requires</h1>
+<h2 id="目录-70">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-52">语法</h2>
+<pre><code>@requires &lt;someModuleName&gt;</code></pre><h2 id="概述-58">概述</h2>
+<p><code>@requires</code> 标签可以记录一个模块需要的依赖项。一个 JSDoc 注释块可以有多个 <code>@require</code> 标签。模块名可以被指定为 &quot;moduleName&quot; 或者 &quot;module:moduleName&quot;;这两种形式将被解析为模块。</p>
+<p>JSDoc 不会尝试处理被包含的模块。如果您希望该模块包含到文档中，您必须将模块包含到 JavaScript 文件列表进行处理。</p>
+<h2 id="实例-54">实例</h2>
+<p>使用 <code>@requires</code> 标签:</p>
+<pre><code class="language-js">/**
+ * This class requires the modules {@link module:xyzcorp/helper} and
+ * {@link module:xyzcorp/helper.ShinyWidget#polish}.
+ * @class
+ * @requires module:xyzcorp/helper
+ * @requires xyzcorp/helper.ShinyWidget#polish
+ */
+function Widgetizer() {}</code></pre>
+<!--
+title: @returns
+order: 356
+author: yuer
+-->
+
+<h1 id="returns">@returns</h1>
+<h2 id="目录-71">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-14">别名</h2>
+<pre><code>@return</code></pre><h2 id="语法-53">语法</h2>
+<pre><code>@return [{type}] [description]</code></pre><h2 id="概述-59">概述</h2>
+<p><code>@returns</code> 标记记录函数返回的值。</p>
+<p>如果要记录生成器函数，请使用 <a >@yiels</a> 标记而不是此标记。</p>
+<h2 id="实例-55">实例</h2>
+<p>返回值的类型:</p>
+<pre><code class="language-js">/**
+ * Returns the sum of a and b
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+function sum(a, b) {
+  return a + b;
+}</code></pre>
+<p>返回值的类型和描述:</p>
+<pre><code class="language-js">/**
+ * Returns the sum of a and b
+ * @param {number} a
+ * @param {number} b
+ * @returns {number} Sum of a and b
+ */
+function sum(a, b) {
+  return a + b;
+}</code></pre>
+<p>返回多类型的值:</p>
+<pre><code class="language-js">/**
+ * Returns the sum of a and b
+ * @param {number} a
+ * @param {number} b
+ * @param {boolean} retArr If set to true, the function will return an array
+ * @returns {(number|Array)} Sum of a and b or an array that contains a, b and the sum of a and b.
+ */
+function sum(a, b, retArr) {
+  if (retArr) {
+    return [a, b, a + b];
+  }
+  return a + b;
+}</code></pre>
+<p>返回 <code>Promise</code>:</p>
+<pre><code class="language-js">/**
+ * Returns the sum of a and b
+ * @param {number} a
+ * @param {number} b
+ * @returns {Promise} Promise object represents the sum of a and b
+ */
+function sumAsync(a, b) {
+  return new Promise(function(resolve, reject) {
+    resolve(a + b);
+  });
+}</code></pre>
+<h2 id="相关链接-50">相关链接</h2>
+<ul>
+<li><a >@param</a></li>
+<li><a >@yields</a></li>
+</ul>
+<!--
+title: @see
+order: 357
+author: yuer
+-->
+
+<h1 id="see">@see</h1>
+<h2 id="目录-72">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-54">语法</h2>
+<pre><code>@see &lt;namepath&gt;
+@see &lt;text&gt;</code></pre><h2 id="概述-60">概述</h2>
+<p><code>@see</code> 标签表示可以参考另一个标识符的说明文档，或者一个外部资源。您可以提供一个标识符的 <code>namepath</code> 或自由格式的文本。如果你提供了一个 <code>namepath</code>，JSDoc 的默认模板会自动将 <code>namepath</code> 转换成链接。</p>
+<h2 id="实例-56">实例</h2>
+<p>使用 <code>@see</code> 标签：</p>
+<pre><code class="language-js">/**
+ * Both of these will link to the bar function.
+ * @see {@link bar}
+ * @see bar
+ */
+function foo() {}
+
+// Use the inline {@link} tag to include a link within a free-form description.
+/**
+ * @see {@link foo} for further information.
+ * @see {@link http://github.com|GitHub}
+ */
+function bar() {}</code></pre>
+<h2 id="相关链接-51">相关链接</h2>
+<ul>
+<li><a >{@link}</a></li>
+</ul>
+<!--
+title: @since
+order: 358
+author: yuer
+-->
+
+<h1 id="since">@since</h1>
+<h2 id="目录-73">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-55">语法</h2>
+<pre><code>@since &lt;versionDescription&gt;</code></pre><h2 id="概述-61">概述</h2>
+<p><code>@since</code> 标记表示在特定版本中添加了类、方法或其他符号。</p>
+<h2 id="实例-57">实例</h2>
+<p>使用 <code>@since</code>:</p>
+<pre><code class="language-js">/**
+ * Provides access to user information.
+ * @since 1.0.1
+ */
+function UserRecord() {}</code></pre>
+<h2 id="相关链接-52">相关链接</h2>
+<ul>
+<li><a >@version</a></li>
+</ul>
+<!--
+title: @static
+order: 359
+author: yuer
+-->
+
+<h1 id="static">@static</h1>
+<h2 id="目录-74">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-56">语法</h2>
+<pre><code>@static</code></pre><h2 id="概述-62">概述</h2>
+<p><code>@static</code> 标记表示符号包含在父项中，可以在不实例化父项的情况下访问。</p>
+<p>使用 <code>@static</code> 标记将覆盖符号的默认作用域，但有一个例外：全局作用域中的符号将保持全局。</p>
+<h2 id="实例-58">实例</h2>
+<p>下面的例子可以写成 <code>&quot;@function MyNamespace.myFunction&quot;</code> 并省略 <code>@memberof</code> 和 <code>@static</code> 标签，他们的效果是一样的.</p>
+<pre><code>/** @namespace MyNamespace */
+
+/**
+ * @function myFunction
+ * @memberof MyNamespace
+ * @static
+ */</code></pre><p>下面的示例强制模块的内部成员被描述为静态成员。</p>
+<p>使用 <code>@static</code> 来覆盖默认作用域：</p>
+<pre><code>/** @module Rollerskate */
+
+/**
+ * The &#39;wheel&#39; variable is documented as Rollerskate.wheel
+ * rather than Rollerskate~wheel.
+ * @static
+ */
+var wheel = 1;</code></pre><h2 id="相关链接-53">相关链接</h2>
+<ul>
+<li><a >@global</a></li>
+<li><a >@inner</a></li>
+<li><a >@instance</a></li>
+</ul>
+<!--
+title: @summary
+order: 360
+author: yuer
+-->
+
+<h1 id="summary">@summary</h1>
+<h2 id="目录-75">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-57">语法</h2>
+<pre><code>@summary Summary goes here.</code></pre><h2 id="概述-63">概述</h2>
+<p><code>@summary</code> 标签是完整描述的一个简写版本。它可以被添加到任何的 doclet。</p>
+<h2 id="实例-59">实例</h2>
+<pre><code>/**
+ * A very long, verbose, wordy, long-winded, tedious, verbacious, tautological,
+ * profuse, expansive, enthusiastic, redundant, flowery, eloquent, articulate,
+ * loquacious, garrulous, chatty, extended, babbling description.
+ * @summary A concise summary.
+ */
+function bloviate() {}</code></pre><!--
+title: @this
+order: 361
+author: yuer
+-->
+
+<h1 id="this">@this</h1>
+<h2 id="目录-76">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-58">语法</h2>
+<pre><code>@this &lt;namePath&gt;</code></pre><h2 id="概述-64">概述</h2>
+<p><code>@this</code> 标签指明 <code>this</code> 关键字的指向。</p>
+<h2 id="实例-60">实例</h2>
+<p>在下面的例子中，<code>@this</code> 标签迫使 <code>&quot;this.name&quot;</code> 被描述为 <code>&quot;Greeter#name&quot;</code>，而不是全局变量 <code>&quot;name&quot;</code>。</p>
+<pre><code class="language-js">/** @constructor */
+function Greeter(name) {
+  setName.apply(this, name);
+}
+
+/** @this Greeter */
+function setName(name) {
+  /** document me */
+  this.name = name;
+}</code></pre>
+<!--
+title: @throws
+order: 362
+author: yuer
+-->
+
+<h1 id="throws">@throws</h1>
+<h2 id="目录-77">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="别名-15">别名</h2>
+<pre><code>@exception</code></pre><h2 id="语法-59">语法</h2>
+<pre><code>@throws free-form description
+@throws {&lt;type&gt;}
+@throws {&lt;type&gt;} free-form description</code></pre><h2 id="概述-65">概述</h2>
+<p><code>@throws</code> 标记记录函数可能引发的错误。可以在一个 JSDoc 注释中多次包含 <code>@throws</code> 标记。</p>
+<h2 id="实例-61">实例</h2>
+<p>使用带有类型的 <code>@throws</code> 标记:</p>
+<pre><code class="language-js">/**
+ * @throws {InvalidArgumentException}
+ */
+function foo(x) {}</code></pre>
+<p>使用带有描述的 <code>@throws</code> 标记:</p>
+<pre><code class="language-js">/**
+ * @throws Will throw an error if the argument is null.
+ */
+function bar(x) {}</code></pre>
+<p>使用带有类型和描述的 <code>@throws</code> 标记:</p>
+<pre><code class="language-js">/**
+ * @throws {DivideByZero} Argument x must be non-zero.
+ */
+function baz(x) {}</code></pre>
+<!--
+title: @todo
+order: 363
+author: yuer
+-->
+
+<h1 id="todo">@todo</h1>
+<h2 id="目录-78">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+</ul>
+<h2 id="语法-60">语法</h2>
+<pre><code>@todo text describing thing to do.</code></pre><h2 id="概述-66">概述</h2>
+<p><code>@todo</code> 标签记录要完成的任务。在一个 JSDoc 注释块中您可以包含多个 <code>@todo</code> 标签。</p>
+<h2 id="实例-62">实例</h2>
+<p>使用 <code>@todo</code> 标签：</p>
+<pre><code class="language-js">/**
+ * @todo Write the documentation.
+ * @todo Implement this function.
+ */
+function foo() {
+  // write me
+}</code></pre>
+<!--
+title: @tutorial
+order: 364
+author: yuer
+-->
+
+<h1 id="tutorial-1">@tutorial</h1>
+<h2 id="目录-79">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-61">语法</h2>
+<pre><code>@tutorial &lt;tutorialID&gt;</code></pre><h2 id="概述-67">概述</h2>
+<p><code>@tutorial</code> 标签插入一个指向向导教程的链接，作为文档的一部分。有关创建教程指导请参阅 <a >tutorials overview</a>。</p>
+<p>可以在一个 JSDoc 注释中多次使用 <code>@tutorial</code> 标记。</p>
+<h2 id="实例-63">实例</h2>
+<p>在下面的示例中，<code>MyClass</code> 的文档将链接到具有标识符 <code>tutorial-1</code> 和 <code>tutorial-2</code> 的教程。</p>
+<pre><code>/**
+ * Description
+ * @class
+ * @tutorial tutorial-1
+ * @tutorial tutorial-2
+ */
+function MyClass() {}</code></pre><h2 id="相关链接-54">相关链接</h2>
+<ul>
+<li><a >Tutorials</a></li>
+<li><a >{@tutorial}</a></li>
+<li><a >@see</a></li>
+</ul>
+<!--
+title: @type
+order: 365
+author: yuer
+-->
+
+<h1 id="type">@type</h1>
+<h2 id="目录-80">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-62">语法</h2>
+<pre><code>@type {typeName}</code></pre><h2 id="概述-68">概述</h2>
+<p><code>@type</code> 标记允许您提供一个类型表达式，用于标识符号可能包含的值类型或函数返回的值类型。您还可以将类型表达式包含在许多其他 JSDoc 标记中，比如 <a >@param</a> 标记。</p>
+<p>类型表达式可以包括符号的 JSDoc namepath（例如，<code>myNamespace.MyClass</code>）、内置的 JavaScript 类型（例如，string）或它们的组合。您可以使用任何 Google Closure Compiler 编译器类型表达式，以及特定于JSDoc的其他几种格式。</p>
+<p>如果 JSDoc 确定类型表达式无效，它将显示错误并停止运行。通过使用 <code>--lenient</code> 选项运行 JSDoc，可以将此错误转换为警告。</p>
+<p>注意：JSDoc 3.2 和更高版本中完全支持 Google Closure Compiler 编译器样式的类型表达式。JSDoc 的早期版本包括对闭包编译器类型表达式的部分支持。</p>
+<p>通过使用下面描述的格式之一提供类型表达式来指定每个类型。在适当的情况下，JSDoc 将自动为其他符号创建指向文档的链接。例如，如果该符号已被文档化，<code>@type {MyClass}</code>将链接到 <code>MyClass</code> 文档。</p>
+<h3 id="symbol-name-name-expression">Symbol name (name expression)</h3>
+<pre><code>{boolean}
+{myNamespace.MyClass}</code></pre><p>指定符号的名称。如果标识符已经被文档化，JSDoc 将创建一个链接到该标识符的文档。</p>
+<h3 id="multiple-types-type-union">Multiple types (type union)</h3>
+<pre><code>{(number|boolean)}</code></pre><p>这意味着值可能是几种类型中的一种，用括号括起来，并用&quot;|&quot;分隔类型的完整列表。</p>
+<h3 id="arrays-and-objects-type-applications-and-record-types">Arrays and objects (type applications and record types)</h3>
+<p>MyClass的实例的数组:</p>
+<pre><code>{Array.&lt;MyClass&gt;}
+// or:
+{MyClass[]}</code></pre><p>具有字符串键和数值的对象：</p>
+<pre><code>{Object.&lt;string, number&gt;}</code></pre><p>名为 <code>myObj</code> 的对象，属性为“a”（数字）、“b”（字符串）和“c”（任何类型）:</p>
+<pre><code>{{a: number, b: string, c}} myObj
+// or:
+{Object} myObj
+{number} myObj.a
+{string} myObj.b
+{*} myObj.c</code></pre><p>JSDoc 支持 Closure Compiler 语法定义的数组和对象类型。</p>
+<p>还可以通过数组后面附加<code>[]</code>指示包含在数组中的类型。例如，表达式<code>string[]</code>表示字符串数组。</p>
+<p>对于具有一组已知的属性的对象，你可以使用 Closure Compiler 语法文档化标注的类型。也可以分别描述每个属性，这使您能够提供有关每个属性的更多详细信息。</p>
+<h3 id="nullable-type">Nullable type</h3>
+<p>一个数字或空值：</p>
+<pre><code>{?number}</code></pre><p>指明类型为指定的类型，或者为 <code>null</code>。</p>
+<h3 id="non-nullable-type">Non-nullable type</h3>
+<p>一个数字，但是绝对不会是 <code>null</code>:</p>
+<pre><code>{!number}</code></pre><p>指明类型为指定的类型，但是绝对不会是 <code>null</code>。</p>
+<h3 id="variable-number-of-that-type">Variable number of that type</h3>
+<p>此函数接受可变数量的数值参数:</p>
+<pre><code>@param {...number} num</code></pre><p>指示函数接受可变数目的参数，并指定参数的类型。例如：</p>
+<pre><code class="language-js">/**
+ * Returns the sum of all numbers passed to the function.
+ * @param {...number} num A positive or negative number
+ */
+function sum(num) {
+  var i=0, n=arguments.length, t=0;
+  for (; i&lt;n; i++) {
+    t += arguments[i];
+  }
+  return t;
+}</code></pre>
+<h3 id="optional-parameter">Optional parameter</h3>
+<p>一个可选参数 <code>foo</code>:</p>
+<pre><code>@param {number} [foo]
+// or:
+@param {number=} foo</code></pre><p>一个可选参数 <code>foo</code>，默认值为 <code>1</code>:</p>
+<pre><code>@param {number} [foo=1]</code></pre><p>表示该参数是可选的。当对可选参数使用 JSDoc 的语法时，还可以显示在省略参数时将使用的值。</p>
+<h3 id="callbacks">Callbacks</h3>
+<pre><code>/**
+ * @callback myCallback
+ * @param {number} x - ...
+ */
+
+/** @type {myCallback} */
+var cb;</code></pre><p>使用 <code>@callback</code> 标签指明一个回调。和 <code>@typedef</code> 标签是相同的，不同之处在于回调的类型始终是&quot;function&quot;。</p>
+<h3 id="type-definitions">Type definitions</h3>
+<p>记录 <code>id</code>, <code>name</code>, <code>age</code> 属性的类型：</p>
+<pre><code>/**
+ * @typedef PropertiesHash
+ * @type {object}
+ * @property {string} id - an ID.
+ * @property {string} name - your name.
+ * @property {number} age - your age.
+ */
+
+/** @type {PropertiesHash} */
+var props;</code></pre><p>您可以使用 <code>@typedef</code> 标签记录复杂类型，然后参考类型定义在你文档的其他地方。</p>
+<h2 id="实例-64">实例</h2>
+<pre><code>/** @type {(string|Array.)} */
+var foo;
+/** @type {number} */
+var bar = 1;</code></pre><p>在许多情况下，您可以包含一个类型表达式作为另一个标签的一部分，而不是在 JSDoc 注释块中包含独立 <code>@type</code> 标签。</p>
+<p>类型表达式可以有多个标签：</p>
+<pre><code>/**
+ * @type {number}
+ * @const
+ */
+var FOO = 1;
+
+// same as:
+
+/** @const {number} */
+var FOO = 1;</code></pre><h2 id="相关链接-55">相关链接</h2>
+<ul>
+<li><a >@callback</a></li>
+<li><a >@typedef</a></li>
+<li><a >@param</a></li>
+<li><a >@property</a></li>
+</ul>
+<!--
+title: @typedef
+order: 366
+author: yuer
+-->
+
+<h1 id="typedef">@typedef</h1>
+<h2 id="目录-81">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-63">语法</h2>
+<pre><code>@typedef [&lt;type&gt;] &lt;namepath&gt;</code></pre><h2 id="概述-69">概述</h2>
+<p><code>@typedef</code> 标签在描述自定义类型时是很有用的，特别是如果你要反复引用它们的时候。这些类型可以在其它标签内使用，如 <code>@type</code> 和 <code>@param</code>。</p>
+<p>使用 <code>@callback</code> 标签表明回调函数的类型。</p>
+<h2 id="实例-65">实例</h2>
+<p>这个例子定义了一个联合类型的参数，表示可以包含数字或字符串。</p>
+<p>使用 <code>@typedef</code> 标签：</p>
+<pre><code>/**
+ * A number, or a string containing a number.
+ * @typedef {(number|string)} NumberLike
+ */
+
+/**
+ * Set the magic number.
+ * @param {NumberLike} x - The magic number.
+ */
+function setMagicNumber(x) {
+}</code></pre><p>这个例子定义了一个更复杂的类型，一个具有多个属性的对象，并设置了它的 <code>namepath</code>，这样它将与使用该类型的类一起显示。因为类型定义实际上不是由类公开的，所以通常将类型定义记录为内部成员。</p>
+<p>使用 <code>@typedef</code> 记录类的复杂类型:</p>
+<pre><code>/**
+ * The complete Triforce, or one or more components of the Triforce.
+ * @typedef {Object} WishGranter~Triforce
+ * @property {boolean} hasCourage - Indicates whether the Courage component is present.
+ * @property {boolean} hasPower - Indicates whether the Power component is present.
+ * @property {boolean} hasWisdom - Indicates whether the Wisdom component is present.
+ */
+
+/**
+ * A class for granting wishes, powered by the Triforce.
+ * @class
+ * @param {...WishGranter~Triforce} triforce - One to three {@link WishGranter~Triforce} objects
+ * containing all three components of the Triforce.
+ */
+function WishGranter(triforce) {}</code></pre><h2 id="相关链接-56">相关链接</h2>
+<ul>
+<li><a >@callback</a></li>
+<li><a >@param</a></li>
+<li><a >@type</a></li>
+</ul>
+<!--
+title: @variation
+order: 367
+author: yuer
+-->
+
+<h1 id="variation">@variation</h1>
+<h2 id="目录-82">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-64">语法</h2>
+<pre><code>@variation &lt;variationNumber&gt;</code></pre><h2 id="概述-70">概述</h2>
+<p>有时代码可能包含多个具有相同长名称的符号。例如，您可能同时拥有一个全局类和一个名为 <code>Widget</code> 的顶级命名空间。在这种情况下，<code>{@link Widget}</code> 或 <code>@memberof Widget</code> 是什么意思？全局命名空间，还是全局类？</p>
+<p>变体有助于 JSDoc 区分具有相同长名称的不同符号。例如，如果将 <code>“@variation 2”</code> 添加到小部件类的JSDoc注释中，<code>“{@link Widget(2)}”</code> 将引用该类，<code>“{@link Widget}”</code> 将引用命名空间。或者，当您使用诸如 <code>@alias</code> 或 <code>@name</code> 之类的标记（例如，<code>“@alias Widget(2)”</code>）指定符号时，也可以包含变体。</p>
+<p>您可以使用 <code>@variation</code> 标记提供任何值，只要该值和 longname 的组合产生了 longname 的全局唯一版本。作为最佳实践，使用可预测的模式来选择值，这将使您更容易编写代码文档。</p>
+<h2 id="实例-66">实例</h2>
+<p>下面的示例使用 <code>@variation</code> 标签来区分 <code>Widget</code> 类和 <code>Widget</code> 命名空间。</p>
+<pre><code class="language-js">/**
+ * The Widget namespace.
+ * @namespace Widget
+ */
+
+// you can also use &#39;@class Widget(2)&#39; and omit the @variation tag
+/**
+ * The Widget class. Defaults to the properties in {@link Widget.properties}.
+ * @class
+ * @variation 2
+ * @param {Object} props - Name-value pairs to add to the widget.
+ */
+function Widget(props) {}
+
+/**
+ * Properties added by default to a new {@link Widget(2)} instance.
+ */
+Widget.properties = {
+  /**
+   * Indicates whether the widget is shiny.
+   */
+  shiny: true,
+  /**
+   * Indicates whether the widget is metallic.
+   */
+  metallic: true
+};</code></pre>
+<h2 id="相关链接-57">相关链接</h2>
+<ul>
+<li><a >@alias</a></li>
+<li><a >@name</a></li>
+</ul>
+<!--
+title: @version
+order: 368
+author: yuer
+-->
+
+<h1 id="version">@version</h1>
+<h2 id="目录-83">目录</h2>
+<ul>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="语法-65">语法</h2>
+<pre><code>@version &lt;version&gt;</code></pre><h2 id="概述-71">概述</h2>
+<p><code>@version</code> 标签后面的文本将被用于表示该项的版本。</p>
+<h2 id="实例-67">实例</h2>
+<p>使用 <code>@version</code> 标签：</p>
+<pre><code>/**
+ * Solves equations of the form a * x = b. Returns the value
+ * of x.
+ * @version 1.2.3
+ * @tutorial solver
+ */
+function solver(a, b) {
+  return b / a;
+}</code></pre><h2 id="相关链接-58">相关链接</h2>
+<ul>
+<li><a >@since</a></li>
+</ul>
+<!--
+title: @yields
+order: 369
+author: yuer
+-->
+
+<h1 id="yields">@yields</h1>
+<h2 id="目录-84">目录</h2>
+<ul>
+<li><a >别名</a></li>
+<li><a >语法</a></li>
+<li><a >概述</a></li>
+<li><a >实例</a></li>
+<li><a >相关链接</a></li>
+</ul>
+<h2 id="别名-16">别名</h2>
+<pre><code>@yield</code></pre><h2 id="语法-66">语法</h2>
+<pre><code>@yields [{type}] [description]</code></pre><h2 id="概述-72">概述</h2>
+<p><code>@yields</code> 标记记录生成器函数生成的值。JSDoc 3.5.0 及更高版本中提供了此标记。</p>
+<p>如果要记录常规函数，请使用 <a >@returns</a> 标记而不是此标记。</p>
+<h2 id="实例-68">实例</h2>
+<p>带有类型的 <code>@yields</code>:</p>
+<pre><code>/**
+ * Generate the Fibonacci sequence of numbers.
+ *
+ * @yields {number}
+ */
+function* fibonacci() {}</code></pre><p>带有类型和描述的 <code>@yields</code>:</p>
+<pre><code>/**
+ * Generate the Fibonacci sequence of numbers.
+ *
+ * @yields {number} The next number in the Fibonacci sequence.
+ */
+function* fibonacci() {}</code></pre><h2 id="相关链接-59">相关链接</h2>
+<ul>
+<li><a >@returns</a></li>
+</ul>
+
+  </article>
+</body>
+</html>
