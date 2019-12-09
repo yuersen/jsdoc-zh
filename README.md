@@ -2,6 +2,11 @@
 
 整理 JSDOC 汉化资源。
 
+## 链接
+
+- [官网](https://jsdoc.app/)
+- [中文文档](./src/index.md)
+
 ## 转化
 
 - html
