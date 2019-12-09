@@ -4,8 +4,8 @@
   "description": "JSDoc ZH",
   "main": "index.js",
   "scripts": {
-    "html": "node build/tohtml.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "html": "node build/convert-html.js",
+    "pdf": "node build/convert-pdf.js"
   },
   "repository": {
     "type": "git",
